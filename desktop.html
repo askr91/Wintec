@@ -6,16 +6,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="format-detection" content="telephone=no" />
-
-	<!-- Windows 12 网页版 谭景元原创  -->
-
-	<!-- Windows 12 网页版是一个开放源项目,
-	希望让用户在网络上预先体验 Windows 12,
-	内容可能与 Windows 12 正式版本不一致。
-	使用标准网络技术，例如 HTML、CSS 和 JavaScript，
-	此项目绝不附属于微软，且不应与微软操作系统或产品混淆，
-	这也不是 Windows365 cloud PC
-	本项目中微软、Windows 和其他示范产品是微软公司的商标 -->
 	<link rel="stylesheet" href="./desktop.css">
 	<link rel="stylesheet" href="bootstrap-icons.css">
 	<!-- Apps style -->
@@ -99,11 +89,11 @@
 		<div class="name">Administrator</div>
 		<div id="login" onclick="
 			this.id = 'login-after';
-			this.innerText = '登录中...';
+			this.innerText = 'please wait...';
 			document.querySelector('#loginback').removeChild(document.querySelector('#loginback .power'));
 			var qwq = window.setInterval(() => {
 				if (this.innerText.match(/\.\.\./)) {
-					this.innerText = '登录中.';
+					this.innerText = 'please wait.';
 				}
 				else {
 					this.innerText += '.';
