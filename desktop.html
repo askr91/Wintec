@@ -416,28 +416,28 @@ $('#search-win').removeClass('show-begin');
 </div>
 </div>
 	<div id="widgets">
-		<div class="widgets">
-			<div class="bar">
-				<p class="tit">小组件</p>
-				<button onclick="shownotice('widgets')" class="a act btn btn-icon big"
-					style="background: linear-gradient(100deg, var(--theme-1), var(--theme-2));color:#fff;"
-					win12_title="添加"><i class="bi bi-plus-lg"></i></button>
-			</div>
-			<div class="content">
-				<div class="template">
-					<div class="calc">
-						<div class="wg calc">
-							<div class="titbar">
-								<a win12_title="更多" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" class="a more notip" onclick="$('.wg.calc>.titbar>.menu').toggleClass('show')"><i class="bi bi-three-dots"></i></a>
-								<div class="menu">
-									<a win12_title="打开应用" class="a img openapp" onclick="$('.wg.calc>.titbar>.menu').removeClass('show');hide_widgets();openapp('calc')" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)">
-										<img src="icon/calc.svg">
-									</a>
-									<a class="a move" win12_title="移动" onmouseenter="showdescp(event)" onclick="if (!edit_mode) { editMode(); }" onmouseleave="hidedescp(event)"><i class="bi bi-arrows-move"></i></a>
-									<a class="a addtodt" win12_title="添加到桌面" onmouseenter="showdescp(event)" onclick="widgets.widgets.addToDesktop('calc')" onmouseleave="hidedescp(event)"><i class="bi bi-box-arrow-in-right"></i></a>
-									<a class="a delete" win12_title="删除" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="$('.wg.calc>.titbar>.menu').removeClass('show');widgets.widgets.remove('calc')"><i class="bi bi-trash"></i></a>
-								</div>
-							</div>
+<div class="widgets">
+<div class="bar">
+<p class="tit">Widget</p>
+<button onclick="shownotice('widgets')" class="a act btn btn-icon big"
+style="background: linear-gradient(100deg, var(--theme-1), var(--theme-2));color:#fff;"
+win12_title="Add"><i class="bi bi-plus-lg"></i></button>
+</div>
+<div class="content">
+<div class="template">
+<div class="calc">
+<div class="wg calc">
+<div class="titbar">
+<a win12_title="more" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" class="a more notip" onclick="$('.wg.calc>.titbar>.menu'). toggleClass('show')"><i class="bi bi-three-dots"></i></a>
+<div class="menu">
+<a win12_title="Open App" class="a img openapp" onclick="$('.wg.calc>.titbar>.menu').removeClass('show');hide_widgets();openapp('calc' )" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)">
+<img src="icon/calc.svg">
+</a>
+<a class="a move" win12_title="Move" onmouseenter="showdescp(event)" onclick="if (!edit_mode) { editMode(); }" onmouseleave="hidedescp(event)"><i class=" bi bi-arrows-move"></i></a>
+<a class="a addtodt" win12_title="Add to Desktop" onmouseenter="showdescp(event)" onclick="widgets.widgets.addToDesktop('calc')" onmouseleave="hidedescp(event)"><i class= "bi bi-box-arrow-in-right"></i></a>
+<a class="a delete" win12_title="Delete" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="$('.wg.calc>.titbar>.menu').removeClass( 'show');widgets.widgets.remove('calc')"><i class="bi bi-trash"></i></a>
+</div>
+</div>
 							<div class="content" onmousedown="widgetsMove(this.parentElement, event);" ontouchstart="widgetsMove(this.parentElement, event);">
 								<div class="container">
 									<input id="calc-input-widgets" readonly="true" value="0" onkeydown="
@@ -500,37 +500,37 @@ $('#search-win').removeClass('show-begin');
 						</div>
 					</div>
 					<div class="weather">
-						<div class="wg weather">
-							<div class="titbar">
-								<a win12_title="更多" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" class="a more notip" onclick="$('.wg.weather>.titbar>.menu').toggleClass('show')"><i class="bi bi-three-dots"></i></a>
-								<div class="menu">
-									<a class="a move" win12_title="移动" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="if (!edit_mode) { editMode() }"><i class="bi bi-arrows-move"></i></a>
-									<a class="a addtotb" win12_title="添加到任务栏" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="widgets.widgets.addToToolbar('weather')"><i class="bi bi-menu-app"></i></a>
-									<a class="a addtodt" win12_title="添加到桌面" onmouseenter="showdescp(event)" onclick="widgets.widgets.addToDesktop('weather')" onmouseleave="hidedescp(event)"><i class="bi bi-box-arrow-in-right"></i></a>
-									<a class="a delete" win12_title="删除" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="$('.wg.weather>.titbar>.menu').removeClass('show');widgets.widgets.remove('weather')"><i class="bi bi-trash"></i></a>
-								</div>
-							</div>
-							<div class="content" onmousedown="widgetsMove(this.parentElement, event);" ontouchstart="widgetsMove(this.parentElement, event);">
-								<img class="img" />
-								<div class="text">
-									<p class="temperature">--℃</p>
-									<p class="detail">-- 体感温度 --℃</p>
-								</div>
-							</div>
-						</div>
-					</div>
+<div class="wg weather">
+<div class="titbar">
+<a win12_title="more" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" class="a more notip" onclick="$('.wg.weather>.titbar>.menu'). toggleClass('show')"><i class="bi bi-three-dots"></i></a>
+<div class="menu">
+<a class="a move" win12_title="Move" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="if (!edit_mode) { editMode() }"><i class="bi bi-arrows-move"></i></a>
+<a class="a addtotb" win12_title="Add to taskbar" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="widgets.widgets.addToToolbar('weather')"><i class ="bi bi-menu-app"></i></a>
+<a class="a addtodt" win12_title="Add to Desktop" onmouseenter="showdescp(event)" onclick="widgets.widgets.addToDesktop('weather')" onmouseleave="hidedescp(event)"><i class= "bi bi-box-arrow-in-right"></i></a>
+<a class="a delete" win12_title="Delete" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="$('.wg.weather>.titbar>.menu').removeClass( 'show');widgets.widgets.remove('weather')"><i class="bi bi-trash"></i></a>
+</div>
+</div>
+<div class="content" onmousedown="widgetsMove(this.parentElement, event);" ontouchstart="widgetsMove(this.parentElement, event);">
+<img class="img" />
+<div class="text">
+<p class="temperature">--℃</p>
+<p class="detail">-- Feeling temperature --℃</p>
+</div>
+</div>
+</div>
+</div>
 					<div class="monitor">
-						<div class="wg monitor">
-							<div class="titbar">
-								<a win12_title="更多" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" class="a more notip" onclick="$('.wg.monitor>.titbar>.menu').toggleClass('show')"><i class="bi bi-three-dots"></i></a>
-								<div class="menu">
-									<a class="a chose" win12_title="切换监视器类型" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="shownotice('widgets.monitor')"><i class="bi bi-arrow-left-right"></i></a>
-									<a class="a move" win12_title="移动" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="if (!edit_mode) { editMode(); }"><i class="bi bi-arrows-move"></i></a>
-									<a class="a addtotb" win12_title="添加到任务栏" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="widgets.widgets.addToToolbar('monitor')"><i class="bi bi-menu-app"></i></a>
-									<a class="a addtodt" win12_title="添加到桌面" onmouseenter="showdescp(event)" onclick="widgets.widgets.addToDesktop('monitor')" onmouseleave="hidedescp(event)"><i class="bi bi-box-arrow-in-right"></i></a>
-									<a class="a delete" win12_title="删除" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="$('.wg.monitor>.titbar>.menu').removeClass('show');widgets.widgets.remove('monitor')"><i class="bi bi-trash"></i></a>
-								</div>
-							</div>
+<div class="wg monitor">
+<div class="titbar">
+<a win12_title="more" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" class="a more notip" onclick="$('.wg.monitor>.titbar>.menu'). toggleClass('show')"><i class="bi bi-three-dots"></i></a>
+<div class="menu">
+<a class="a chose" win12_title="Switch monitor type" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="shownotice('widgets.monitor')"><i class=" bi bi-arrow-left-right"></i></a>
+<a class="a move" win12_title="Move" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="if (!edit_mode) { editMode(); }"><i class=" bi bi-arrows-move"></i></a>
+<a class="a addtotb" win12_title="Add to taskbar" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="widgets.widgets.addToToolbar('monitor')"><i class ="bi bi-menu-app"></i></a>
+<a class="a addtodt" win12_title="Add to Desktop" onmouseenter="showdescp(event)" onclick="widgets.widgets.addToDesktop('monitor')" onmouseleave="hidedescp(event)"><i class= "bi bi-box-arrow-in-right"></i></a>
+<a class="a delete" win12_title="Delete" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="$('.wg.monitor>.titbar>.menu').removeClass( 'show');widgets.widgets.remove('monitor')"><i class="bi bi-trash"></i></a>
+</div>
+</div>
 							<div class="content" onmousedown="widgetsMove(this.parentElement, event);" ontouchstart="widgetsMove(this.parentElement, event);">
 								<div class="container">
 									<svg width="60px" height="60px">
@@ -556,128 +556,128 @@ $('#search-win').removeClass('show-begin');
 		</div>
 		<span class="hr"></span>
 		<div class="news">
-			<div class="bar">
-				<p class="tit">新闻</p>
-				<p style="color: #7f7f7f;margin-right: 5px;margin-top: 2px;">注意: 新闻内容均不属实 </p>
-			</div>
-			<div class="content">
-				<div class="card" style="grid-column: 1/6;grid-row: 1/3;color: #fff;background: var(--bgul);background-position:0 -278px;background-size: 100%;">
-					<p class="tit" style="font-size: 20px;margin: 90px 0 0 30px;text-shadow: 0 0 8px #000;">Windows12 v6.0 发布</p>
-					<a class="a" style="margin: 5px 0 0 50px;font-size: 17px;color: #9dd0fb;text-shadow: 0 0 3px #000;" onclick="hide_widgets();
-					openapp('about');if($('.window.about').hasClass('min'))minwin('about');
-					$('#win-about>.about').removeClass('show');$('#win-about>.update').addClass('show');
-					$('#win-about>.update>div>details:first-child').attr('open','open')">详细信息 ></a>
-				</div>
+<div class="bar">
+<p class="tit">News</p>
+<p style="color: #7f7f7f;margin-right: 5px;margin-top: 2px;">Note: The news content is not true </p>
+</div>
+<div class="content">
+<div class="card" style="grid-column: 1/6;grid-row: 1/3;color: #fff;background: var(--bgul);background-position:0 -278px;background- size: 100%;">
+<p class="tit" style="font-size: 20px;margin: 90px 0 0 30px;text-shadow: 0 0 8px #000;">Windows12 v6.0 released</p>
+<a class="a" style="margin: 5px 0 0 50px;font-size: 17px;color: #9dd0fb;text-shadow: 0 0 3px #000;" onclick="hide_widgets();
+openapp('about');if($('.window.about').hasClass('min'))minwin('about');
+$('#win-about>.about').removeClass('show');$('#win-about>.update').addClass('show');
+$('#win-about>.update>div>details:first-child').attr('open','open')">Details ></a>
+</div>
+<div class="card"
+style="grid-column: 4/6;grid-row: 7/9;background:url(img/win13.jpg) right;background-size: cover;">
+<p class="tit" style="margin: 70px 0 0 10px;color: #fff;">Windows 13 is about to be released, and the official revealed: it will come with a Macos subsystem</p>
+<a class="a"
+style="margin: 5px 0 0 80px;font-size: 17px;color: #9dd0fb;text-shadow: 0 0 3px #000;">Details
+></a>
+</div>
+<div class="card"
+style="grid-column: 4/6;grid-row: 3/5;background:linear-gradient(#00000000,var(--bg) 70%),url(img/win11.jpg) center;background- size: cover;">
+<p class="tit" style="margin: 100px 0 0 10px;">Windows 11 will end support next week</p>
+<a class="a" style="margin: 5px 0 0 80px;font-size: 17px;">Details ></a>
+</div>
+<div class="card"
+style="grid-column: 1/3;grid-row: 5/7;background:linear-gradient(#00000000,#111 80%),url(img/corsiri.svg) bottom;background-size: 150% ;">
+<p class="tit" style="margin: 80px 0 0px 10px;color: #fff;">In 2029, Microsoft will finally regain Cortana. Microsoft employees revealed that it will be integrated with Siri</p>
+<a class="a" style="margin: 0 0 0 80px;font-size: 17px;color: #9dd0fb;">Details ></a>
+</div>
+<div class="card"
+style="grid-column: 1/4;grid-row: 7/9;background:linear-gradient(#00000000,#111 90%),url(img/wsm.png) left;background-size: 120% ;">
+<p class="tit" style="margin: 100px 0 0px 10px;color: #fff;">Microsoft releases Windows Subsystem for MacOS</p>
+<a class="a" style="margin: 0 0 0 170px;font-size: 17px;color: #9dd0fb;">Details ></a>
+</div>
+<div class="card" style="grid-column: 3/6;grid-row: 5/7;background:linear-gradient(#00000000 0 30%,var(--bg) 70%),url( img/mc.jpg) bottom;background-size: cover;">
+<p class="tit" style="margin: 100px 0 -20px 10px;">Early this morning, Minecraft handed over the agency rights to Chinese astronaut Tan Jingyuan. Is NetEase defeated?</p>
+<a class="a" style="margin: 0 0 0 170px;font-size: 17px;">Details ></a>
+</div>
+<div class="card" style="grid-column: 1/4;grid-row: 3/5;background:linear-gradient(#00000000 0 30%,var(--bg) 80%),url( img/yq.jpg) center;background-size: cover;">
+<p class="tit" style="margin: 120px 0 -20px 10px;">Chinese astronaut Tan Jingyuan successfully landed on the moon yesterday afternoon</p>
+<a class="a" style="margin: 0 0 0 150px;font-size: 17px;">Details ></a>
+</div>
+<div class="card" style="grid-column: 3/6;grid-row: 9/11;background:linear-gradient(#00000000 0 30%,var(--bg) 80%),url( img/office.png) center;background-size: cover;">
+<p class="tit" style="margin: 100px 0 0 10px;">Microsoft releases voice-controlled Office suite, allowing users to edit files with their voice</p>
+<a class="a" style="margin: 0 0 0 160px;font-size: 17px;">Details ></a>
+</div>
 				<div class="card"
-					style="grid-column: 4/6;grid-row: 7/9;background:url(img/win13.jpg) right;background-size: cover;">
-					<p class="tit" style="margin: 70px 0 0 10px;color: #fff;">Windows13 即将发布，官方透露: 将自带 Macos 子系统</p>
-					<a class="a"
-						style="margin: 5px 0 0 80px;font-size: 17px;color: #9dd0fb;text-shadow: 0 0 3px #000;">详细信息
-						></a>
-				</div>
-				<div class="card"
-					style="grid-column: 4/6;grid-row: 3/5;background:linear-gradient(#00000000,var(--bg) 70%),url(img/win11.jpg) center;background-size: cover;">
-					<p class="tit" style="margin: 100px 0 0 10px;">Windows11 将于下周停止支持</p>
-					<a class="a" style="margin: 5px 0 0 80px;font-size: 17px;">详细信息 ></a>
-				</div>
-				<div class="card"
-					style="grid-column: 1/3;grid-row: 5/7;background:linear-gradient(#00000000,#111 80%),url(img/corsiri.svg) bottom;background-size: 150%;">
-					<p class="tit" style="margin: 80px 0 0px 10px;color: #fff;">2029年,微软终重拾Cortana 微软员工透露:将与Siri整合</p>
-					<a class="a" style="margin: 0 0 0 80px;font-size: 17px;color: #9dd0fb;">详细信息 ></a>
-				</div>
-				<div class="card"
-					style="grid-column: 1/4;grid-row: 7/9;background:linear-gradient(#00000000,#111 90%),url(img/wsm.png) left;background-size: 120%;">
-					<p class="tit" style="margin: 100px 0 0px 10px;color: #fff;">微软发布 Windows Subsystem for MacOS</p>
-					<a class="a" style="margin: 0 0 0 170px;font-size: 17px;color: #9dd0fb;">详细信息 ></a>
-				</div>
-				<div class="card" style="grid-column: 3/6;grid-row: 5/7;background:linear-gradient(#00000000 0 30%,var(--bg) 70%),url(img/mc.jpg) bottom;background-size: cover;">
-					<p class="tit" style="margin: 100px 0 -20px 10px;">今日凌晨,Minecraft把代理权交给中国航天员谭景元,网易败下阵来了?</p>
-					<a class="a" style="margin: 0 0 0 170px;font-size: 17px;">详细信息 ></a>
-				</div>
-				<div class="card" style="grid-column: 1/4;grid-row: 3/5;background:linear-gradient(#00000000 0 30%,var(--bg) 80%),url(img/yq.jpg) center;background-size: cover;">
-					<p class="tit" style="margin: 120px 0 -20px 10px;">中国航天员谭景元昨天下午成功登月</p>
-					<a class="a" style="margin: 0 0 0 150px;font-size: 17px;">详细信息 ></a>
-				</div>
-				<div class="card" style="grid-column: 3/6;grid-row: 9/11;background:linear-gradient(#00000000 0 30%,var(--bg) 80%),url(img/office.png) center;background-size: cover;">
-					<p class="tit" style="margin: 100px 0 0 10px;">微软发布声控Office套件，用户可以用嗓子完成文件编辑</p>
-					<a class="a" style="margin: 0 0 0 160px;font-size: 17px;">详细信息 ></a>
-				</div>
-				<div class="card"
-					style="grid-column: 1/4;grid-row: 11/13;background:linear-gradient(#00000000,var(--bg) 70%),url(img/earth.webp) center;background-size: cover;">
-					<p class="tit" style="margin: 100px 0 0 10px;">流浪地球4首支预告片发布</p>
-					<a class="a" style="margin: 5px 0 0 160px;font-size: 17px;">详细信息 ></a>
-				</div>
-				<div class="card" style="grid-column: 1/3;grid-row: 9/11;background:#171b22;">
-					<p class="tit" style="font-size: 19px;margin: 50px 0 0 10px;color: #fff;">想给新闻增加更多奇思妙想?
-						<br />快在github上来提交吧</p>
-					<a class="a" win12_title="https://github.com/tjy-gitnub/win12/issues"
-						style="margin: 10px 0 0 70px;font-size: 17px;color: #9dd0fb" onclick="
-					window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">提交issues ></a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="copilot">
-		<div class="titbar">
-			<p class="text">Windows 12 Copilot</p>
-			<div class="alr">
-				<span class="btn about" onclick="shownotice('about-copilot')">
-					<i class="bi bi-info-circle"></i>
-				</span>
-				<span class="btn hide" onclick="$('#copilot').removeClass('show')">
-					<i class="bi bi-chevron-bar-right"></i>
-				</span>
-			</div>
-		</div>
-		<div class="chat">
-			<a class="a btn button" onclick="copilot.init()">开始对话</a>
-			<p style="margin-top: 20px;">注意:目前后端发生了一点小问题，大概率不能使用，若能使用当然就运气好了。</p>
-		</div>
-		<div class="inputbox disable">
-			<input type="text" class="input" onkeydown="if(event.keyCode==13){copilot.send($(this).val());$(this).val('');this.blur()}">
-			<a class="a send btn" onclick="copilot.send($('#copilot>.inputbox>.input').val());$('#copilot>.inputbox>.input').val('');">发送</a>
-		</div>
-	</div>
-	<div id="control">
-		<div class="cont">
-			<div class="top">
-				<div class="btn1">
-					<div class="icon active" onclick="controlStatus.call(this, 'wifi')">
-						<icon class="s-icon"></icon>
-					</div>
-					<div class="tit">WLAN</div>
-				</div>
-				<div class="btn2">
-					<div class="icon active" onclick="controlStatus.call(this)">
-						<icon class="s-icon"></icon>
-					</div>
-					<div class="tit">蓝牙</div>
-				</div>
-				<div class="btn3">
-					<div class="icon" onclick="controlStatus.call(this)">
-						<icon class="s-icon"></icon>
-					</div>
-					<div class="tit">飞行模式</div>
-				</div>
-				<div class="btn4">
-					<div class="icon" onclick="controlStatus.call(this)">
-						<icon class="s-icon"></icon>
-					</div>
-					<div class="tit">夜间模式</div>
-				</div>
-				<div class="btn5">
-					<div class="icon" onclick="controlStatus.call(this)">
-						<icon class="s-icon"></icon>
-					</div>
-					<div class="tit">移动热点</div>
-				</div>
-				<div class="btn6">
-					<div class="icon" onclick="controlStatus.call(this)">
-						<icon class="s-icon"></icon>
-					</div>
-					<div class="tit">辅助功能</div>
-				</div>
-			</div>
+style="grid-column: 1/4;grid-row: 11/13;background:linear-gradient(#00000000,var(--bg) 70%),url(img/earth.webp) center;background- size: cover;">
+<p class="tit" style="margin: 100px 0 0 10px;">The first trailer of The Wandering Earth 4 is released</p>
+<a class="a" style="margin: 5px 0 0 160px;font-size: 17px;">Details ></a>
+</div>
+<div class="card" style="grid-column: 1/3;grid-row: 9/11;background:#171b22;">
+<p class="tit" style="font-size: 19px;margin: 50px 0 0 10px;color: #fff;">Want to add more whimsical ideas to the news?
+<br />Commit it on github</p>
+<a class="a" win12_title="https://github.com/tjy-gitnub/win12/issues"
+style="margin: 10px 0 0 70px;font-size: 17px;color: #9dd0fb" onclick="
+window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issues ></a>
+</div>
+</div>
+</div>
+</div>
+<div id="copilot">
+<div class="titbar">
+<p class="text">Windows 12 Copilot</p>
+<div class="alr">
+<span class="btn about" onclick="shownotice('about-copilot')">
+<i class="bi bi-info-circle"></i>
+</span>
+<span class="btn hide" onclick="$('#copilot').removeClass('show')">
+<i class="bi bi-chevron-bar-right"></i>
+</span>
+</div>
+</div>
+<div class="chat">
+<a class="a btn button" onclick="copilot.init()">Start conversation</a>
+<p style="margin-top: 20px;">Note: There is currently a small problem with the backend, and there is a high probability that it cannot be used. If it can be used, you will be lucky. </p>
+</div>
+<div class="inputbox disable">
+<input type="text" class="input" onkeydown="if(event.keyCode==13){copilot.send($(this).val());$(this).val(''); this.blur()}">
+<a class="a send btn" onclick="copilot.send($('#copilot>.inputbox>.input').val());$('#copilot>.inputbox>.input').val ('');">Send</a>
+</div>
+</div>
+<div id="control">
+<div class="cont">
+<div class="top">
+<div class="btn1">
+<div class="icon active" onclick="controlStatus.call(this, 'wifi')">
+<icon class="s-icon"></icon>
+</div>
+<div class="tit">WLAN</div>
+</div>
+<div class="btn2">
+<div class="icon active" onclick="controlStatus.call(this)">
+<icon class="s-icon"></icon>
+</div>
+<div class="tit">Bluetooth</div>
+</div>
+<div class="btn3">
+<div class="icon" onclick="controlStatus.call(this)">
+<icon class="s-icon"></icon>
+</div>
+<div class="tit">Airplane mode</div>
+</div>
+<div class="btn4">
+<div class="icon" onclick="controlStatus.call(this)">
+<icon class="s-icon"></icon>
+</div>
+<div class="tit">Night mode</div>
+</div>
+<div class="btn5">
+<div class="icon" onclick="controlStatus.call(this)">
+<icon class="s-icon"></icon>
+</div>
+<div class="tit">Mobile Hotspot</div>
+</div>
+<div class="btn6">
+<div class="icon" onclick="controlStatus.call(this)">
+<icon class="s-icon"></icon>
+</div>
+<div class="tit">Accessibility</div>
+</div>
+</div>
 			<div class="bottom">
 				<div class="brightness">
 					<div class="icon">
@@ -692,23 +692,23 @@ $('#search-win').removeClass('show-begin');
 		</div>
 	</div>
 	<div id="datebox">
-		<div class="tit">
-			<p class="time">12:29:19</p>
-			<p class="date">星期一, 2022年09月22日</p>
-			<hr>
-		</div>
-		<div class="cont">
-			<div class="head">
-				<p>一</p><p>二</p><p>三</p><p>四</p><p>五</p><p>六</p><p>日</p>
-			</div>
-			<div class="body">
-			</div>
-		</div>
-	</div>
+<div class="tit">
+<p class="time">12:29:19</p>
+<p class="date">Monday, September 22, 2022</p>
+<hr>
+</div>
+<div class="cont">
+<div class="head">
+<p>One</p><p>Two</p><p>Three</p><p>Four</p><p>Five</p><p>Six</p><p >Day</p>
+</div>
+<div class="body">
+</div>
+</div>
+</div>
 	<div id="dock-box">
-		<!-- Dock(任务)栏 -->
+		<!-- Dock (task) bar -->
 		<div class="dock dock-start">
-			<a class="dock-btn" id="start-btn" win12_title="开始" onclick="
+			<a class="dock-btn" id="start-btn" win12_title="start" onclick="
 				if($('#start-menu').hasClass('show')){
 					hide_startmenu();
 				}
@@ -728,7 +728,7 @@ $('#search-win').removeClass('show-begin');
 						$('#start-menu').addClass('show');
 					}, 0);
 				}" oncontextmenu="return showcm(event,'winx',null)">
-				<!-- 开始按钮 -->
+				<!-- start button -->
 				<svg class="menu" viewBox="0,0,440,439" xmlns="http://www.w3.org/2000/svg"
 					xmlns:xlink="http://www.w3.org/1999/xlink" overflow="hidden">
 					<defs>
