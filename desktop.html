@@ -2,42 +2,42 @@
 <html lang="en" style="height: 100%;">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<meta name="format-detection" content="telephone=no" />
-	<link rel="stylesheet" href="./desktop.css">
-	<link rel="stylesheet" href="bootstrap-icons.css">
-	<!-- Apps style -->
-	<link rel="stylesheet" href="apps/style/setting.css">
-	<link rel="stylesheet" href="apps/style/explorer.css">
-	<link rel="stylesheet" href="apps/style/calc.css">
-	<link rel="stylesheet" href="apps/style/about.css">
-	<link rel="stylesheet" href="apps/style/notepad.css">
-	<link rel="stylesheet" href="apps/style/terminal.css">
-	<link rel="stylesheet" href="apps/style/edge.css">
-	<link rel="stylesheet" href="apps/style/camera.css">
-	<link rel="stylesheet" href="apps/style/pythonEditor.css">
-	<link rel="stylesheet" href="apps/style/run.css">
-	<link rel="stylesheet" href="apps/style/whiteboard.css">
-	<link rel="stylesheet" href="apps/style/defender.css">
-	<link rel="stylesheet" href="apps/style/taskmgr.css">
-	<link rel="stylesheet" href="widgets.css">
-	<!-- 掌声欢迎 Copilot 的 css 引入(bs -->
-	<link rel="stylesheet" href="apps/style/copilot.css">
-	<link rel="manifest" href="pwa/manifest.json">
-	<link rel="shortcut icon" href="./pwa/logo.png" type="image/x-icon">
-	<link rel="stylesheet" href="apps/style/login.css">
-	<!-- 各个模块 -->
-	<link rel="stylesheet" href="module/tab.css">
-	<base target="_blank">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" href="./desktop.css">
+<link rel="stylesheet" href="bootstrap-icons.css">
+<!-- Apps style -->
+<link rel="stylesheet" href="apps/style/setting.css">
+<link rel="stylesheet" href="apps/style/explorer.css">
+<link rel="stylesheet" href="apps/style/calc.css">
+<link rel="stylesheet" href="apps/style/about.css">
+<link rel="stylesheet" href="apps/style/notepad.css">
+<link rel="stylesheet" href="apps/style/terminal.css">
+<link rel="stylesheet" href="apps/style/edge.css">
+<link rel="stylesheet" href="apps/style/camera.css">
+<link rel="stylesheet" href="apps/style/pythonEditor.css">
+<link rel="stylesheet" href="apps/style/run.css">
+<link rel="stylesheet" href="apps/style/whiteboard.css">
+<link rel="stylesheet" href="apps/style/defender.css">
+<link rel="stylesheet" href="apps/style/taskmgr.css">
+<link rel="stylesheet" href="widgets.css">
+<!-- Applause for the introduction of Copilot’s css (bs -->
+<link rel="stylesheet" href="apps/style/copilot.css">
+<link rel="manifest" href="pwa/manifest.json">
+<link rel="shortcut icon" href="./pwa/logo.png" type="image/x-icon">
+<link rel="stylesheet" href="apps/style/login.css">
+<!-- Each module -->
+<link rel="stylesheet" href="module/tab.css">
+<base target="_blank">
 
-	<title>A.K technical study point</title>
+<title>A.K technical study point</title>
 </head>
 
 <body>
 	<audio src="media/startup.mp3" id="startup-music"></audio>
-	<div id="loadback" style="background-color:#000;width:100%;height:100%;z-index:105;position:absolute;transition:200ms;cursor: none;/*加载界面隐藏鼠标指针*/">
+	<div id="loadback" style="background-color:#000;width:100%;height:100%;z-index:105;position:absolute;transition:200ms;cursor: none;/*Loading interface hides mouse pointer*/">
 		<style>
 			#loadback.hide {
 				opacity: 0;
@@ -75,7 +75,8 @@
 			<svg style="position:absolute;left:calc(50% - 25px);top:72%;" width="50px" height="50px" viewBox="0 0 16 16">
 				<circle cx="8px" cy="8px" r="7px"></circle>
 			</svg>
-			<p id="loadbackupdate" style="position:absolute;top:calc(72% + 55px);left:0;width:100%;text-align:center;color:#fff;font-size: 25px;display:none;">正在更新</p>
+			<p id="loadbackupdate" style="position:absolute;top:calc(72% + 55px);left:0;width:100%;text-align:center;color:#fff;font-size: 
+                        25px;display:none;">Updating</p>
 		</loading>
 		<script>
 			setTimeout(() => {
@@ -120,20 +121,20 @@
 			Login
 		</div>
 		<a class="power" onclick="$(this).addClass('show')">
-			<i class="bi bi-power" onclick="setTimeout(() => {window.location='shutdown.html';}, 200);" win12_title="关机"></i>
-			<i class="bi bi-arrow-counterclockwise" onclick="setTimeout(() => {window.location='reload.html';}, 200);" win12_title="重启"></i>
-		</a>
+<i class="bi bi-power" onclick="setTimeout(() => {window.location='shutdown.html';}, 200);" win12_title="Shutdown"></i>
+<i class="bi bi-arrow-counterclockwise" onclick="setTimeout(() => {window.location='reload.html';}, 200);" win12_title="Restart"></i>
+</a>
 	</div>
 	<!-- <img src="https://bing.com/th?id=OHR.Trossachs_ZH-CN9299955040_UHD.jpg&qlt=100" alt=""> -->
 	<script src="./jq.min.js"></script>
 	<div id="start-menu">
-		<!-- 开始菜单 -->
+		<!-- Start Menu -->
 		<div id="s-m-l">
 			<div id="s-m-user">
 				<svg viewBox="0,0,257,344" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="hidden"><defs><clipPath id="user-clip0"><rect x="382" y="195" width="257" height="344" /></clipPath><linearGradient x1="351.462" y1="233.56" x2="669.496" y2="500.422" gradientUnits="userSpaceOnUse" spreadMethod="reflect" id="user-fill1"><stop offset="0" stop-color="#A964C8" /><stop offset="0.35" stop-color="#A964C8" /><stop offset="0.87" stop-color="#2D8AD5" /><stop offset="1" stop-color="#2D8AD5" /></linearGradient><linearGradient x1="351.462" y1="233.56" x2="669.496" y2="500.422" gradientUnits="userSpaceOnUse" spreadMethod="reflect" id="user-fill2"><stop offset="0" stop-color="#A964C8" /><stop offset="0.35" stop-color="#A964C8" /><stop offset="0.87" stop-color="#2D8AD5" /><stop offset="1" stop-color="#2D8AD5" /></linearGradient></defs><g clip-path="url(#user-clip0)" transform="translate(-382 -195)"><path d="M637.755 433.872C642.215 515.221 579.577 537.983 508.011 537.983 436.444 537.983 376.676 507.833 383.513 437.11 383.109 425.234 389.59 414.133 398.634 409.891 413.82 402.768 444.753 402.936 507.484 402.997 570.214 403.058 609.164 402.279 621.521 407.947 633.878 413.614 638.011 424.609 637.755 433.872Z" fill="url(#user-fill1)" fill-rule="evenodd" /><path d="M422 285C422 235.847 461.623 196 510.5 196 559.377 196 599 235.847 599 285 599 334.153 559.377 374 510.5 374 461.623 374 422 334.153 422 285Z" fill="url(#user-fill2)" fill-rule="evenodd" /></g></svg>
 			</div>
 			<p style="width: 100%;text-align: center;margin: -50px 0 20px 0;font-size: 30px;">Administrator</p>
-			<input type="text" class="input" win12_title="搜索" placeholder="在这里输入你要搜索的内容" onfocus="hide_startmenu();
+			<input type="text" class="input" win12_title="search" placeholder="Enter what you are searching for here" onfocus="hide_startmenu();
 				$('#search-btn').addClass('show');
 				$('#search-win').addClass('show-begin');
 				setTimeout(() => {
@@ -142,278 +143,278 @@
 				$('#search-input').focus();">
 			<input-before class="bi bi-search"></input-before>
 			<list>
-				<p class="text">可用</p>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['setting', '设置'])"
-					onclick="openapp('setting');hide_startmenu();">
-					<img src="icon/setting.svg">
-					<p>设置</p>
-				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['explorer', '文件资源管理器'])"
-					onclick="openapp('explorer');hide_startmenu();">
-					<img src="icon/explorer.svg">
-					<p>文件资源管理器</p>
-				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['calc', '计算器'])"
-					onclick="openapp('calc');hide_startmenu();">
-					<img src="icon/calc.svg">
-					<p>计算器</p>
-				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['run', '运行'])"
-					onclick="openapp('run');hide_startmenu();">
-					<img src="icon/run.png">
-					<p>运行</p>
-				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['about', '关于Win12网页版'])"
-					onclick="openapp('about');hide_startmenu();">
-					<img src="icon/about.svg">
-					<p>关于Win12网页版</p>
-				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['taskmgr', '任务管理器'])"
-					onclick="openapp('taskmgr');hide_startmenu();">
-					<img src="icon/taskmgr.png">
-					<p>任务管理器</p>
-				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['notepad', '记事本'])"
-					onclick="openapp('notepad');hide_startmenu();">
-					<img src="icon/notepad.svg">
-					<p>记事本</p>
-				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['edge', 'Microsoft Edge'])"
-					onclick="openapp('edge');hide_startmenu();">
-					<img src="icon/edge.svg">
-					<p>Microsoft Edge</p>
-				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['camera', '相机'])"
-					onclick="apps.camera.notice();hide_startmenu()">
-					<img src="icon/camera.svg">
-					<p>相机</p>
-				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['pythonEditor', 'Python Editor'])"
-					onclick="openapp('pythonEditor');hide_startmenu()">
-					<img src="icon/pythonEditor.svg">
-					<p>Python Editor</p>
-				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['python', 'Python 3.10.2'])"
-					onclick="openapp('python');hide_startmenu()">
-					<img src="icon/python.png">
-					<p>Python 3.10.2</p>
-				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['terminal', '终端'])"
-					onclick="openapp('terminal');hide_startmenu();">
-					<img src="icon/terminal.svg">
-					<p>终端</p>
-				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['whiteboard', 'Whiteboard'])"
-					onclick="openapp('whiteboard');hide_startmenu();">
-					<img src="icon/whiteboard.png">
-					<p>Whiteboard</p>
-				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['defender', 'Windows 安全中心'])"
-					onclick="openapp('defender');hide_startmenu();">
-					<img src="icon/defender.svg">
-					<p>Windows 安全中心</p>
-				</a>
-				<p class="text">Web 应用</p>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['bilibili', '哔哩哔哩'])"
-					onclick="openapp('bilibili');hide_startmenu();">
-					<img src="icon/bilibili.png">
-					<p>哔哩哔哩</p>
-				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['vscode', 'Visual Studio Code'])"
-					onclick="openapp('vscode');hide_startmenu();">
-					<img src="icon/vscode.png">
-					<p>Visual Studio Code</p>
-				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['wsa', '适用于 Android™️ 的 Windows 子系统'])"
-					onclick="openapp('wsa');hide_startmenu();">
-					<img src="icon/wsa.png">
-					<p>适用于 Android™️ 的 Windows 子系统</p>
-				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['windows12', 'Windows 12'])"
-					onclick="openapp('windows12');hide_startmenu();">
-					<img src="icon/logo.svg">
-					<p>Windows 12</p>
-				</a>
-			</list>
-		</div>
-		<div id="s-m-r">
-			<div class="row1">
-				<div class="folder">
+				<p class="text">Available</p>
+<a oncontextmenu="return showcm(event, 'smlapp', ['setting', 'setting'])"
+onclick="openapp('setting');hide_startmenu();">
+<img src="icon/setting.svg">
+<p>Settings</p>
+</a>
+<a oncontextmenu="return showcm(event, 'smlapp', ['explorer', 'File Explorer'])"
+onclick="openapp('explorer');hide_startmenu();">
+<img src="icon/explorer.svg">
+<p>File Explorer</p>
+</a>
+<a oncontextmenu="return showcm(event, 'smlapp', ['calc', 'calculator'])"
+onclick="openapp('calc');hide_startmenu();">
+<img src="icon/calc.svg">
+<p>Calculator</p>
+</a>
+<a oncontextmenu="return showcm(event, 'smlapp', ['run', 'Run'])"
+onclick="openapp('run');hide_startmenu();">
+<img src="icon/run.png">
+<p>Run</p>
+</a>
+<a oncontextmenu="return showcm(event, 'smlapp', ['about', 'About Win12 web version'])"
+onclick="openapp('about');hide_startmenu();">
+<img src="icon/about.svg">
+<p>About Win12 web version</p>
+</a>
+<a oncontextmenu="return showcm(event, 'smlapp', ['taskmgr', 'Task Manager'])"
+onclick="openapp('taskmgr');hide_startmenu();">
+<img src="icon/taskmgr.png">
+<p>Task Manager</p>
+</a>
+				<a oncontextmenu="return showcm(event, 'smlapp', ['notepad', 'notepad'])"
+onclick="openapp('notepad');hide_startmenu();">
+<img src="icon/notepad.svg">
+<p>Notepad</p>
+</a>
+<a oncontextmenu="return showcm(event, 'smlapp', ['edge', 'Microsoft Edge'])"
+onclick="openapp('edge');hide_startmenu();">
+<img src="icon/edge.svg">
+<p>Microsoft Edge</p>
+</a>
+<a oncontextmenu="return showcm(event, 'smlapp', ['camera', 'camera'])"
+onclick="apps.camera.notice();hide_startmenu()">
+<img src="icon/camera.svg">
+<p>Camera</p>
+</a>
+<a oncontextmenu="return showcm(event, 'smlapp', ['pythonEditor', 'Python Editor'])"
+onclick="openapp('pythonEditor');hide_startmenu()">
+<img src="icon/pythonEditor.svg">
+<p>Python Editor</p>
+</a>
+<a oncontextmenu="return showcm(event, 'smlapp', ['python', 'Python 3.10.2'])"
+onclick="openapp('python');hide_startmenu()">
+<img src="icon/python.png">
+<p>Python 3.10.2</p>
+</a>
+<a oncontextmenu="return showcm(event, 'smlapp', ['terminal', 'terminal'])"
+onclick="openapp('terminal');hide_startmenu();">
+<img src="icon/terminal.svg">
+<p>Terminal</p>
+</a>
+<a oncontextmenu="return showcm(event, 'smlapp', ['whiteboard', 'Whiteboard'])"
+onclick="openapp('whiteboard');hide_startmenu();">
+<img src="icon/whiteboard.png">
+<p>Whiteboard</p>
+</a>
+<a oncontextmenu="return showcm(event, 'smlapp', ['defender', 'Windows Security Center'])"
+onclick="openapp('defender');hide_startmenu();">
+<img src="icon/defender.svg">
+<p>Windows Security Center</p>
+</a>
+				<p class="text">Web application</p>
+<a oncontextmenu="return showcm(event, 'smlapp', ['bilibili', 'bilibili'])"
+onclick="openapp('bilibili');hide_startmenu();">
+<img src="icon/bilibili.png">
+<p>Bilibili</p>
+</a>
+<a oncontextmenu="return showcm(event, 'smlapp', ['vscode', 'Visual Studio Code'])"
+onclick="openapp('vscode');hide_startmenu();">
+<img src="icon/vscode.png">
+<p>Visual Studio Code</p>
+</a>
+<a oncontextmenu="return showcm(event, 'smlapp', ['wsa', 'Windows Subsystem for Android™️'])"
+onclick="openapp('wsa');hide_startmenu();">
+<img src="icon/wsa.png">
+<p>Windows Subsystem for Android™️</p>
+</a>
+<a oncontextmenu="return showcm(event, 'smlapp', ['windows12', 'Windows 12'])"
+onclick="openapp('windows12');hide_startmenu();">
+<img src="icon/logo.svg">
+<p>Windows 12</p>
+</a>
+</list>
+</div>
+<div id="s-m-r">
+<div class="row1">
+<div class="folder">
+<a class="a sm-app enable"
+onclick="openapp('explorer');apps.explorer.goto('C:/Users/Administrator/Documents');hide_startmenu();">
+<img src="icon/folder/docs.svg">
+<p>Documentation</p>
+</a>
+<a class="a sm-app enable"
+onclick="openapp('explorer');apps.explorer.goto('C:/Users/Administrator/Pictures');hide_startmenu();">
+<img src="icon/folder/pics.svg">
+<p>Pictures</p>
+</a>
 					<a class="a sm-app enable"
-						onclick="openapp('explorer');apps.explorer.goto('C:/用户/Administrator/文档');hide_startmenu();">
-						<img src="icon/folder/docs.svg">
-						<p>文档</p>
-					</a>
-					<a class="a sm-app enable"
-						onclick="openapp('explorer');apps.explorer.goto('C:/用户/Administrator/图片');hide_startmenu();">
-						<img src="icon/folder/pics.svg">
-						<p>图片</p>
-					</a>
-					<a class="a sm-app enable"
-						onclick="openapp('explorer');apps.explorer.goto('C:/用户/Administrator/音乐');hide_startmenu();">
-						<img src="icon/folder/music.svg">
-						<p>音乐</p>
-					</a>
-				</div>
-				<div class="tool">
-					<p style="font-size: 40px;margin-bottom: -10px;" class="time">12:00</p>
-					<p class="date">星期一, 2368年13月34日</p>
-					<a class="a btn btn-icon power" win12_title="电源" onclick="$(this).addClass('show')">
-						<span class="bi bi-power"></span>
-						<i class="bi bi-power" onclick="$('#start-menu').removeClass('show');
-						setTimeout(() => {window.location='shutdown.html';},200);" win12_title="关机"></i>
-						<i class="bi bi-arrow-counterclockwise" onclick="$('#start-menu').removeClass('show');
-						setTimeout(() => {window.location='reload.html';},200);" win12_title="重启"></i>
-					</a>
-					<a class="a btn btn-icon big" win12_title="切换全屏" onclick="
-					if($('#start-menu').hasClass('max')){
-						$('#start-menu>#s-m-r>.row1>.tool>.btn-icon.big').html('<i class=\'bi bi-arrows-angle-expand\'></i>');
-						$('#start-menu').removeClass('max');
-					}else{
-						$('#start-menu>#s-m-r>.row1>.tool>.btn-icon.big').html('<i class=\'bi bi-arrows-angle-contract\'></i>');
-						$('#start-menu').addClass('max');
-					}
-					">
-						<i class="bi bi-arrows-angle-expand"></i>
-					</a>
-				</div>
-			</div>
-			<div class="pinned">
-				<!-- 已固定 卡片 -->
-				<div class="title">
-					<p>已固定</p>
-					<div>
-						<a class="a more-btn">所有应用 <i class="bi bi-chevron-right"></i></a>
-						<!-- 这个好像没什么必要 -->
-					</div>
-				</div>
-				<div class="apps">
-					<a class="a sm-app enable calc" onclick="openapp('calc');hide_startmenu();"
-						oncontextmenu="return showcm(event,'smapp',['calc','计算器'])">
-						<img src="icon/calc.svg">
-						<p>计算器</p>
-					</a>
-					<a class="a sm-app enable camera" onclick="apps.camera.notice();hide_startmenu();"
-						oncontextmenu="return showcm(event,'smapp',['camera', '相机'])">
-						<img src="icon/camera.svg">
-						<p>相机</p>
-					</a>
-					<a class="a sm-app enable" onclick="shownotice('feedback');">
-						<img src="icon/feedback.svg">
-						<p>反馈中心</p>
-					</a>
-					<a class="a sm-app enable defender" onclick="openapp('defender');hide_startmenu();"
-						oncontextmenu="return showcm(event,'smapp',['defender','Windows 安全中心'])">
-						<img src="icon/defender.svg">
-						<p>Windows 安全中心</p>
-					</a>
+onclick="openapp('explorer');apps.explorer.goto('C:/Users/Administrator/Music');hide_startmenu();">
+<img src="icon/folder/music.svg">
+<p>Music</p>
+</a>
+</div>
+<div class="tool">
+<p style="font-size: 40px;margin-bottom: -10px;" class="time">12:00</p>
+<p class="date">Monday, March 34, 2368</p>
+<a class="a btn btn-icon power" win12_title="Power" onclick="$(this).addClass('show')">
+<span class="bi bi-power"></span>
+<i class="bi bi-power" onclick="$('#start-menu').removeClass('show');
+setTimeout(() => {window.location='shutdown.html';},200);" win12_title="Shutdown"></i>
+<i class="bi bi-arrow-counterclockwise" onclick="$('#start-menu').removeClass('show');
+setTimeout(() => {window.location='reload.html';},200);" win12_title="Restart"></i>
+</a>
+<a class="a btn btn-icon big" win12_title="Switch to full screen" onclick="
+if($('#start-menu').hasClass('max')){
+$('#start-menu>#s-m-r>.row1>.tool>.btn-icon.big').html('<i class=\'bi bi-arrows-angle-expand\'></i> ');
+$('#start-menu').removeClass('max');
+}else{
+$('#start-menu>#s-m-r>.row1>.tool>.btn-icon.big').html('<i class=\'bi bi-arrows-angle-contract\'></i> ');
+$('#start-menu').addClass('max');
+}
+">
+<i class="bi bi-arrows-angle-expand"></i>
+</a>
+</div>
+</div>
+<div class="pinned">
+<!-- Pinned card -->
+<div class="title">
+<p>Fixed</p>
+<div>
+<a class="a more-btn">All apps <i class="bi bi-chevron-right"></i></a>
+<!-- This seems unnecessary -->
+</div>
+</div>
+<div class="apps">
+<a class="a sm-app enable calc" onclick="openapp('calc');hide_startmenu();"
+oncontextmenu="return showcm(event,'smapp',['calc','calculator'])">
+<img src="icon/calc.svg">
+<p>Calculator</p>
+</a>
+<a class="a sm-app enable camera" onclick="apps.camera.notice();hide_startmenu();"
+oncontextmenu="return showcm(event,'smapp',['camera', 'camera'])">
+<img src="icon/camera.svg">
+<p>Camera</p>
+</a>
+<a class="a sm-app enable" onclick="shownotice('feedback');">
+<img src="icon/feedback.svg">
+<p>Feedback Center</p>
+</a>
+<a class="a sm-app enable defender" onclick="openapp('defender');hide_startmenu();"
+oncontextmenu="return showcm(event,'smapp',['defender','Windows Security Center'])">
+<img src="icon/defender.svg">
+<p>Windows Security Center</p>
+</a>
 					<a class="a sm-app enable about" onclick="openapp('about');hide_startmenu();"
-						oncontextmenu="return showcm(event,'smapp',['about','关于 Win12 网页版'])">
-						<img src="icon/about.svg">
-						<p>关于Win12网页版</p>
-					</a>
-					<a class="a sm-app enable explorer" onclick="openapp('explorer');hide_startmenu();"
-						oncontextmenu="return showcm(event,'smapp',['explorer','文件资源管理器'])">
-						<img src="icon/explorer.svg">
-						<p>文件资源管理器</p>
-					</a>
-					<a class="a sm-app enable notepad" onclick="openapp('notepad');hide_startmenu();"
-						oncontextmenu="return showcm(event,'smapp',['notepad','记事本'])">
-						<img src="icon/notepad.svg">
-						<p>记事本</p>
-					</a>
-					<a class="a sm-app enable setting" onclick="openapp('setting');hide_startmenu();"
-						oncontextmenu="return showcm(event,'smapp',['setting','设置'])">
-						<img src="icon/setting.svg">
-						<p>设置 </p>
-					</a>
-					<a class="a sm-app"><img src="icon/store.svg">
-						<p>Microsoft Store</p>
-					</a>
-					<a class="a sm-app enable edge" onclick="openapp('edge');hide_startmenu();"
-						oncontextmenu="return showcm(event,'smapp',['edge','Microsoft Edge'])">
-						<img src="icon/edge.svg">
-						<p>Microsoft Edge</p>
-					</a>
-					<a class="a sm-app enable" onclick="openapp('windows12');hide_startmenu();"
-						oncontextmenu="return showcm(event,'smapp',['windows12','Windows 12'])">
-						<img src="icon/logo.svg">
-						<p>Windows 12</p>
-					</a>
-					<a class="a sm-app enable terminal" onclick="openapp('terminal');hide_startmenu();"
-						oncontextmenu="return showcm(event,'smapp',['terminal','终端'])">
-						<img src="icon/terminal.svg">
-						<p>终端</p>
-					</a>
-				</div>
-			</div>
+oncontextmenu="return showcm(event,'smapp',['about','About Win12 web version'])">
+<img src="icon/about.svg">
+<p>About Win12 web version</p>
+</a>
+<a class="a sm-app enable explorer" onclick="openapp('explorer');hide_startmenu();"
+oncontextmenu="return showcm(event,'smapp',['explorer','File Explorer'])">
+<img src="icon/explorer.svg">
+<p>File Explorer</p>
+</a>
+<a class="a sm-app enable notepad" onclick="openapp('notepad');hide_startmenu();"
+oncontextmenu="return showcm(event,'smapp',['notepad','notepad'])">
+<img src="icon/notepad.svg">
+<p>Notepad</p>
+</a>
+<a class="a sm-app enable setting" onclick="openapp('setting');hide_startmenu();"
+oncontextmenu="return showcm(event,'smapp',['setting','setting'])">
+<img src="icon/setting.svg">
+<p>Settings </p>
+</a>
+<a class="a sm-app"><img src="icon/store.svg">
+<p>Microsoft Store</p>
+</a>
+<a class="a sm-app enable edge" onclick="openapp('edge');hide_startmenu();"
+oncontextmenu="return showcm(event,'smapp',['edge','Microsoft Edge'])">
+<img src="icon/edge.svg">
+<p>Microsoft Edge</p>
+</a>
+<a class="a sm-app enable" onclick="openapp('windows12');hide_startmenu();"
+oncontextmenu="return showcm(event,'smapp',['windows12','Windows 12'])">
+<img src="icon/logo.svg">
+<p>Windows 12</p>
+</a>
+<a class="a sm-app enable terminal" onclick="openapp('terminal');hide_startmenu();"
+oncontextmenu="return showcm(event,'smapp',['terminal','terminal'])">
+<img src="icon/terminal.svg">
+<p>Terminal</p>
+</a>
+</div>
+</div>
 			<div class="tuijian">
-				<!-- 推荐的项目 卡片 -->
-				<div class="title">
-					<p>推荐的项目</p>
-					<div>
-						<a class="a more-btn">更多 <i class="bi bi-chevron-right"></i></a>
-					</div>
-				</div>
-				<div class="apps">
-					<a class="a tj-obj act"><img src="icon/files/ppt.png"><div><p>科学地使用瓶盖.pptx</p><p>5 分钟前</p></div></a>
-					<a class="a tj-obj act"><img src="icon/files/img.png"><div><p>可口可乐瓶盖.jpg</p><p>7 分钟前</p></div></a>
-					<a class="a tj-obj act"><img src="icon/files/img.png"><div><p>瓶盖构造图.jpg</p><p>16 分钟前</p></div></a>
-					<a class="a tj-obj act"><img src="icon/files/word.png"><div><p>瓶盖的构造及作用.docx</p><p>24 分钟前</p></div></a>
-					<a class="a tj-obj act"><img src="icon/files/excel.png"><div><p>可口可乐瓶盖厚度.xlsx</p><p>35 分钟前</p></div></a>
-				</div>
-			</div>
-		</div>
-	</div>
+<!-- Recommended item card -->
+<div class="title">
+<p>Recommended items</p>
+<div>
+<a class="a more-btn">More <i class="bi bi-chevron-right"></i></a>
+</div>
+</div>
+<div class="apps">
+<a class="a tj-obj act"><img src="icon/files/ppt.png"><div><p>Use bottle caps scientifically.pptx</p><p>5 minutes ago< /p></div></a>
+<a class="a tj-obj act"><img src="icon/files/img.png"><div><p>Coca-Cola bottle cap.jpg</p><p>7 minutes ago</p ></div></a>
+<a class="a tj-obj act"><img src="icon/files/img.png"><div><p>Bottle cap structure diagram.jpg</p><p>16 minutes ago</ p></div></a>
+<a class="a tj-obj act"><img src="icon/files/word.png"><div><p>The structure and function of bottle caps.docx</p><p>24 minutes ago </p></div></a>
+<a class="a tj-obj act"><img src="icon/files/excel.png"><div><p>Coca-Cola bottle cap thickness.xlsx</p><p>35 minutes ago</ p></div></a>
+</div>
+</div>
+</div>
+</div>
 	<div id="search-win">
-		<!-- 搜索框 -->
-		<input type="text" class="input" placeholder="在这里输入你要搜索的内容" id="search-input"
-			oninput="apps.search.search(this.value.length)">
-		<input-before class="bi bi-search"></input-before>
-		<div class="tab">
-			<a class="now">全部</a><a>应用</a><a>文档</a><a>网页</a>
-			<a>电子邮件</a><a>人员</a><a>设置</a><a>视频</a>
-			<a>文件夹</a><a>音乐</a><a>照片</a>
-		</div>
-		<div class="ans">
-			<div class="list">
-				<list>
-					<p class="text">推荐</p>
-					<a onclick="openapp('setting');$('#search-btn').removeClass('show');
-					$('#search-win').removeClass('show');
-					setTimeout(() => {
-						$('#search-win').removeClass('show-begin');
-					}, 200);">
-						<img src="icon/setting.svg">
-						<p>设置</p>
-					</a>
-					<a onclick="openapp('about');$('#search-btn').removeClass('show');
-					$('#search-win').removeClass('show');
-					setTimeout(() => {
-						$('#search-win').removeClass('show-begin');
-					}, 200);">
-						<img src="icon/about.svg">
-						<p>关于Win12网页版</p>
-					</a>
-				</list>
-			</div>
-			<div class="view">
-				<div class="fname">
-					<i class="bi bi-search"></i>
-					<p class="name"></p>
-					<p class="type"></p>
-				</div>
-				<hr>
-				<div class="option">
-					<list>
-						<a class="a">打开</a>
-						<a class="a">打开文件所在位置</a>
-						<a class="a">复制路径</a>
-					</list>
-				</div>
-			</div>
-		</div>
-	</div>
+<!-- Search box -->
+<input type="text" class="input" placeholder="Enter what you want to search for here" id="search-input"
+oninput="apps.search.search(this.value.length)">
+<input-before class="bi bi-search"></input-before>
+<div class="tab">
+<a class="now">All</a><a>Apps</a><a>Documents</a><a>Web</a>
+<a>Email</a><a>People</a><a>Settings</a><a>Video</a>
+<a>Folders</a><a>Music</a><a>Photos</a>
+</div>
+<div class="ans">
+<div class="list">
+<list>
+<p class="text">Recommended</p>
+<a onclick="openapp('setting');$('#search-btn').removeClass('show');
+$('#search-win').removeClass('show');
+setTimeout(() => {
+$('#search-win').removeClass('show-begin');
+}, 200);">
+<img src="icon/setting.svg">
+<p>Settings</p>
+</a>
+<a onclick="openapp('about');$('#search-btn').removeClass('show');
+$('#search-win').removeClass('show');
+setTimeout(() => {
+$('#search-win').removeClass('show-begin');
+}, 200);">
+<img src="icon/about.svg">
+<p>About Win12 web version</p>
+</a>
+</list>
+</div>
+<div class="view">
+<div class="fname">
+<i class="bi bi-search"></i>
+<p class="name"></p>
+<p class="type"></p>
+</div>
+<hr>
+<div class="option">
+<list>
+<a class="a">Open</a>
+<a class="a">Open file location</a>
+<a class="a">Copy path</a>
+</list>
+</div>
+</div>
+</div>
+</div>
 	<div id="widgets">
 		<div class="widgets">
 			<div class="bar">
