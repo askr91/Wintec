@@ -1,43 +1,98 @@
 <!DOCTYPE html>
 <html lang="en" style="height: 100%;">
 
+<!-------- Formatting of this document is prohibited! -------->
+
 <head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<meta name="format-detection" content="telephone=no" />
-<link rel="stylesheet" href="./desktop.css">
-<link rel="stylesheet" href="bootstrap-icons.css">
-<!-- Apps style -->
-<link rel="stylesheet" href="apps/style/setting.css">
-<link rel="stylesheet" href="apps/style/explorer.css">
-<link rel="stylesheet" href="apps/style/calc.css">
-<link rel="stylesheet" href="apps/style/about.css">
-<link rel="stylesheet" href="apps/style/notepad.css">
-<link rel="stylesheet" href="apps/style/terminal.css">
-<link rel="stylesheet" href="apps/style/edge.css">
-<link rel="stylesheet" href="apps/style/camera.css">
-<link rel="stylesheet" href="apps/style/pythonEditor.css">
-<link rel="stylesheet" href="apps/style/run.css">
-<link rel="stylesheet" href="apps/style/whiteboard.css">
-<link rel="stylesheet" href="apps/style/defender.css">
-<link rel="stylesheet" href="apps/style/taskmgr.css">
-<link rel="stylesheet" href="widgets.css">
-<!-- Applause for the introduction of Copilot’s css (bs -->
-<link rel="stylesheet" href="apps/style/copilot.css">
-<link rel="manifest" href="pwa/manifest.json">
-<link rel="shortcut icon" href="./pwa/logo.png" type="image/x-icon">
-<link rel="stylesheet" href="apps/style/login.css">
-<!-- Each module -->
-<link rel="stylesheet" href="module/tab.css">
-<base target="_blank">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
 
-<title>A.K technical study point</title>
+	<!-- Windows 12 web version Original by Tan Jingyuan -->
+
+	<!-- Windows 12 web version is an open source project,
+	We hope to allow users to experience Windows 12 in advance on the Internet,
+	Content may not be consistent with the official version of Windows 12.
+	Use standard web technologies such as HTML, CSS, and JavaScript,
+	This project is in no way affiliated with Microsoft and should not be confused with Microsoft operating systems or products,
+	This is not a Windows365 cloud PC either
+	Microsoft, Windows and other demonstration products in this project are trademarks of Microsoft Corporation -->
+	<link rel="stylesheet" href="./desktop.css">
+	<link rel="stylesheet" href="bootstrap-icons.css">
+	<!-- Apps style -->
+	<link rel="stylesheet" href="apps/style/setting.css">
+	<link rel="stylesheet" href="apps/style/explorer.css">
+	<link rel="stylesheet" href="apps/style/calc.css">
+	<link rel="stylesheet" href="apps/style/about.css">
+	<link rel="stylesheet" href="apps/style/notepad.css">
+	<link rel="stylesheet" href="apps/style/terminal.css">
+	<link rel="stylesheet" href="apps/style/edge.css">
+	<link rel="stylesheet" href="apps/style/camera.css">
+	<link rel="stylesheet" href="apps/style/pythonEditor.css">
+	<link rel="stylesheet" href="apps/style/run.css">
+	<link rel="stylesheet" href="apps/style/whiteboard.css">
+	<link rel="stylesheet" href="apps/style/defender.css">
+	<link rel="stylesheet" href="apps/style/taskmgr.css">
+	<link rel="stylesheet" href="widgets.css">
+	<!-- Applause for the introduction of Copilot’s css (bs -->
+	<link rel="stylesheet" href="apps/style/copilot.css">
+	<!-- Applause welcomes the introduction of css for speech recognition input method (bs -->
+	<link rel="stylesheet" href="apps/style/recognition.css">
+	
+	<link rel="manifest" href="pwa/manifest.json">
+	<link rel="shortcut icon" href="./pwa/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="apps/style/login.css">
+	<!-- Each module -->
+	<link rel="stylesheet" href="module/tab.css">
+	<base target="_blank">
+
+	<title>Windows 12 web version</title>
+	<meta name="description" content="Windows 12 web version is an open source project for online experience of Windows 12 operating system. It uses HTML, CSS and JavaScript to simulate the interface and interaction of Windows 12 operating system.">
+<!-- 	<meta name="keywords" content="Windows 12, windows 12, Windows12, windows12, Windows 12 web version, Windows 12 web version, Windows12 web version, windows12 web version, Win12, win12,Win12 web version, win12 web version, Web version"> -->
+<!-- 	Real SEO experts don’t know how to use keywords -->
 </head>
+<!-- Development instructions:
+In order to unify the code style and increase readability, and for the convenience of others, all developers and contributors must abide by the following content. Thank you for your cooperation.
+Regulations for HTML files
+1. Formatting of this document is absolutely prohibited
+2. For the id attribute, unless the id attribute must not be used, try to replace it with class. If you must use it, remember:
+	1. Unless it is a node with body>*, please do not use a single word id name.
+	2. The name must be meaningful
+	3. For non-body>* nodes, please name them according to "parent element identifier word-(...)-id name". Such as: taskmgr-search, setting-search, etc.
+3. Regulations on class attributes:
+	1. Assign classes only to necessary elements
+	2. The name must be meaningful
+	3. When using a CSS selector, please ensure that the selected element is accurately positioned and has no other matches.
+4. Pressure:
+	1. For svg images in the file, be sure to press them into one line
+	2. For more than 3 consecutive end tags, press them into one line as appropriate.
+	3. For multiple shorter and similar items, each item is pressed into one line as appropriate, such as the content in the list.
+	3. For the content before #loginback, readability can be sacrificed by pressing the line.
 
+Some globally available content for use and unifying style:
+.button classic button, often used together with .a
+list list>
+	a list item, often used together with .a
+	.text text content
+.buttons button group>
+	.submit confirms, often used together with .a
+	.cancel cancel, often used together with .a
+.act classic click animation
+.a modern design link that can be used for various elements
+.input input box
+
+The following functions are available:
+setData(k,v) stores information locally and is permanently available
+localStorage.getItem(k) is used with the former
+stop(event) stops the event from being passed to the parent
+showcm(event,id,arg) displays the right-click menu, usage method: oncontextmenu="return showcm(event,'identification',arg);"
+
+Welcome to add~
+-->
 <body>
 	<audio src="media/startup.mp3" id="startup-music"></audio>
-	<div id="loadback" style="background-color:#000;width:100%;height:100%;z-index:105;position:absolute;transition:200ms;cursor: none;/*Loading interface hides mouse pointer*/">
+	<div id="loadback" style="background-color:#000;width:100%;height:100%;z-index:105;position:absolute;transition:200ms;cursor: none;/*Loading interface is hidden Mouse pointer*/">
 		<style>
 			#loadback.hide {
 				opacity: 0;
@@ -75,8 +130,7 @@
 			<svg style="position:absolute;left:calc(50% - 25px);top:72%;" width="50px" height="50px" viewBox="0 0 16 16">
 				<circle cx="8px" cy="8px" r="7px"></circle>
 			</svg>
-			<p id="loadbackupdate" style="position:absolute;top:calc(72% + 55px);left:0;width:100%;text-align:center;color:#fff;font-size: 
-                        25px;display:none;">Updating</p>
+			<p id="loadbackupdate" style="position:absolute;top:calc(72% + 55px);left:0;width:100%;text-align:center;color:#fff;font-size: 25px;display:none;">正在更新</p>
 		</loading>
 		<script>
 			setTimeout(() => {
@@ -90,11 +144,11 @@
 		<div class="name">Administrator</div>
 		<div id="login" onclick="
 			this.id = 'login-after';
-			this.innerText = 'please wait...';
+			this.innerText = 'Logging in...';
 			document.querySelector('#loginback').removeChild(document.querySelector('#loginback .power'));
 			var qwq = window.setInterval(() => {
 				if (this.innerText.match(/\.\.\./)) {
-					this.innerText = 'please wait.';
+					this.innerText = 'Logging in.';
 				}
 				else {
 					this.innerText += '.';
@@ -118,23 +172,124 @@
 			}, 1000);
 			this.onclick = null;
 		">
-			Login
+			Log in
 		</div>
 		<a class="power" onclick="$(this).addClass('show')">
-<i class="bi bi-power" onclick="setTimeout(() => {window.location='shutdown.html';}, 200);" win12_title="Shutdown"></i>
-<i class="bi bi-arrow-counterclockwise" onclick="setTimeout(() => {window.location='reload.html';}, 200);" win12_title="Restart"></i>
-</a>
+			<i class="bi bi-power" onclick="setTimeout(() => {window.location='shutdown.html';}, 200);" win12_title="关机"></i>
+			<i class="bi bi-arrow-counterclockwise" onclick="setTimeout(() => {window.location='reload.html';}, 200);" win12_title="重启"></i>
+		</a>
 	</div>
 	<!-- <img src="https://bing.com/th?id=OHR.Trossachs_ZH-CN9299955040_UHD.jpg&qlt=100" alt=""> -->
 	<script src="./jq.min.js"></script>
+	<div id="draggableBtn" class="draggable no-drag" style="top: 80%;left: 80%;">
+        <link rel="stylesheet" href="./style.css">
+
+        <div class="rainbow-container-main">
+            <div class="rainbow-container">
+                <div class="green"></div>
+                <div class="pink"></div>
+                <div class="blue"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var draggableElement = document.getElementById("draggableBtn");
+		var nbFlag = true;
+        where pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+        var isDragging = false;
+
+        draggableElement.addEventListener("mousedown", dragMouseDown);
+        draggableElement.addEventListener("mouseup", stopDrag);
+
+        function dragMouseDown(e) {
+            e.preventDefault();
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            document.addEventListener("mousemove", elementDrag);
+            isDragging = false;
+        }
+
+        function elementDrag(e) {
+            e.preventDefault();
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            draggableElement.style.top = (draggableElement.offsetTop - pos2) + "px";
+            draggableElement.style.left = (draggableElement.offsetLeft - pos1) + "px";
+            isDragging = true;
+        }
+
+        function stopDrag() {
+            document.removeEventListener("mousemove", elementDrag);
+            if (!isDragging) {
+                startSpeechRecognition();
+            }
+        }
+
+		function insertTextAtCursor(text) {
+			var range, selection;
+			
+			if (window.getSelection) {
+				selection = window.getSelection();
+				
+				if (selection.rangeCount) {
+				range = selection.getRangeAt(0);
+				
+					if (range.commonAncestorContainer.parentNode.isContentEditable) {
+						range.collapse(false);
+						var textNode = document.createTextNode(text);
+						range.insertNode(textNode);
+						
+						range.setEndAfter(textNode);
+						range.setStartAfter(textNode);
+						selection.removeAllRanges();
+						selection.addRange(range);
+					}
+					else{
+						var el = document.activeElement;
+						var start = el.selectionStart;
+						var end = el.selectionEnd;
+						var value = el.value;
+						var newText = value.slice(0, start) + text + value.slice(end);
+						el.value = newText;
+						el.selectionStart = el.selectionEnd = start + text.length;
+
+					}
+				}
+			}
+		}
+
+        function startSpeechRecognition() {
+            var recognition = new webkitSpeechRecognition() || new SpeechRecognition();
+            recognition.lang = "zh-CN";
+
+			if (nbFlag)
+			{
+				shownotice("recognition");
+				nbFlag=false;
+			}
+			else
+			{
+				recognition.onresult = function (event) {
+					var result = event.results[0][0].transcript;
+					insertTextAtCursor(result);
+				};
+
+				recognition.start();
+			}
+
+        }
+    </script>
 	<div id="start-menu">
-		<!-- Start Menu -->
+		<!-- Start menu -->
 		<div id="s-m-l">
 			<div id="s-m-user">
 				<svg viewBox="0,0,257,344" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="hidden"><defs><clipPath id="user-clip0"><rect x="382" y="195" width="257" height="344" /></clipPath><linearGradient x1="351.462" y1="233.56" x2="669.496" y2="500.422" gradientUnits="userSpaceOnUse" spreadMethod="reflect" id="user-fill1"><stop offset="0" stop-color="#A964C8" /><stop offset="0.35" stop-color="#A964C8" /><stop offset="0.87" stop-color="#2D8AD5" /><stop offset="1" stop-color="#2D8AD5" /></linearGradient><linearGradient x1="351.462" y1="233.56" x2="669.496" y2="500.422" gradientUnits="userSpaceOnUse" spreadMethod="reflect" id="user-fill2"><stop offset="0" stop-color="#A964C8" /><stop offset="0.35" stop-color="#A964C8" /><stop offset="0.87" stop-color="#2D8AD5" /><stop offset="1" stop-color="#2D8AD5" /></linearGradient></defs><g clip-path="url(#user-clip0)" transform="translate(-382 -195)"><path d="M637.755 433.872C642.215 515.221 579.577 537.983 508.011 537.983 436.444 537.983 376.676 507.833 383.513 437.11 383.109 425.234 389.59 414.133 398.634 409.891 413.82 402.768 444.753 402.936 507.484 402.997 570.214 403.058 609.164 402.279 621.521 407.947 633.878 413.614 638.011 424.609 637.755 433.872Z" fill="url(#user-fill1)" fill-rule="evenodd" /><path d="M422 285C422 235.847 461.623 196 510.5 196 559.377 196 599 235.847 599 285 599 334.153 559.377 374 510.5 374 461.623 374 422 334.153 422 285Z" fill="url(#user-fill2)" fill-rule="evenodd" /></g></svg>
 			</div>
 			<p style="width: 100%;text-align: center;margin: -50px 0 20px 0;font-size: 30px;">Administrator</p>
-			<input type="text" class="input" win12_title="search" placeholder="Enter what you are searching for here" onfocus="hide_startmenu();
+			<input type="text" class="input" win12_title="Search" placeholder="Enter what you want to search for here" onfocus="hide_startmenu();
 				$('#search-btn').addClass('show');
 				$('#search-win').addClass('show-begin');
 				setTimeout(() => {
@@ -144,300 +299,300 @@
 			<input-before class="bi bi-search"></input-before>
 			<list>
 				<p class="text">Available</p>
-<a oncontextmenu="return showcm(event, 'smlapp', ['setting', 'setting'])"
-onclick="openapp('setting');hide_startmenu();">
-<img src="icon/setting.svg">
-<p>Settings</p>
-</a>
-<a oncontextmenu="return showcm(event, 'smlapp', ['explorer', 'File Explorer'])"
-onclick="openapp('explorer');hide_startmenu();">
-<img src="icon/explorer.svg">
-<p>File Explorer</p>
-</a>
-<a oncontextmenu="return showcm(event, 'smlapp', ['calc', 'calculator'])"
-onclick="openapp('calc');hide_startmenu();">
-<img src="icon/calc.svg">
-<p>Calculator</p>
-</a>
-<a oncontextmenu="return showcm(event, 'smlapp', ['run', 'Run'])"
-onclick="openapp('run');hide_startmenu();">
-<img src="icon/run.png">
-<p>Run</p>
-</a>
-<a oncontextmenu="return showcm(event, 'smlapp', ['about', 'About Win12 web version'])"
-onclick="openapp('about');hide_startmenu();">
-<img src="icon/about.svg">
-<p>About Win12 web version</p>
-</a>
-<a oncontextmenu="return showcm(event, 'smlapp', ['taskmgr', 'Task Manager'])"
-onclick="openapp('taskmgr');hide_startmenu();">
-<img src="icon/taskmgr.png">
-<p>Task Manager</p>
-</a>
+				<a oncontextmenu="return showcm(event, 'smlapp', ['setting', 'setting'])"
+					onclick="openapp('setting');hide_startmenu();">
+					<img src="icon/setting.svg">
+					<p>Settings</p>
+				</a>
+				<a oncontextmenu="return showcm(event, 'smlapp', ['explorer', 'File Explorer'])"
+					onclick="openapp('explorer');hide_startmenu();">
+					<img src="icon/explorer.svg">
+					<p>File Explorer</p>
+				</a>
+				<a oncontextmenu="return showcm(event, 'smlapp', ['calc', 'calculator'])"
+					onclick="openapp('calc');hide_startmenu();">
+					<img src="icon/calc.svg">
+					<p>Calculator</p>
+				</a>
+				<a oncontextmenu="return showcm(event, 'smlapp', ['run', 'Run'])"
+					onclick="openapp('run');hide_startmenu();">
+					<img src="icon/run.svg">
+					<p>Run</p>
+				</a>
+				<a oncontextmenu="return showcm(event, 'smlapp', ['about', 'About Win12 web version'])"
+					onclick="openapp('about');hide_startmenu();">
+					<img src="icon/about.svg">
+					<p>About Win12 web version</p>
+				</a>
+				<a oncontextmenu="return showcm(event, 'smlapp', ['taskmgr', 'Task Manager'])"
+					onclick="openapp('taskmgr');hide_startmenu();">
+					<img src="icon/taskmgr.png">
+					<p>Task Manager</p>
+				</a>
 				<a oncontextmenu="return showcm(event, 'smlapp', ['notepad', 'notepad'])"
-onclick="openapp('notepad');hide_startmenu();">
-<img src="icon/notepad.svg">
-<p>Notepad</p>
-</a>
-<a oncontextmenu="return showcm(event, 'smlapp', ['edge', 'Microsoft Edge'])"
-onclick="openapp('edge');hide_startmenu();">
-<img src="icon/edge.svg">
-<p>Microsoft Edge</p>
-</a>
-<a oncontextmenu="return showcm(event, 'smlapp', ['camera', 'camera'])"
-onclick="apps.camera.notice();hide_startmenu()">
-<img src="icon/camera.svg">
-<p>Camera</p>
-</a>
-<a oncontextmenu="return showcm(event, 'smlapp', ['pythonEditor', 'Python Editor'])"
-onclick="openapp('pythonEditor');hide_startmenu()">
-<img src="icon/pythonEditor.svg">
-<p>Python Editor</p>
-</a>
-<a oncontextmenu="return showcm(event, 'smlapp', ['python', 'Python 3.10.2'])"
-onclick="openapp('python');hide_startmenu()">
-<img src="icon/python.png">
-<p>Python 3.10.2</p>
-</a>
-<a oncontextmenu="return showcm(event, 'smlapp', ['terminal', 'terminal'])"
-onclick="openapp('terminal');hide_startmenu();">
-<img src="icon/terminal.svg">
-<p>Terminal</p>
-</a>
-<a oncontextmenu="return showcm(event, 'smlapp', ['whiteboard', 'Whiteboard'])"
-onclick="openapp('whiteboard');hide_startmenu();">
-<img src="icon/whiteboard.png">
-<p>Whiteboard</p>
-</a>
-<a oncontextmenu="return showcm(event, 'smlapp', ['defender', 'Windows Security Center'])"
-onclick="openapp('defender');hide_startmenu();">
-<img src="icon/defender.svg">
-<p>Windows Security Center</p>
-</a>
+					onclick="openapp('notepad');hide_startmenu();">
+					<img src="icon/notepad.svg">
+					<p>Notepad</p>
+				</a>
+				<a oncontextmenu="return showcm(event, 'smlapp', ['edge', 'Microsoft Edge'])"
+					onclick="openapp('edge');hide_startmenu();">
+					<img src="icon/edge.svg">
+					<p>Microsoft Edge</p>
+				</a>
+				<a oncontextmenu="return showcm(event, 'smlapp', ['camera', 'camera'])"
+					onclick="apps.camera.notice();hide_startmenu()">
+					<img src="icon/camera.svg">
+					<p>Camera</p>
+				</a>
+				<a oncontextmenu="return showcm(event, 'smlapp', ['pythonEditor', 'Python Editor'])"
+					onclick="openapp('pythonEditor');hide_startmenu()">
+					<img src="icon/pythonEditor.svg">
+					<p>Python Editor</p>
+				</a>
+				<a oncontextmenu="return showcm(event, 'smlapp', ['python', 'Python 3.10.2'])"
+					onclick="openapp('python');hide_startmenu()">
+					<img src="icon/python.svg">
+					<p>Python 3.10.2</p>
+				</a>
+				<a oncontextmenu="return showcm(event, 'smlapp', ['terminal', 'terminal'])"
+					onclick="openapp('terminal');hide_startmenu();">
+					<img src="icon/terminal.svg">
+					<p>Terminal</p>
+				</a>
+				<a oncontextmenu="return showcm(event, 'smlapp', ['whiteboard', 'Whiteboard'])"
+					onclick="openapp('whiteboard');hide_startmenu();">
+					<img src="icon/whiteboard.svg">
+					<p>Whiteboard</p>
+				</a>
+				<a oncontextmenu="return showcm(event, 'smlapp', ['defender', 'Windows Security Center'])"
+					onclick="openapp('defender');hide_startmenu();">
+					<img src="icon/defender.svg">
+					<p>Windows Security Center</p>
+				</a>
 				<p class="text">Web application</p>
-<a oncontextmenu="return showcm(event, 'smlapp', ['bilibili', 'bilibili'])"
-onclick="openapp('bilibili');hide_startmenu();">
-<img src="icon/bilibili.png">
-<p>Billible</p>
-</a>
-<a oncontextmenu="return showcm(event, 'smlapp', ['vscode', 'Visual Studio Code'])"
-onclick="openapp('vscode');hide_startmenu();">
-<img src="icon/vscode.png">
-<p>Visual Studio Code</p>
-</a>
-<a oncontextmenu="return showcm(event, 'smlapp', ['wsa', 'Windows Subsystem for Android™️'])"
-onclick="openapp('wsa');hide_startmenu();">
-<img src="icon/wsa.png">
-<p>Windows Subsystem for Android™️</p>
-</a>
-<a oncontextmenu="return showcm(event, 'smlapp', ['windows12', 'Windows 12'])"
-onclick="openapp('windows12');hide_startmenu();">
-<img src="icon/logo.svg">
-<p>Windows 12</p>
-</a>
-</list>
-</div>
-<div id="s-m-r">
-<div class="row1">
-<div class="folder">
-<a class="a sm-app enable"
-onclick="openapp('explorer');apps.explorer.goto('C:/Users/Administrator/Documents');hide_startmenu();">
-<img src="icon/folder/docs.svg">
-<p>Documentation</p>
-</a>
-<a class="a sm-app enable"
-onclick="openapp('explorer');apps.explorer.goto('C:/Users/Administrator/Pictures');hide_startmenu();">
-<img src="icon/folder/pics.svg">
-<p>Pictures</p>
-</a>
+				<a oncontextmenu="return showcm(event, 'smlapp', ['bilibili', 'bilibili'])"
+					onclick="openapp('bilibili');hide_startmenu();">
+					<img src="icon/bilibili.png">
+					<p>Bilibili</p>
+				</a>
+				<a oncontextmenu="return showcm(event, 'smlapp', ['vscode', 'Visual Studio Code'])"
+					onclick="openapp('vscode');hide_startmenu();">
+					<img src="icon/vscode.png">
+					<p>Visual Studio Code</p>
+				</a>
+				<a oncontextmenu="return showcm(event, 'smlapp', ['wsa', 'Windows Subsystem for Android™️'])"
+					onclick="openapp('wsa');hide_startmenu();">
+					<img src="icon/wsa.png">
+					<p>Windows Subsystem for Android™️</p>
+				</a>
+				<a oncontextmenu="return showcm(event, 'smlapp', ['windows12', 'Windows 12'])"
+					onclick="openapp('windows12');hide_startmenu();">
+					<img src="icon/logo.svg">
+					<p>Windows 12</p>
+				</a>
+			</list>
+		</div>
+		<div id="s-m-r">
+			<div class="row1">
+				<div class="folder">
 					<a class="a sm-app enable"
-onclick="openapp('explorer');apps.explorer.goto('C:/Users/Administrator/Music');hide_startmenu();">
-<img src="icon/folder/music.svg">
-<p>Music</p>
-</a>
-</div>
-<div class="tool">
-<p style="font-size: 40px;margin-bottom: -10px;" class="time">12:00</p>
-<p class="date">Monday, March 34, 2368</p>
-<a class="a btn btn-icon power" win12_title="Power" onclick="$(this).addClass('show')">
-<span class="bi bi-power"></span>
-<i class="bi bi-power" onclick="$('#start-menu').removeClass('show');
-setTimeout(() => {window.location='shutdown.html';},200);" win12_title="Shutdown"></i>
-<i class="bi bi-arrow-counterclockwise" onclick="$('#start-menu').removeClass('show');
-setTimeout(() => {window.location='reload.html';},200);" win12_title="Restart"></i>
-</a>
-<a class="a btn btn-icon big" win12_title="Switch to full screen" onclick="
-if($('#start-menu').hasClass('max')){
-$('#start-menu>#s-m-r>.row1>.tool>.btn-icon.big').html('<i class=\'bi bi-arrows-angle-expand\'></i> ');
-$('#start-menu').removeClass('max');
-}else{
-$('#start-menu>#s-m-r>.row1>.tool>.btn-icon.big').html('<i class=\'bi bi-arrows-angle-contract\'></i> ');
-$('#start-menu').addClass('max');
-}
-">
-<i class="bi bi-arrows-angle-expand"></i>
-</a>
-</div>
-</div>
-<div class="pinned">
-<!-- Pinned card -->
-<div class="title">
-<p>Fixed</p>
-<div>
-<a class="a more-btn">All apps <i class="bi bi-chevron-right"></i></a>
-<!-- This seems unnecessary -->
-</div>
-</div>
-<div class="apps">
-<a class="a sm-app enable calc" onclick="openapp('calc');hide_startmenu();"
-oncontextmenu="return showcm(event,'smapp',['calc','calculator'])">
-<img src="icon/calc.svg">
-<p>Calculator</p>
-</a>
-<a class="a sm-app enable camera" onclick="apps.camera.notice();hide_startmenu();"
-oncontextmenu="return showcm(event,'smapp',['camera', 'camera'])">
-<img src="icon/camera.svg">
-<p>Camera</p>
-</a>
-<a class="a sm-app enable" onclick="shownotice('feedback');">
-<img src="icon/feedback.svg">
-<p>Feedback Center</p>
-</a>
-<a class="a sm-app enable defender" onclick="openapp('defender');hide_startmenu();"
-oncontextmenu="return showcm(event,'smapp',['defender','Windows Security Center'])">
-<img src="icon/defender.svg">
-<p>Windows Security Center</p>
-</a>
+						onclick="openapp('explorer');apps.explorer.goto('C:/Users/Administrator/Documents');hide_startmenu();">
+						<img src="icon/folder/docs.svg">
+						<p>Documentation</p>
+					</a>
+					<a class="a sm-app enable"
+						onclick="openapp('explorer');apps.explorer.goto('C:/Users/Administrator/Pictures');hide_startmenu();">
+						<img src="icon/folder/pics.svg">
+						<p>Pictures</p>
+					</a>
+					<a class="a sm-app enable"
+						onclick="openapp('explorer');apps.explorer.goto('C:/Users/Administrator/Music');hide_startmenu();">
+						<img src="icon/folder/music.svg">
+						<p>Music</p>
+					</a>
+				</div>
+				<div class="tool">
+					<p style="font-size: 40px;margin-bottom: -10px;" class="time">12:00</p>
+					<p class="date">Monday, March 34, 2368</p>
+					<a class="a btn btn-icon power" win12_title="电源" onclick="$(this).addClass('show')">
+						<span class="bi bi-power"></span>
+						<i class="bi bi-power" onclick="$('#start-menu').removeClass('show');
+						setTimeout(() => {window.location='shutdown.html';},200);" win12_title="Shutdown"></i>
+						<i class="bi bi-arrow-counterclockwise" onclick="$('#start-menu').removeClass('show');
+						setTimeout(() => {window.location='reload.html';},200);" win12_title="Restart"></i>
+					</a>
+					<a class="a btn btn-icon big" win12_title="Switch to full screen" onclick="
+					if($('#start-menu').hasClass('max')){
+						$('#start-menu>#s-m-r>.row1>.tool>.btn-icon.big').html('<i class=\'bi bi-arrows-angle-expand\'></i>');
+						$('#start-menu').removeClass('max');
+					}else{
+						$('#start-menu>#s-m-r>.row1>.tool>.btn-icon.big').html('<i class=\'bi bi-arrows-angle-contract\'></i>');
+						$('#start-menu').addClass('max');
+					}
+					">
+						<i class="bi bi-arrows-angle-expand"></i>
+					</a>
+				</div>
+			</div>
+			<div class="pinned">
+				<!-- Pinned card -->
+				<div class="title">
+					<p>Fixed</p>
+					<div>
+						<a class="a more-btn">For ownership <i class="bi bi-chevron-right"></i></a>
+						<!-- This seems unnecessary -->
+					</div>
+				</div>
+				<div class="apps">
+					<a class="a sm-app enable calc" onclick="openapp('calc');hide_startmenu();"
+						oncontextmenu="return showcm(event,'smapp',['calc','calculator'])">
+						<img src="icon/calc.svg">
+						<p>Calculator</p>
+					</a>
+					<a class="a sm-app enable camera" onclick="apps.camera.notice();hide_startmenu();"
+						oncontextmenu="return showcm(event,'smapp',['camera', 'camera'])">
+						<img src="icon/camera.svg">
+						<p>Camera</p>
+					</a>
+					<a class="a sm-app enable" onclick="shownotice('feedback');">
+						<img src="icon/feedback.svg">
+						<p>Feedback Center</p>
+					</a>
+					<a class="a sm-app enable defender" onclick="openapp('defender');hide_startmenu();"
+						oncontextmenu="return showcm(event,'smapp',['defender','Windows Security Center'])">
+						<img src="icon/defender.svg">
+						<p>Windows Security Center</p>
+					</a>
 					<a class="a sm-app enable about" onclick="openapp('about');hide_startmenu();"
-oncontextmenu="return showcm(event,'smapp',['about','About Win12 web version'])">
-<img src="icon/about.svg">
-<p>About Win12 web version</p>
-</a>
-<a class="a sm-app enable explorer" onclick="openapp('explorer');hide_startmenu();"
-oncontextmenu="return showcm(event,'smapp',['explorer','File Explorer'])">
-<img src="icon/explorer.svg">
-<p>File Explorer</p>
-</a>
-<a class="a sm-app enable notepad" onclick="openapp('notepad');hide_startmenu();"
-oncontextmenu="return showcm(event,'smapp',['notepad','notepad'])">
-<img src="icon/notepad.svg">
-<p>Notepad</p>
-</a>
-<a class="a sm-app enable setting" onclick="openapp('setting');hide_startmenu();"
-oncontextmenu="return showcm(event,'smapp',['setting','setting'])">
-<img src="icon/setting.svg">
-<p>Settings </p>
-</a>
-<a class="a sm-app"><img src="icon/store.svg">
-<p>Microsoft Store</p>
-</a>
-<a class="a sm-app enable edge" onclick="openapp('edge');hide_startmenu();"
-oncontextmenu="return showcm(event,'smapp',['edge','Microsoft Edge'])">
-<img src="icon/edge.svg">
-<p>Microsoft Edge</p>
-</a>
-<a class="a sm-app enable" onclick="openapp('windows12');hide_startmenu();"
-oncontextmenu="return showcm(event,'smapp',['windows12','Windows 12'])">
-<img src="icon/logo.svg">
-<p>Windows 12</p>
-</a>
-<a class="a sm-app enable terminal" onclick="openapp('terminal');hide_startmenu();"
-oncontextmenu="return showcm(event,'smapp',['terminal','terminal'])">
-<img src="icon/terminal.svg">
-<p>Terminal</p>
-</a>
-</div>
-</div>
+						oncontextmenu="return showcm(event,'smapp',['about','About Win12 web version'])">
+						<img src="icon/about.svg">
+						<p>About Win12 web version</p>
+					</a>
+					<a class="a sm-app enable explorer" onclick="openapp('explorer');hide_startmenu();"
+						oncontextmenu="return showcm(event,'smapp',['explorer','File Explorer'])">
+						<img src="icon/explorer.svg">
+						<p>File Explorer</p>
+					</a>
+					<a class="a sm-app enable notepad" onclick="openapp('notepad');hide_startmenu();"
+						oncontextmenu="return showcm(event,'smapp',['notepad','notepad'])">
+						<img src="icon/notepad.svg">
+						<p>Notepad</p>
+					</a>
+					<a class="a sm-app enable setting" onclick="openapp('setting');hide_startmenu();"
+						oncontextmenu="return showcm(event,'smapp',['setting','setting'])">
+						<img src="icon/setting.svg">
+						<p>Settings </p>
+					</a>
+					<a class="a sm-app"><img src="icon/store.svg">
+						<p>Microsoft Store</p>
+					</a>
+					<a class="a sm-app enable edge" onclick="openapp('edge');hide_startmenu();"
+						oncontextmenu="return showcm(event,'smapp',['edge','Microsoft Edge'])">
+						<img src="icon/edge.svg">
+						<p>Microsoft Edge</p>
+					</a>
+					<a class="a sm-app enable" onclick="openapp('windows12');hide_startmenu();"
+						oncontextmenu="return showcm(event,'smapp',['windows12','Windows 12'])">
+						<img src="icon/logo.svg">
+						<p>Windows 12</p>
+					</a>
+					<a class="a sm-app enable terminal" onclick="openapp('terminal');hide_startmenu();"
+						oncontextmenu="return showcm(event,'smapp',['terminal','terminal'])">
+						<img src="icon/terminal.svg">
+						<p>Terminal</p>
+					</a>
+				</div>
+			</div>
 			<div class="tuijian">
-<!-- Recommended item card -->
-<div class="title">
-<p>Recommended items</p>
-<div>
-<a class="a more-btn">More <i class="bi bi-chevron-right"></i></a>
-</div>
-</div>
-<div class="apps">
-<a class="a tj-obj act"><img src="icon/files/ppt.png"><div><p>Use bottle caps scientifically.pptx</p><p>5 minutes ago< /p></div></a>
-<a class="a tj-obj act"><img src="icon/files/img.png"><div><p>Coca-Cola bottle cap.jpg</p><p>7 minutes ago</p ></div></a>
-<a class="a tj-obj act"><img src="icon/files/img.png"><div><p>Bottle cap structure diagram.jpg</p><p>16 minutes ago</ p></div></a>
-<a class="a tj-obj act"><img src="icon/files/word.png"><div><p>The structure and function of bottle caps.docx</p><p>24 minutes ago </p></div></a>
-<a class="a tj-obj act"><img src="icon/files/excel.png"><div><p>Coca-Cola bottle cap thickness.xlsx</p><p>35 minutes ago</ p></div></a>
-</div>
-</div>
-</div>
-</div>
+				<!-- Recommended item card -->
+				<div class="title">
+					<p>Recommended items</p>
+					<div>
+						<a class="a more-btn">More <i class="bi bi-chevron-right"></i></a>
+					</div>
+				</div>
+				<div class="apps">
+					<a class="a tj-obj act"><img src="icon/files/ppt.png"><div><p>Use bottle caps scientifically.pptx</p><p>5 minutes ago< /p></div></a>
+					<a class="a tj-obj act"><img src="icon/files/img.png"><div><p>Coca-Cola bottle cap.jpg</p><p>7 minutes ago</p ></div></a>
+					<a class="a tj-obj act"><img src="icon/files/img.png"><div><p>Bottle cap structure diagram.jpg</p><p>16 minutes ago</ p></div></a>
+					<a class="a tj-obj act"><img src="icon/files/word.png"><div><p>The structure and function of bottle caps.docx</p><p>24 minutes ago </p></div></a>
+					<a class="a tj-obj act"><img src="icon/files/excel.png"><div><p>Coca-Cola bottle cap thickness.xlsx</p><p>35 minutes ago</ p></div></a>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div id="search-win">
-<!-- Search box -->
-<input type="text" class="input" placeholder="Enter what you want to search for here" id="search-input"
-oninput="apps.search.search(this.value.length)">
-<input-before class="bi bi-search"></input-before>
-<div class="tab">
-<a class="now">All</a><a>Apps</a><a>Documents</a><a>Web</a>
-<a>Email</a><a>People</a><a>Settings</a><a>Video</a>
-<a>Folders</a><a>Music</a><a>Photos</a>
-</div>
-<div class="ans">
-<div class="list">
-<list>
-<p class="text">Recommended</p>
-<a onclick="openapp('setting');$('#search-btn').removeClass('show');
-$('#search-win').removeClass('show');
-setTimeout(() => {
-$('#search-win').removeClass('show-begin');
-}, 200);">
-<img src="icon/setting.svg">
-<p>Settings</p>
-</a>
-<a onclick="openapp('about');$('#search-btn').removeClass('show');
-$('#search-win').removeClass('show');
-setTimeout(() => {
-$('#search-win').removeClass('show-begin');
-}, 200);">
-<img src="icon/about.svg">
-<p>About Win12 web version</p>
-</a>
-</list>
-</div>
-<div class="view">
-<div class="fname">
-<i class="bi bi-search"></i>
-<p class="name"></p>
-<p class="type"></p>
-</div>
-<hr>
-<div class="option">
-<list>
-<a class="a">Open</a>
-<a class="a">Open file location</a>
-<a class="a">Copy path</a>
-</list>
-</div>
-</div>
-</div>
-</div>
+		<!-- Search box -->
+		<input type="text" class="input" placeholder="Enter what you want to search for here" id="search-input"
+			oninput="apps.search.search(this.value.length)">
+		<input-before class="bi bi-search"></input-before>
+		<div class="tab">
+			<a class="now">All</a><a>Apps</a><a>Documents</a><a>Web</a>
+			<a>Email</a><a>People</a><a>Settings</a><a>Video</a>
+			<a>Folders</a><a>Music</a><a>Photos</a>
+		</div>
+		<div class="ans">
+			<div class="list">
+				<list>
+					<p class="text">Recommended</p>
+					<a onclick="openapp('setting');$('#search-btn').removeClass('show');
+					$('#search-win').removeClass('show');
+					setTimeout(() => {
+						$('#search-win').removeClass('show-begin');
+					}, 200);">
+						<img src="icon/setting.svg">
+						<p>Settings</p>
+					</a>
+					<a onclick="openapp('about');$('#search-btn').removeClass('show');
+					$('#search-win').removeClass('show');
+					setTimeout(() => {
+						$('#search-win').removeClass('show-begin');
+					}, 200);">
+						<img src="icon/about.svg">
+						<p>About Win12 web version</p>
+					</a>
+				</list>
+			</div>
+			<div class="view">
+				<div class="fname">
+					<i class="bi bi-search"></i>
+					<p class="name"></p>
+					<p class="type"></p>
+				</div>
+				<hr>
+				<div class="option">
+					<list>
+						<a class="a">Open</a>
+						<a class="a">Open file location</a>
+						<a class="a">Copy path</a>
+					</list>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div id="widgets">
-<div class="widgets">
-<div class="bar">
-<p class="tit">Widget</p>
-<button onclick="shownotice('widgets')" class="a act btn btn-icon big"
-style="background: linear-gradient(100deg, var(--theme-1), var(--theme-2));color:#fff;"
-win12_title="Add"><i class="bi bi-plus-lg"></i></button>
-</div>
-<div class="content">
-<div class="template">
-<div class="calc">
-<div class="wg calc">
-<div class="titbar">
-<a win12_title="more" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" class="a more notip" onclick="$('.wg.calc>.titbar>.menu'). toggleClass('show')"><i class="bi bi-three-dots"></i></a>
-<div class="menu">
-<a win12_title="Open App" class="a img openapp" onclick="$('.wg.calc>.titbar>.menu').removeClass('show');hide_widgets();openapp('calc' )" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)">
-<img src="icon/calc.svg">
-</a>
-<a class="a move" win12_title="Move" onmouseenter="showdescp(event)" onclick="if (!edit_mode) { editMode(); }" onmouseleave="hidedescp(event)"><i class=" bi bi-arrows-move"></i></a>
-<a class="a addtodt" win12_title="Add to Desktop" onmouseenter="showdescp(event)" onclick="widgets.widgets.addToDesktop('calc')" onmouseleave="hidedescp(event)"><i class= "bi bi-box-arrow-in-right"></i></a>
-<a class="a delete" win12_title="Delete" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="$('.wg.calc>.titbar>.menu').removeClass( 'show');widgets.widgets.remove('calc')"><i class="bi bi-trash"></i></a>
-</div>
-</div>
+		<div class="widgets">
+			<div class="bar">
+				<p class="tit">Widget</p>
+				<button onclick="shownotice('widgets')" class="a act btn btn-icon big"
+					style="background: linear-gradient(100deg, var(--theme-1), var(--theme-2));color:#fff;"
+					win12_title="添加"><i class="bi bi-plus-lg"></i></button>
+			</div>
+			<div class="content">
+				<div class="template">
+					<div class="calc">
+						<div class="wg calc">
+							<div class="titbar">
+								<a win12_title="更多" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" class="a more notip" onclick="$('.wg.calc>.titbar>.menu').toggleClass('show')"><i class="bi bi-three-dots"></i></a>
+								<div class="menu">
+									<a win12_title="打开应用" class="a img openapp" onclick="$('.wg.calc>.titbar>.menu').removeClass('show');hide_widgets();openapp('calc')" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)">
+										<img src="icon/calc.svg">
+									</a>
+									<a class="a move" win12_title="移动" onmouseenter="showdescp(event)" onclick="if (!edit_mode) { editMode(); }" onmouseleave="hidedescp(event)"><i class="bi bi-arrows-move"></i></a>
+									<a class="a addtodt" win12_title="添加到桌面" onmouseenter="showdescp(event)" onclick="widgets.widgets.addToDesktop('calc')" onmouseleave="hidedescp(event)"><i class="bi bi-box-arrow-in-right"></i></a>
+									<a class="a delete" win12_title="删除" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="$('.wg.calc>.titbar>.menu').removeClass('show');widgets.widgets.remove('calc')"><i class="bi bi-trash"></i></a>
+								</div>
+							</div>
 							<div class="content" onmousedown="widgetsMove(this.parentElement, event);" ontouchstart="widgetsMove(this.parentElement, event);">
 								<div class="container">
 									<input id="calc-input-widgets" readonly="true" value="0" onkeydown="
@@ -500,37 +655,37 @@ win12_title="Add"><i class="bi bi-plus-lg"></i></button>
 						</div>
 					</div>
 					<div class="weather">
-<div class="wg weather">
-<div class="titbar">
-<a win12_title="more" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" class="a more notip" onclick="$('.wg.weather>.titbar>.menu'). toggleClass('show')"><i class="bi bi-three-dots"></i></a>
-<div class="menu">
-<a class="a move" win12_title="Move" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="if (!edit_mode) { editMode() }"><i class="bi bi-arrows-move"></i></a>
-<a class="a addtotb" win12_title="Add to taskbar" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="widgets.widgets.addToToolbar('weather')"><i class ="bi bi-menu-app"></i></a>
-<a class="a addtodt" win12_title="Add to Desktop" onmouseenter="showdescp(event)" onclick="widgets.widgets.addToDesktop('weather')" onmouseleave="hidedescp(event)"><i class= "bi bi-box-arrow-in-right"></i></a>
-<a class="a delete" win12_title="Delete" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="$('.wg.weather>.titbar>.menu').removeClass( 'show');widgets.widgets.remove('weather')"><i class="bi bi-trash"></i></a>
-</div>
-</div>
-<div class="content" onmousedown="widgetsMove(this.parentElement, event);" ontouchstart="widgetsMove(this.parentElement, event);">
-<img class="img" />
-<div class="text">
-<p class="temperature">--℃</p>
-<p class="detail">-- Feeling temperature --℃</p>
-</div>
-</div>
-</div>
-</div>
+						<div class="wg weather">
+							<div class="titbar">
+								<a win12_title="更多" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" class="a more notip" onclick="$('.wg.weather>.titbar>.menu').toggleClass('show')"><i class="bi bi-three-dots"></i></a>
+								<div class="menu">
+									<a class="a move" win12_title="移动" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="if (!edit_mode) { editMode() }"><i class="bi bi-arrows-move"></i></a>
+									<a class="a addtotb" win12_title="Add to taskbar" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="widgets.widgets.addToToolbar('weather')"><i class ="bi bi-menu-app"></i></a>
+									<a class="a addtodt" win12_title="添加到桌面" onmouseenter="showdescp(event)" onclick="widgets.widgets.addToDesktop('weather')" onmouseleave="hidedescp(event)"><i class="bi bi-box-arrow-in-right"></i></a>
+									<a class="a delete" win12_title="删除" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="$('.wg.weather>.titbar>.menu').removeClass('show');widgets.widgets.remove('weather')"><i class="bi bi-trash"></i></a>
+								</div>
+							</div>
+							<div class="content" onmousedown="widgetsMove(this.parentElement, event);" ontouchstart="widgetsMove(this.parentElement, event);">
+								<img class="img" />
+								<div class="text">
+									<p class="temperature">--℃</p>
+									<p class="detail">-- Feeling temperature --℃</p>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="monitor">
-<div class="wg monitor">
-<div class="titbar">
-<a win12_title="more" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" class="a more notip" onclick="$('.wg.monitor>.titbar>.menu'). toggleClass('show')"><i class="bi bi-three-dots"></i></a>
-<div class="menu">
-<a class="a chose" win12_title="Switch monitor type" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="shownotice('widgets.monitor')"><i class=" bi bi-arrow-left-right"></i></a>
-<a class="a move" win12_title="Move" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="if (!edit_mode) { editMode(); }"><i class=" bi bi-arrows-move"></i></a>
-<a class="a addtotb" win12_title="Add to taskbar" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="widgets.widgets.addToToolbar('monitor')"><i class ="bi bi-menu-app"></i></a>
-<a class="a addtodt" win12_title="Add to Desktop" onmouseenter="showdescp(event)" onclick="widgets.widgets.addToDesktop('monitor')" onmouseleave="hidedescp(event)"><i class= "bi bi-box-arrow-in-right"></i></a>
-<a class="a delete" win12_title="Delete" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="$('.wg.monitor>.titbar>.menu').removeClass( 'show');widgets.widgets.remove('monitor')"><i class="bi bi-trash"></i></a>
-</div>
-</div>
+						<div class="wg monitor">
+							<div class="titbar">
+								<a win12_title="更多" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" class="a more notip" onclick="$('.wg.monitor>.titbar>.menu').toggleClass('show')"><i class="bi bi-three-dots"></i></a>
+								<div class="menu">
+									<a class="a chose" win12_title="Switch monitor type" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="shownotice('widgets.monitor')"><i class=" bi bi-arrow-left-right"></i></a>
+									<a class="a move" win12_title="移动" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="if (!edit_mode) { editMode(); }"><i class="bi bi-arrows-move"></i></a>
+									<a class="a addtotb" win12_title="Add to taskbar" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="widgets.widgets.addToToolbar('monitor')"><i class ="bi bi-menu-app"></i></a>
+									<a class="a addtodt" win12_title="添加到桌面" onmouseenter="showdescp(event)" onclick="widgets.widgets.addToDesktop('monitor')" onmouseleave="hidedescp(event)"><i class="bi bi-box-arrow-in-right"></i></a>
+									<a class="a delete" win12_title="删除" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="$('.wg.monitor>.titbar>.menu').removeClass('show');widgets.widgets.remove('monitor')"><i class="bi bi-trash"></i></a>
+								</div>
+							</div>
 							<div class="content" onmousedown="widgetsMove(this.parentElement, event);" ontouchstart="widgetsMove(this.parentElement, event);">
 								<div class="container">
 									<svg width="60px" height="60px">
@@ -556,128 +711,128 @@ win12_title="Add"><i class="bi bi-plus-lg"></i></button>
 		</div>
 		<span class="hr"></span>
 		<div class="news">
-<div class="bar">
-<p class="tit">News</p>
-<p style="color: #7f7f7f;margin-right: 5px;margin-top: 2px;">Note: The news content is not true </p>
-</div>
-<div class="content">
-<div class="card" style="grid-column: 1/6;grid-row: 1/3;color: #fff;background: var(--bgul);background-position:0 -278px;background- size: 100%;">
-<p class="tit" style="font-size: 20px;margin: 90px 0 0 30px;text-shadow: 0 0 8px #000;">Windows12 v6.0 released</p>
-<a class="a" style="margin: 5px 0 0 50px;font-size: 17px;color: #9dd0fb;text-shadow: 0 0 3px #000;" onclick="hide_widgets();
-openapp('about');if($('.window.about').hasClass('min'))minwin('about');
-$('#win-about>.about').removeClass('show');$('#win-about>.update').addClass('show');
-$('#win-about>.update>div>details:first-child').attr('open','open')">Details ></a>
-</div>
-<div class="card"
-style="grid-column: 4/6;grid-row: 7/9;background:url(img/win13.jpg) right;background-size: cover;">
-<p class="tit" style="margin: 70px 0 0 10px;color: #fff;">Windows 13 is about to be released, and the official revealed: it will come with a Macos subsystem</p>
-<a class="a"
-style="margin: 5px 0 0 80px;font-size: 17px;color: #9dd0fb;text-shadow: 0 0 3px #000;">Details
-></a>
-</div>
-<div class="card"
-style="grid-column: 4/6;grid-row: 3/5;background:linear-gradient(#00000000,var(--bg) 70%),url(img/win11.jpg) center;background- size: cover;">
-<p class="tit" style="margin: 100px 0 0 10px;">Windows 11 will end support next week</p>
-<a class="a" style="margin: 5px 0 0 80px;font-size: 17px;">Details ></a>
-</div>
-<div class="card"
-style="grid-column: 1/3;grid-row: 5/7;background:linear-gradient(#00000000,#111 80%),url(img/corsiri.svg) bottom;background-size: 150% ;">
-<p class="tit" style="margin: 80px 0 0px 10px;color: #fff;">In 2029, Microsoft will finally regain Cortana. Microsoft employees revealed that it will be integrated with Siri</p>
-<a class="a" style="margin: 0 0 0 80px;font-size: 17px;color: #9dd0fb;">Details ></a>
-</div>
-<div class="card"
-style="grid-column: 1/4;grid-row: 7/9;background:linear-gradient(#00000000,#111 90%),url(img/wsm.png) left;background-size: 120% ;">
-<p class="tit" style="margin: 100px 0 0px 10px;color: #fff;">Microsoft releases Windows Subsystem for MacOS</p>
-<a class="a" style="margin: 0 0 0 170px;font-size: 17px;color: #9dd0fb;">Details ></a>
-</div>
-<div class="card" style="grid-column: 3/6;grid-row: 5/7;background:linear-gradient(#00000000 0 30%,var(--bg) 70%),url( img/mc.jpg) bottom;background-size: cover;">
-<p class="tit" style="margin: 100px 0 -20px 10px;">Early this morning, Minecraft handed over the agency rights to Chinese astronaut Tan Jingyuan. Is NetEase defeated?</p>
-<a class="a" style="margin: 0 0 0 170px;font-size: 17px;">Details ></a>
-</div>
-<div class="card" style="grid-column: 1/4;grid-row: 3/5;background:linear-gradient(#00000000 0 30%,var(--bg) 80%),url( img/yq.jpg) center;background-size: cover;">
-<p class="tit" style="margin: 120px 0 -20px 10px;">Chinese astronaut Tan Jingyuan successfully landed on the moon yesterday afternoon</p>
-<a class="a" style="margin: 0 0 0 150px;font-size: 17px;">Details ></a>
-</div>
-<div class="card" style="grid-column: 3/6;grid-row: 9/11;background:linear-gradient(#00000000 0 30%,var(--bg) 80%),url( img/office.png) center;background-size: cover;">
-<p class="tit" style="margin: 100px 0 0 10px;">Microsoft releases voice-controlled Office suite, allowing users to edit files with their voice</p>
-<a class="a" style="margin: 0 0 0 160px;font-size: 17px;">Details ></a>
-</div>
+			<div class="bar">
+				<p class="tit">News</p>
+				<p style="color: #7f7f7f;margin-right: 5px;margin-top: 2px;">Note: The news content is not true </p>
+			</div>
+			<div class="content">
+				<div class="card" style="grid-column: 1/6;grid-row: 1/3;color: #fff;background: var(--bgul);background-position:0 -278px;background-size: 100%;">
+					<p class="tit" style="font-size: 20px;margin: 90px 0 0 30px;text-shadow: 0 0 8px #000;">Windows12 v6.0 released</p>
+					<a class="a" style="margin: 5px 0 0 50px;font-size: 17px;color: #9dd0fb;text-shadow: 0 0 3px #000;" onclick="hide_widgets();
+					openapp('about');if($('.window.about').hasClass('min'))minwin('about');
+					$('#win-about>.about').removeClass('show');$('#win-about>.update').addClass('show');
+					$('#win-about>.update>div>details:first-child').attr('open','open')">Details ></a>
+				</div>
 				<div class="card"
-style="grid-column: 1/4;grid-row: 11/13;background:linear-gradient(#00000000,var(--bg) 70%),url(img/earth.webp) center;background- size: cover;">
-<p class="tit" style="margin: 100px 0 0 10px;">The first trailer of The Wandering Earth 4 is released</p>
-<a class="a" style="margin: 5px 0 0 160px;font-size: 17px;">Details ></a>
-</div>
-<div class="card" style="grid-column: 1/3;grid-row: 9/11;background:#171b22;">
-<p class="tit" style="font-size: 19px;margin: 50px 0 0 10px;color: #fff;">Want to add more whimsical ideas to the news?
-<br />Commit it on github</p>
-<a class="a" win12_title="https://github.com/tjy-gitnub/win12/issues"
-style="margin: 10px 0 0 70px;font-size: 17px;color: #9dd0fb" onclick="
-window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issues ></a>
-</div>
-</div>
-</div>
-</div>
-<div id="copilot">
-<div class="titbar">
-<p class="text">Windows 12 Copilot</p>
-<div class="alr">
-<span class="btn about" onclick="shownotice('about-copilot')">
-<i class="bi bi-info-circle"></i>
-</span>
-<span class="btn hide" onclick="$('#copilot').removeClass('show')">
-<i class="bi bi-chevron-bar-right"></i>
-</span>
-</div>
-</div>
-<div class="chat">
-<a class="a btn button" onclick="copilot.init()">Start conversation</a>
-<p style="margin-top: 20px;">Note: There is currently a small problem with the backend, and there is a high probability that it cannot be used. If it can be used, you will be lucky. </p>
-</div>
-<div class="inputbox disable">
-<input type="text" class="input" onkeydown="if(event.keyCode==13){copilot.send($(this).val());$(this).val(''); this.blur()}">
-<a class="a send btn" onclick="copilot.send($('#copilot>.inputbox>.input').val());$('#copilot>.inputbox>.input').val ('');">Send</a>
-</div>
-</div>
-<div id="control">
-<div class="cont">
-<div class="top">
-<div class="btn1">
-<div class="icon active" onclick="controlStatus.call(this, 'wifi')">
-<icon class="s-icon"></icon>
-</div>
-<div class="tit">WLAN</div>
-</div>
-<div class="btn2">
-<div class="icon active" onclick="controlStatus.call(this)">
-<icon class="s-icon"></icon>
-</div>
-<div class="tit">Bluetooth</div>
-</div>
-<div class="btn3">
-<div class="icon" onclick="controlStatus.call(this)">
-<icon class="s-icon"></icon>
-</div>
-<div class="tit">Airplane mode</div>
-</div>
-<div class="btn4">
-<div class="icon" onclick="controlStatus.call(this)">
-<icon class="s-icon"></icon>
-</div>
-<div class="tit">Night mode</div>
-</div>
-<div class="btn5">
-<div class="icon" onclick="controlStatus.call(this)">
-<icon class="s-icon"></icon>
-</div>
-<div class="tit">Mobile Hotspot</div>
-</div>
-<div class="btn6">
-<div class="icon" onclick="controlStatus.call(this)">
-<icon class="s-icon"></icon>
-</div>
-<div class="tit">Accessibility</div>
-</div>
-</div>
+					style="grid-column: 4/6;grid-row: 7/9;background:url(img/win13.jpg) right;background-size: cover;">
+					<p class="tit" style="margin: 70px 0 0 10px;color: #fff;">Windows 13 is about to be released, and the official revealed: it will come with its own Macos subsystem</p>
+					<a class="a"
+						style="margin: 5px 0 0 80px;font-size: 17px;color: #9dd0fb;text-shadow: 0 0 3px #000;">Details
+						></a>
+				</div>
+				<div class="card"
+					style="grid-column: 4/6;grid-row: 3/5;background:linear-gradient(#00000000,var(--bg) 70%),url(img/win11.jpg) center;background-size: cover;">
+					<p class="tit" style="margin: 100px 0 0 10px;">Windows 11 will end support next week</p>
+					<a class="a" style="margin: 5px 0 0 80px;font-size: 17px;">Details ></a>
+				</div>
+				<div class="card"
+					style="grid-column: 1/3;grid-row: 5/7;background:linear-gradient(#00000000,#111 80%),url(img/corsiri.svg) bottom;background-size: 150%;">
+					<p class="tit" style="margin: 80px 0 0px 10px;color: #fff;">In 2029, Microsoft will finally regain Cortana. Microsoft employees revealed that it will be integrated with Siri</p>
+					<a class="a" style="margin: 0 0 0 80px;font-size: 17px;color: #9dd0fb;">Details ></a>
+				</div>
+				<div class="card"
+					style="grid-column: 1/4;grid-row: 7/9;background:linear-gradient(#00000000,#111 90%),url(img/wsm.png) left;background-size: 120%;">
+					<p class="tit" style="margin: 100px 0 0px 10px;color: #fff;">Microsoft releases Windows Subsystem for MacOS</p>
+					<a class="a" style="margin: 0 0 0 170px;font-size: 17px;color: #9dd0fb;">Details ></a>
+				</div>
+				<div class="card" style="grid-column: 3/6;grid-row: 5/7;background:linear-gradient(#00000000 0 30%,var(--bg) 70%),url(img/mc.jpg) bottom;background-size: cover;">
+					<p class="tit" style="margin: 100px 0 -20px 10px;">Early this morning, Minecraft handed over the agency rights to Chinese astronaut Tan Jingyuan. Is NetEase defeated?</p>
+					<a class="a" style="margin: 0 0 0 170px;font-size: 17px;">Details ></a>
+				</div>
+				<div class="card" style="grid-column: 1/4;grid-row: 3/5;background:linear-gradient(#00000000 0 30%,var(--bg) 80%),url(img/yq.jpg) center;background-size: cover;">
+					<p class="tit" style="margin: 120px 0 -20px 10px;">Chinese astronaut Tan Jingyuan successfully landed on the moon yesterday afternoon</p>
+					<a class="a" style="margin: 0 0 0 150px;font-size: 17px;">Details ></a>
+				</div>
+				<div class="card" style="grid-column: 3/6;grid-row: 9/11;background:linear-gradient(#00000000 0 30%,var(--bg) 80%),url(img/office.png) center;background-size: cover;">
+					<p class="tit" style="margin: 100px 0 0 10px;">Microsoft releases voice-controlled Office suite, allowing users to edit files with their voice</p>
+					<a class="a" style="margin: 0 0 0 160px;font-size: 17px;">Details ></a>
+				</div>
+				<div class="card"
+					style="grid-column: 1/4;grid-row: 11/13;background:linear-gradient(#00000000,var(--bg) 70%),url(img/earth.webp) center;background-size: cover;">
+					<p class="tit" style="margin: 100px 0 0 10px;">The first trailer of The Wandering Earth 4 is released</p>
+					<a class="a" style="margin: 5px 0 0 160px;font-size: 17px;">Details ></a>
+				</div>
+				<div class="card" style="grid-column: 1/3;grid-row: 9/11;background:#171b22;">
+					<p class="tit" style="font-size: 19px;margin: 50px 0 0 10px;color: #fff;">Want to add more whimsical ideas to the news?
+						<br />Commit it on github</p>
+					<a class="a" win12_title="https://github.com/tjy-gitnub/win12/issues"
+						style="margin: 10px 0 0 70px;font-size: 17px;color: #9dd0fb" onclick="
+					window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">提交issues ></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="copilot">
+		<div class="titbar">
+			<p class="text">Windows 12 Copilot</p>
+			<div class="alr">
+				<span class="btn about" onclick="shownotice('about-copilot')">
+					<i class="bi bi-info-circle"></i>
+				</span>
+				<span class="btn hide" onclick="$('#copilot').removeClass('show')">
+					<i class="bi bi-chevron-bar-right"></i>
+				</span>
+			</div>
+		</div>
+		<div class="chat">
+			<a class="a btn button" onclick="copilot.init()">Start conversation</a>
+			<p style="margin-top: 20px;">The new version of AI Copilot is finally online! This AI is developed and maintained by github@NB-Group<br>Please read the usage instructions on the left of '>|' before using it</p>
+		</div>
+		<div class="inputbox disable">
+			<input type="text" class="input" onkeydown="if(event.keyCode==13){copilot.send($(this).val());$(this).val('');this.blur()}">
+			<a class="a send btn" onclick="copilot.send($('#copilot>.inputbox>.input').val());$('#copilot>.inputbox>.input').val('');">发送</a>
+		</div>
+	</div>
+	<div id="control">
+		<div class="cont">
+			<div class="top">
+				<div class="btn1">
+					<div class="icon active" onclick="controlStatus.call(this, 'wifi')">
+						<icon class="s-icon"></icon>
+					</div>
+					<div class="tit">WLAN</div>
+				</div>
+				<div class="btn2">
+					<div class="icon active" onclick="controlStatus.call(this)">
+						<icon class="s-icon"></icon>
+					</div>
+					<div class="tit">Bluetooth</div>
+				</div>
+				<div class="btn3">
+					<div class="icon" onclick="controlStatus.call(this)">
+						<icon class="s-icon"></icon>
+					</div>
+					<div class="tit">Airplane mode</div>
+				</div>
+				<div class="btn4">
+					<div class="icon" onclick="controlStatus.call(this)">
+						<icon class="s-icon"></icon>
+					</div>
+					<div class="tit">Night mode</div>
+				</div>
+				<div class="btn5">
+					<div class="icon" onclick="controlStatus.call(this)">
+						<icon class="s-icon"></icon>
+					</div>
+					<div class="tit">Mobile Hotspot</div>
+				</div>
+				<div class="btn6">
+					<div class="icon" onclick="controlStatus.call(this)">
+						<icon class="s-icon"></icon>
+					</div>
+					<div class="tit">Accessibility</div>
+				</div>
+			</div>
 			<div class="bottom">
 				<div class="brightness">
 					<div class="icon">
@@ -692,23 +847,23 @@ window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issu
 		</div>
 	</div>
 	<div id="datebox">
-<div class="tit">
-<p class="time">12:29:19</p>
-<p class="date">Monday, September 22, 2022</p>
-<hr>
-</div>
-<div class="cont">
-<div class="head">
-<p>One</p><p>Two</p><p>Three</p><p>Four</p><p>Five</p><p>Six</p><p >Day</p>
-</div>
-<div class="body">
-</div>
-</div>
-</div>
+		<div class="tit">
+			<p class="time">12:29:19</p>
+			<p class="date">Monday, September 22, 2022</p>
+			<hr>
+		</div>
+		<div class="cont">
+			<div class="head">
+				<p>One</p><p>Two</p><p>Three</p><p>Four</p><p>Five</p><p>Six</p><p >Day</p>
+			</div>
+			<div class="body">
+			</div>
+		</div>
+	</div>
 	<div id="dock-box">
 		<!-- Dock (task) bar -->
 		<div class="dock dock-start">
-			<a class="dock-btn" id="start-btn" win12_title="start" onclick="
+			<a class="dock-btn" id="start-btn" win12_title="Start" onclick="
 				if($('#start-menu').hasClass('show')){
 					hide_startmenu();
 				}
@@ -728,7 +883,7 @@ window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issu
 						$('#start-menu').addClass('show');
 					}, 0);
 				}" oncontextmenu="return showcm(event,'winx',null)">
-				<!-- start button -->
+				<!-- Start button -->
 				<svg class="menu" viewBox="0,0,440,439" xmlns="http://www.w3.org/2000/svg"
 					xmlns:xlink="http://www.w3.org/1999/xlink" overflow="hidden">
 					<defs>
@@ -864,7 +1019,7 @@ window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issu
 		</div>
 	</div>
 	<div id="desktop">
-		<div class="b" ondblclick="openapp('explorer');" ontouchstart="openapp('explorer');" win12_title="Shows the drives and hardware connected to this computer." oncontextmenu="return showcm(event ,'desktop.icon',['explorer',-1]);" appname="explorer">
+		<div ondblclick="openapp('explorer');" ontouchstart="openapp('explorer');" win12_title="Shows the drives and hardware connected to this computer." oncontextmenu="return showcm(event,'desktop.icon ',['explorer',-1]);" appname="explorer">
 			<img src="apps/icons/explorer/thispc.svg">
 			<p>This computer</p>
 		</div>
@@ -1242,20 +1397,21 @@ window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issu
 					<svg viewBox="0,0,257,344" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="hidden"><defs><clipPath id="user-clip1"><rect x="382" y="195" width="257" height="344" /></clipPath><linearGradient x1="351.462" y1="233.56" x2="669.496" y2="500.422" gradientUnits="userSpaceOnUse" spreadMethod="reflect" id="user-fill3"><stop offset="0" stop-color="#A964C8" /><stop offset="0.35" stop-color="#A964C8" /><stop offset="0.87" stop-color="#2D8AD5" /><stop offset="1" stop-color="#2D8AD5" /></linearGradient><linearGradient x1="351.462" y1="233.56" x2="669.496" y2="500.422" gradientUnits="userSpaceOnUse" spreadMethod="reflect" id="user-fill4"><stop offset="0" stop-color="#A964C8" /><stop offset="0.35" stop-color="#A964C8" /><stop offset="0.87" stop-color="#2D8AD5" /><stop offset="1" stop-color="#2D8AD5" /></linearGradient></defs><g clip-path="url(#user-clip1)" transform="translate(-382 -195)"><path d="M637.755 433.872C642.215 515.221 579.577 537.983 508.011 537.983 436.444 537.983 376.676 507.833 383.513 437.11 383.109 425.234 389.59 414.133 398.634 409.891 413.82 402.768 444.753 402.936 507.484 402.997 570.214 403.058 609.164 402.279 621.521 407.947 633.878 413.614 638.011 424.609 637.755 433.872Z" fill="url(#user-fill3)" fill-rule="evenodd" /><path d="M422 285C422 235.847 461.623 196 510.5 196 559.377 196 599 235.847 599 285 599 334.153 559.377 374 510.5 374 461.623 374 422 334.153 422 285Z" fill="url(#user-fill4)" fill-rule="evenodd" /></g></svg>
 					<div>
 						<p>Bottle cap</p>
-						<p>tanjingyuan@win12.com</p>
+						<p>tanjingyuan@windows12.com</p>
 					</div>
 				</a>
 				<input type="text" class="input" placeholder="Find settings" style="padding-left: 30px;">
 				<input-before class="bi bi-search"></input-before>
 				<list class="focs"><!--Number of compressed lines-->
-					<a class="enable system check" onclick="apps.setting.page('system')"><img src="apps/icons/setting/system.png">系统</a>
-					<a class="enable blueteeth" onclick="apps.setting.page('blueteeth')"><img src="apps/icons/setting/blueteeth.png">Bluetooth and other devices</a><!- - Bluetooth and devices@Junchen Yi-->
-					<a><img src="apps/icons/setting/network.png">Network and Internet</a>
+					<a class="enable home check" onclick="apps.setting.page('home')"><img src="apps/icons/setting/home.png">主页</a><!-- 主页  by lh11117 @github.com (20239/31~2023/10/1) -->
+					<a class="enable system" onclick="apps.setting.page('system')"><img src="apps/icons/setting/system.png">系统</a>
+					<a class="enable blueteeth" onclick="apps.setting.page('blueteeth')"><img src="apps/icons/setting/blueteeth.png">Bluetooth and other devices</a><!- - Bluetooth and devices@Junchen Yi 2023-9-9-->
+					<a class="enable network" onclick="apps.setting.page('network')"><img src="apps/icons/setting/network.png">Network and Internet</a><!-- Network and Internet @Junchen Yi 2023-9-10-->
 					<a class="enable appearance" onclick="apps.setting.page('appearance')"><img src="apps/icons/setting/personal.png">个性化</a>
-					<a><img src="apps/icons/setting/apps.png">应用</a>
-					<a><img src="apps/icons/setting/user.png">账户</a>
-					<a><img src="apps/icons/setting/time.png">Time and language</a>
-					<a><img src="apps/icons/setting/game.png">游戏</a>
+					<a class="enable apps" onclick="apps.setting.page('apps')"><img src="apps/icons/setting/apps.png">应用</a><!-- 应用  @Junchen Yi 2023-9-11-->
+					<a class="enable user" onclick="apps.setting.page('user')"><img src="apps/icons/setting/user.png">账户</a><!-- 账户  @Junchen Yi 2023-9-11-->
+					<a class="enable time" onclick="apps.setting.page('time')"><img src="apps/icons/setting/time.png">Time and language</a><!-- Time@Junchen Yi 2023-9-17-->
+					<a class="enable game" onclick="apps.setting.page('game')"><img src="apps/icons/setting/game.png">游戏</a>
 					<a><img src="apps/icons/setting/help.png">Accessibility</a>
 					<a class="enable safe" onclick="apps.setting.page('safe')"><img src="apps/icons/setting/safe.png">Privacy and Security</a>
 					<a class="enable update" onclick="apps.setting.page('update')"><img src="apps/icons/setting/update.png">Windows 更新</a>
@@ -1263,7 +1419,47 @@ window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issu
 				</list>
 			</div>
 			<div class="page">
-				<div class="cnt system show">
+				<!-- Home page begin -->
+				<div class="cnt home show">
+					<p class="title">Home</p>
+					<div style="display: flex;margin: 25px;">
+						<p class="s-icon" style="font-size: 70px;margin: -8px 10px 0px 20px;"></p>
+						<div>
+							<p style="font-size: 28px;text-overflow: ellipsis;white-space: nowrap;">Desktop-PingGai</p>
+							<p style="color: #7f7f7f;margin:-8px 0 -5px 0;">Bottle cap</p>
+							<a style="color: var(--href);text-decoration: underline !important;;" class="a">重命名</a>
+						</div>
+					</div>
+					<div class="setting-card">
+						<p style="padding: 10px 15px;"><icon><img src="apps/icons/setting/ms.png"></icon><br>All functions are available in Microsoft account<br><span style ="font-size: 14px;color:var(--text2)">Sign in to use your favorite Microsoft apps and services on your device. You can back up your device, make it more secure, and use Microsoft 365 Apps and cloud storage. </span><br><img src="apps/icons/setting/ms365.png"></p>
+						<div style="padding:  10px 15px;">
+							<a class="a button" onclick="window.location.href='./bluescreen.html?code=YOU_CAN_NOT_SIGN_IN_YOUR_MICROSOFT_ACCOUNT'" win12_title="BSOD is coming!">登录</a>
+						</div>
+					</div>
+					<div class="setting-card">
+						<p style="padding: 10px 15px;">Recommended settings<br><span style="font-size: 14px;color:var(--text2)">Recently used and commonly used settings</span>< /p>
+						<div class="setting-list">
+							<a><icon><i class="bi bi-power"></i></icon><div><p>Electric power source</p><p></p></div>< i class="bi bi-chevron-right"></i></a>
+							<a><icon><i class="bi bi-window-desktop"></i></icon><div><p>抡栏</p><p></p></div> <i class="bi bi-chevron-right"></i></a>
+							<a><icon><i class="bi bi-camera"></i></icon><div><p>摄image头</p><p></p></div><i class ="bi bi-chevron-right"></i></a>
+						</div>
+					</div>
+					<div class="setting-card">
+						<p style="padding: 10px 15px;">Bluetooth devices<br><span style="font-size: 14px;color:var(--text2)">Manage, add and delete devices</span></ p>
+						<div class="setting-list">
+							<a onclick="$('#win-setting>.menu>list>a.blueteeth')[0].click();"><icon></icon><div><p>蓝牙</p><p></p></div><i class="bi bi-chevron-right"></i></a>
+						</div>
+					</div>
+					<div class="setting-card">
+						<p style="padding: 10px 15px;">Personalized equipment</p>
+						<div class="setting-list">
+							<a onclick="$('#win-setting>.menu>list>a.appearance')[0].click();"><icon><i class="bi bi-palette"></i></icon><div><p>个性化</p><p></p></div><i class="bi bi-chevron-right"></i></a>
+						</div>
+					</div>
+					<div style="height: 60px;"></div>
+				</div>
+				<!-- Home page end -->
+				<div class="cnt system">
 					<p class="title">System</p>
 					<div style="display: flex;">
 						<p class="s-icon" style="font-size: 70px;margin: -8px 10px 0px 20px;"></p>
@@ -1290,7 +1486,7 @@ window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issu
 						<a><icon></icon><div><p>About</p><p>Device Specifications, Rename PC, Windows Specifications</p></div><i class="bi bi-chevron -right"></i></a>
 					</div>
 				</div>
-				<!-- Bluetooth and devices @Junchen Yi-->
+				<!-- Bluetooth and devices @Junchen Yi 2023-9-9-->
 				<div class="cnt blueteeth">
 					<p class="title">Bluetooth and devices</p>
 					<div style="display: flex;">
@@ -1312,6 +1508,30 @@ window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issu
 						<a><icon></icon><div><p>USB devices</p><p>Connect more devices via USB...</p></div><i class="bi bi- chevron-right"></i></a>
 					</div>
 				</div>
+				<!-- Bluetooth and devices end -->
+				<!-- Network and Internet @Junchen Yi 2023-9-10-->
+				<div class="cnt network">
+					<p class="title">Network and the Internet</p>
+					<div style="display: flex;">
+						<p class="s-icon" style="font-size: 70px;margin: -8px 15px 0px 20px;"></p>
+						<div>
+							<p style="color: #7f7f7f;margin:-8px 0 -5px 0;">Wifi is connected</p>
+							<p style="font-size: 28px;text-overflow: ellipsis;white-space: nowrap;">PingGai - 5G</p>
+							<a style="color: var(--href);text-decoration: underline !important;;" class="a">断开</a>
+						</div>
+					</div>
+					<div class="setting-list">
+						<a><icon></icon><div><p>Wireless LAN</p><p>Connect and manage connected networks</p></div><i class="bi bi-chevron-right "></i></a>
+						<a><icon></icon><div><p>Mobile network not connected</p><p>Access the Internet via mobile network</p></div><i class="bi bi-chevron- right"></i></a>
+						<a><icon></icon><div><p>VPN</p><p>Add, connect, manage</p></div><i class="bi bi-chevron-right"> </i></a>
+						<a><icon></icon><div><p>Mobile Internet</p><p>Share the Internet via native mobile network</p></div><i class="bi bi-chevron- right"></i></a>
+						<a><icon></icon><div><p>Airplane mode</p><p>Pause all communications and device connections</p></div><i class="bi bi-chevron-right "></i></a>
+						<a><icon></icon><div><p>Proxy</p><p>Proxy server for Wifi and Ethernet</p></div><i class="bi bi-chevron -right"></i></a>
+						<a><icon></icon><div><p>Dial</p><p>Make calls over Wifi network</p></div><i class="bi bi-chevron-right"> </i></a>
+						<a><icon></icon><div><p>Advanced settings</p><p>View all network adapters, network reset</p></div><i class="bi bi-chevron -right"></i></a>
+					</div>
+				</div>
+				<!-- Network and Internet end @Junchen Yi -->
 				<div class="cnt appearance">
 					<p class="title">Personalization</p>
 					<div class="setting-list" style="margin-top: 10px;">
@@ -1390,6 +1610,93 @@ window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issu
 						</div>
 					</div>
 				</div>
+				<!-- For @Junchen Yi 2023-9-11-->
+				<div class="cnt apps">
+					<p class="title">Application</p>
+					<div class="setting-list">
+						<a><icon></icon><div><p>Applications and features</p><p>Installed applications, application execution aliases</p></div><i class=" bi bi-chevron-right"></i></a>
+						<a><icon></icon><div><p>Default application</p><p>Default values ​​for file and link types, other default values</p></div><i class=" bi bi-chevron-right"></i></a>
+						<a><icon></icon><div><p>Offline map</p><p>Download, storage location, map update</p></div><i class="bi bi-chevron- right"></i></a>
+						<a><icon></icon><div><p>Optional content</p><p>Provides additional functionality to your device</p></div><i class="bi bi-chevron -right"></i></a>
+						<a><icon></icon><div><p>Website applications</p><p>Websites that can be opened in an application instead of a browser</p></div><i class= "bi bi-chevron-right"></i></a>
+						<a><icon></icon><div><p>Video</p><p>Video format adjustment, HDR streaming, battery options</p></div><i class="bi bi- chevron-right"></i></a>
+						<a><icon></icon><div><p>Startup items</p><p>Applications that automatically start when you log in</p></div><i class="bi bi-chevron- right"></i></a>
+					</div>
+				</div>
+				<!-- 应用 end @Junchen Yi -->
+				<!-- Account @Junchen Yi 2023-9-11-->
+				<div class="cnt user">
+					<p class="title">Account</p>
+					<div style="display: flex;">
+						<a class="a user" style="display:flex">
+							<svg viewBox="0,0,257,344" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 100px;height: 100px;background-color: var(--hover-b);/* box-shadow: 0 0 10px var(--sd); */width: 60px;width: 60px;height: 60px;border-radius: 50%;padding: 11px;margin-right: 15px;margin-bottom: 15px;" overflow="hidden"><defs><clipPath id="user-clip1"><rect x="382" y="195" width="257" height="344" /></clipPath><linearGradient x1="351.462" y1="233.56" x2="669.496" y2="500.422" gradientUnits="userSpaceOnUse" spreadMethod="reflect" id="user-fill3"><stop offset="0" stop-color="#A964C8" /><stop offset="0.35" stop-color="#A964C8" /><stop offset="0.87" stop-color="#2D8AD5" /><stop offset="1" stop-color="#2D8AD5" /></linearGradient><linearGradient x1="351.462" y1="233.56" x2="669.496" y2="500.422" gradientUnits="userSpaceOnUse" spreadMethod="reflect" id="user-fill4"><stop offset="0" stop-color="#A964C8" /><stop offset="0.35" stop-color="#A964C8" /><stop offset="0.87" stop-color="#2D8AD5" /><stop offset="1" stop-color="#2D8AD5" /></linearGradient></defs><g clip-path="url(#user-clip1)" transform="translate(-382 -195)"><path d="M637.755 433.872C642.215 515.221 579.577 537.983 508.011 537.983 436.444 537.983 376.676 507.833 383.513 437.11 383.109 425.234 389.59 414.133 398.634 409.891 413.82 402.768 444.753 402.936 507.484 402.997 570.214 403.058 609.164 402.279 621.521 407.947 633.878 413.614 638.011 424.609 637.755 433.872Z" fill="url(#user-fill3)" fill-rule="evenodd" /><path d="M422 285C422 235.847 461.623 196 510.5 196 559.377 196 599 235.847 599 285 599 334.153 559.377 374 510.5 374 461.623 374 422 334.153 422 285Z" fill="url(#user-fill4)" fill-rule="evenodd" /></g></svg>
+							<div style="margin-top: 5px;">
+								<p>Bottle cap</p>
+								<p>tanjingyuan@Windows12.com</p>
+							</div>
+						</a>
+					</div>
+					<div class="setting-list">
+						<a><icon></icon><div><p>Your Microsoft account</p><p>Subscriptions, billing, etc.</p></div><i class="bi bi-chevron-right "></i></a>
+						<a><icon></icon><div><p>Your account information</p><p>Accounts used for email, calendar, and contacts</p></div><i class=" bi bi-chevron-right"></i></a>
+						<a><icon></icon><div><p>Login options</p><p>Windows Hello, security keys, passwords, dynamic lock</p></div><i class="bi bi-chevron-right"></i></a>
+						<a><icon></icon><div><p>Email and Accounts</p><p>Accounts used for email, calendar, and contacts</p></div><i class=" bi bi-chevron-right"></i></a>
+						<a><icon></icon><div><p>Family</p><p>Manage your family group, edit account types and device permissions</p></div><i class=" bi bi-chevron-right"></i></a>
+						<a><icon></icon><div><p>Windows Backup</p><p>Back up your files, apps, preferences and restore them across devices</p></div><i class="bi bi-chevron-right"></i></a>
+						<a><icon></icon><div><p>Other users</p><p>Device access, work or school users, kiosk assigned access</p></div><i class= "bi bi-chevron-right"></i></a>
+						<a><icon></icon><div><p>Access work or school accounts</p><p>Organizational resources such as email, apps, and the web</p></div><i class= "bi bi-chevron-right"></i></a>
+					</div>
+				</div>
+				<!-- Account end -->
+				<!-- Time @Junchen Yi 2023-9-17-->
+				<div class="cnt time">
+					<p class="title">Time and language</p>
+					<div class="settingTimeItem">
+						<p class="settingTimeTitle">Current device time:</p>
+						<span class="settingTime"></span>
+					</div>
+					<div class="setting-list">
+						<a><icon></icon><div><p>Date and time</p><p>Time zone, automatic clock setting, calendar display</p></div><i class="bi bi- chevron-right"></i></a>
+						<a><icon></icon><div><p>Language and Region</p><p>Windows and some applications format dates and times based on your region</p></div ><i class="bi bi-chevron-right"></i></a>
+						<a><icon></icon><div><p>Input</p><p>Touch keyboard, text suggestions, preferences</p></div><i class="bi bi-chevron- right"></i></a>
+						<a><icon></icon><div><p>Reading and audio input</p><p>Speech language, speech recognition microphone settings, sound</p></div><i class="bi bi-chevron-right"></i></a>
+						<a class="selectLanguageA"><icon></icon><div><p>Windows display language</p><p>Windows features such as Settings and File Explorer will be displayed in this language</p> </div>
+							<select class="languageSelect bi-chevron-right">
+								<option value="en">English</option>
+								<option value="es">Español (Spanish)</option>
+								<option value="fr">French (French)</option>
+								<option value="de">Deutsch (German)</option>
+								<option value="zh" selected>中文 (Chinese)</option>
+								<option value="ja">Japanese</option>
+								<option value="ko">Korean</option>
+								<option value="ar">Arabic</option>
+								<option value="ru">Russian</option>
+								<option value="pt">Português (Portuguese)</option>
+								<option value="it">Italiano (Italian)</option>
+								<option value="nl">Nederlands (Dutch)</option>
+								<option value="hi">Hindi</option>
+								<option value="en">Swedish</option>
+								<option value="fi">Finland (Finnish)</option>
+								<option value="da">Danish</option>
+								<option value="no">Norsk (Norwegian)</option>
+								<option value="tr">Türkçe (Turkish)</option>
+								<option value="pl">Polski (Polish)</option>
+								<option value="th">Thai language (Thai)</option>
+							</select>
+						</a>
+					</div>
+				</div>
+				<!-- time end -->
+				<!-- game begin -->
+				<div class="cnt game">
+					<p class="title">Game</p>
+					<div class="setting-list">
+						<a><icon><i class="bi bi-xbox"></i></icon><div><p>Xbox Game Bar</p><p>Controller and keyboard shortcuts</p ></div><i class="bi bi-chevron-right"></i></a>
+						<a><icon><i class="bi bi-camera"></i></icon><div><p>Camera</p><p>Save location, recording preferences</p>< /div><i class="bi bi-chevron-right"></i></a>
+						<a><icon><i class="bi bi-controller"></i></icon><div><p>Game Mode</p><p>Optimize your computer for smooth play</p>< /div><i class="bi bi-chevron-right"></i></a>
+					</div>
+				</div>
+				<!-- game end -->
 				<div class="cnt safe">
 					<p class="title">Privacy and Security</p>
 					<div class="setting-list">
@@ -1411,7 +1718,7 @@ window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issu
 					<div class="setting-list">
 						<div class="update-now"><icon>&#xE794;</icon><div><p>Checking for updates...</p><p></p></div><div class="alr"><a class="a button" style="font-size: 16px;margin-top: -7.5px;" onclick="sendToSw({ head: 'update' }); localStorage.setItem( 'update', true); shownotice('setting.update')">Update</a></div></div>
 						<a onclick="openapp('about');$('#win-about>.update').addClass('show');$('#win-about>.about').removeClass('show' );"><icon>&#xE946;</icon><div><p>Historical version</p><p>View historical version function</p></div><i class="bi bi- chevron-right"></i></a>
-						<a onclick="sendToSw({ head: 'update' })"><icon>&#xE896;</icon><div><p>Download full content</p><p>When there is an update or system problem , use this to download the latest complete content</p></div><i class="bi bi-chevron-right"></i></a>
+						<a onclick="sendToSw({ head: 'update',force:true })"><icon>&#xE896;</icon><div><p>Download full content</p><p>When updated Or there is a system problem, use this item to download the latest complete content</p></div><i class="bi bi-chevron-right"></i></a>
 						<div><icon></icon><div><p>Automatic update</p><p>Set whether to enable automatic update</p></div>
 							<div class="alr">
 								<a class="checkbox checked a" onclick="$(this).toggleClass('checked'); autoUpdate = !autoUpdate; localStorage.setItem('autoUpdate', autoUpdate)"></a>
@@ -1600,10 +1907,10 @@ window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issu
 				<h1 class="tit"><span></span>Windows 12 web version</h1>
 				<div style="margin-left: 20px;">
 					<h2 class="tit"><span></span>Introduction</h2>
-					<p>&emsp;&emsp;Windows 12 web version is an open source project, created by Tan Jingyuan, which uses HTML, CSS and JavaScript to simulate and innovate operating systems on the network. </p>
+					<p>&emsp;&emsp;Windows 12 web version is an open source project, created by Xingyuan (Tan Jingyuan), using HTML, CSS and JavaScript to simulate and innovate operating systems on the Internet. </p>
 					<p>&emsp;&emsp;This project has been published to GitHub, <a onclick="window.open('https://github.com/tjy-gitnub/win12','_blank');" win12_title="https: //github.com/tjy-gitnub/win12" class="jump">Click here to view</a>. </p>
 					<p>&emsp;&emsp;If you have any comments or suggestions about the project, please post it on GitHub <a onclick="window.open('https://github.com/tjy-gitnub/win12/issues',' _blank');" win12_title="https://github.com/tjy-gitnub/win12/issues" class="jump">Submit issues</a> and your issue will be resolved as quickly as possible. </p>
-					<p>&emsp;&emsp;Original author Tan Jingyuan, click to <a onclick="window.open('https://tjy-gitnub.github.io/','_blank');" win12_title="https:// tjy-gitnub.github.io/" class="jump">Learn more</a>. </p>
+					<p>&emsp;&emsp;Original author Xingyuan, click to <a onclick="window.open('https://tjy-gitnub.github.io/','_blank');" win12_title="https:/ /tjy-gitnub.github.io/" class="jump">Learn more</a>. </p>
 					<h2 class="tit"><span></span>Open Source Instructions</h2>
 					<p>&emsp;&emsp;This project is an open source project. This project uses the EPL v2.0 open source license. The open source license is a legally binding contract. Please consciously abide by the open source license and respect the labor of others. </p>
 					<p>&emsp;&emsp;Under the license, you can propagate, distribute, modify, and redistribute the project, including for personal and commercial use. </p>
@@ -1645,6 +1952,27 @@ window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issu
 			<div class="cnt update">
 				<h1 class="tit"><span></span>Update record</h1>
 				<div style="margin-left: 20px;">
+					<details><summary><span>v7.4.0</span> AI Copilot！</summary><p>
+						&emsp;&emsp;-(Update from @NB-Group)</p>
+						&emsp;&emsp;-Remove some weird stuff</p>
+						&emsp;&emsp;-After 114 years of development by me, AI Copilot 2.0 was born! </p>
+						&emsp;&emsp;-Open sourced the AI ​​backend code</p>
+						&emsp;&emsp;-Detail optimization and repair</p>
+					</details>
+					<details><summary><span>v7.3.7</span> Details changes</summary><p>
+						&emsp;&emsp;-Add some weird stuff</p>
+						&emsp;&emsp;-Detail optimization and repair</p>
+					</details>
+					<details><summary><span>v7.3.6</span> Voice Recognition Ball</summary><p>
+						&emsp;&emsp;(Update from @NB-Group)<br/>
+						&emsp;&emsp;-Add voice recognition ball</p>
+						&emsp;&emsp;-Detail optimization and repair</p>
+					</details>
+					<details><summary><span>v7.3.5</span> Rectify the code</summary><p>
+						&emsp;&emsp;-Rectify the code. Contributors must edit the code according to the specifications at the beginning of this file and CONTRIBUTING.md, otherwise it will not be merged. Thank you for your understanding<br/>
+						&emsp;&emsp;-Redraw some new icons<br>
+						&emsp;&emsp;-Detail optimization and repair</p>
+					</details>
 					<details><summary><span>v7.3.4</span> Edge update</summary><p>
 						&emsp;&emsp;(Updated from @lh11117)<br>
 						&emsp;&emsp;-Edge supports full screen<br/>
@@ -1738,440 +2066,12 @@ window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issu
 							&emsp;&emsp;-Adapt to new theme formats and speed up preview display<br />
 							&emsp;&emsp;-Detail optimization and repair</p>
 					</details>
-					<details>
-						<summary><span>v5.4.2</span> Catastrophic program error fix</summary>
-						<p>
-							&emsp;&emsp;-Fixed a major catastrophic accident in which pwa blocked the topic acquisition request<br />
-							&emsp;&emsp;-Details optimization and repair
-						</p>
-					</details>
-					<details>
-						<summary><span>v5.4.1</span> bug fixes</summary>
-						<p>
-							&emsp;&emsp;<strong>(Updated from @tjy-gitnub)</strong><br />
-							&emsp;&emsp;-Fix the catastrophic accident of pwa intercepting dynamic requests<br />
-							&emsp;&emsp;-Adjust the coveted start menu scroll bar<br />
-							&emsp;&emsp;-Add a right-click unpin option for fixed items in the Start menu<br />
-							&emsp;&emsp;-Some changes to adapt to the theme format<br />
-							&emsp;&emsp;-Details optimization and repair
-						</p>
-					</details>
-					<details>
-						<summary><span>v5.4.0</span> New version of logo and icon, UI optimization, custom theme and winver</summary>
-						<p>
-							&emsp;&emsp;<strong>(Update from @tjy-gitnub, actually I want to release v6)</strong><br />
-							&emsp;&emsp;-New Logo: New version of logo<br />
-							&emsp;&emsp;-New icon: redrawn and replaced the win11 icon<br />
-							&emsp;&emsp;-Customized theme: supports users to change and upload their own themes<br />
-							&emsp;&emsp;-Version information: add winver<br />
-							&emsp;&emsp;-New UI: Add win11 hover stereo highlight<br />
-							&emsp;&emsp;-Startup optimization: speed up and fix the problem of local failure to start due to failure to obtain power<br />
-							&emsp;&emsp;-UI adaptation: slightly changed the unsuitable UI<br />
-							&emsp;&emsp;-Bug repair: the right-click menu cannot be closed<br />
-							&emsp;&emsp;-Code optimization: organize and summarize some repetitive codes, and introduce the initial load configuration of the application<br />
-							&emsp;&emsp;-Detail optimization and repair<br />
-						</p>
-					</details>
-					<details>
-						<summary><span>v5.3.1</span> Problem fixes</summary>
-						<p>
-							&emsp;&emsp;<strong>Update from @User782Tec</strong><br />
-							&emsp;&emsp;-Fixed the problem of abnormal style<br />
-							&emsp;&emsp;-Fixed the issue of incorrect position of loading animated circle in Edge browser in some cases<br />
-							&emsp;&emsp;-Fixed the problem that the start menu cannot be scrolled<br />
-							&emsp;&emsp;-Fixed control panel style issue<br />
-						</p>
-					</details>
-					<details>
-						<summary><span>v5.3.0</span> Touch device adaptation, "Run" application, "Whiteboard" application, control center and detail repair</summary>
-						<p>
-							&emsp;&emsp;<strong>Update from @NB-Group and @User782Tec</strong><br />
-							&emsp;&emsp;-New "Run" application, which can run commands, open folders or visit websites based on input content<br />
-							&emsp;&emsp;-New whiteboard application, you can draw and save<br />
-							&emsp;&emsp;-Added control center to adjust monitor brightness<br />
-							&emsp;&emsp;-Added the function of closing the application after right-clicking on the taskbar icon<br />
-							&emsp;&emsp;-Added the ability to pin apps to the Start Menu<br />
-							&emsp;&emsp;-Added the function of getting the title of the web page in the Edge browser (this update is provided by @NB-Group and @User782Tec improves the front end)<br />
-							&emsp;&emsp;-Adapt touch devices to perform tab drag and sort operations in the Edge browser<br />
-							&emsp;&emsp;-Fixed the problem of incorrect calculation position in the tab drag sorting function in the Edge browser<br />
-							&emsp;&emsp;-Fixed the issue of incorrect position of loading animated circle in Edge browser in some cases<br />
-							&emsp;&emsp;-Fixed the problem that the terminal could not work properly in some cases (see Issue#87 raised by NebulaTechs for details)<br />
-							&emsp;&emsp;-Fixed the problem that the tab page could not be displayed correctly in the Edge browser in some cases<br />
-							&emsp;&emsp;-Some other changes<br />
-							&emsp;&emsp;-Format part of the document<br />
-						</p>
-					</details>
-					<details>
-						<summary><span>v5.2.4</span> Python Editor</summary>
-						<p>
-							&emsp;&emsp;<strong>Update from @NB-Group</strong><br />
-							&emsp;&emsp;-New Python editor application, the editor comes with automatic completion, code highlighting and running functions. <br />
-						</p>
-					</details>
-					<details>
-						<summary><span>v5.2.3</span> Login interface optimization and Python interpreter</summary>
-						<p>
-							&emsp;&emsp;<strong>Update from @NB-Group and @User782Tec</strong><br />
-							&emsp;&emsp;-Improved the login interface, added lock wallpaper and power operation<br />
-							&emsp;&emsp;-Compatible with development environments, caching and PWA are not enabled when developing locally<br />
-							&emsp;&emsp;-New Python interpreter (this update is inspired and framed by @NB-Group and improved by @User782Tec)<br />
-							&emsp;&emsp;-Fixed the problem of abnormal terminal selection<br />
-							&emsp;&emsp;-Improved terminal to open apps by app identifier<br />
-							&emsp;&emsp;-Format part of the document<br />
-						</p>
-					</details>
-					<details>
-						<summary><span>v5.2.2</span> Detailed optimization</summary>
-						<p>
-							&emsp;&emsp;-Optimized camera appearance and code<br />
-							&emsp;&emsp;-Add login background, some appearance optimization<br />
-							&emsp;&emsp;-Improvement of open source licensing<br />
-							&emsp;&emsp;-Some optimizations and fixes<br />
-							&emsp;&emsp;-Whet your appetite: v6 will use new icons (wallpapers?) and support custom themes >_-)o
-						</p>
-					</details>
-					<details>
-						<summary><span>v5.2.1</span> Login interface, startup sound effects and details optimized</summary>
-						<p>
-							&emsp;&emsp;<strong>Update from @User782Tec</strong><br />
-							&emsp;&emsp;-Add favicon and title to the website<br />
-							&emsp;&emsp;-In Edge browser, text that exceeds the tab page will be hidden to avoid text overflow problems<br />
-							&emsp;&emsp;-Fine-tune the position of loading animation in Edge browser<br />
-							&emsp;&emsp;-Added startup sound effects and login interface<br />
-							&emsp;&emsp;-Format part of the document<br />
-						</p>
-					</details>
-					<details>
-						<summary><span>v5.2.0</span> Camera application and detail repair</summary>
-						<p>
-							&emsp;&emsp;<strong>Update from @User782Tec</strong><br />
-							&emsp;&emsp;-New “Camera” application supports photo taking function<br />
-							&emsp;&emsp;-Optimize focus control. After closing the focus window, the focus will be transferred to the next window, which is more in line with the native experience<br />
-							&emsp;&emsp;-Calculator optimization, optimized symbols and input<br />
-							&emsp;&emsp;-Fixed the problem of a blue dot appearing in the upper left corner of the desktop batch selection box<br />
-							&emsp;&emsp;-Fixed the problem that the title bar is not displayed in some cases<br />
-							&emsp;&emsp;-Optimize window layout<br />
-							&emsp;&emsp;-Correct some non-standard CSS features<br />
-							&emsp;&emsp;-Format part of the document<br />
-						</p>
-					</details>
-					<details>
-						<summary><span>v5.1.2</span> Detailed fixes and changes</summary>
-						<p>
-							&emsp;&emsp;-Fix the issue about loading failure<br />
-							&emsp;&emsp;-Set the loading circle as the theme color<br />
-							&emsp;&emsp;-Add refresh circle animation<br />
-							&emsp;&emsp;-Optimize window drag code<br />
-							&emsp;&emsp;-Some other changes<br />
-							&emsp;&emsp;-Tip: Some <a on the github project page
-								onclick="window.open('https://github.com/tjy-gitnub/win12','_blank');"
-								win12_title="https://github.com/tjy-gitnub/win12" class="jump">公告</a>
-							</p>
-					</details>
-					<details>
-						<summary><span>v5.1.1</span> Web page loading animation and new applications</summary>
-						<p>
-							&emsp;&emsp;Update from @User782Tec<br />
-							&emsp;&emsp;-Optimized desktop file drag selection<br />
-							&emsp;&emsp;-Tab animation when loading web pages in Edge browser<br />
-							&emsp;&emsp;-Added the function of pop-up menu after clicking the window icon (some touch devices cannot trigger the context menu)<br />
-							&emsp;&emsp;-Add applications VSCode and Bilibili<br />
-							&emsp;&emsp;-Miscellaneous: Formatting documents and repairs
-						</p>
-					</details>
-					<details>
-						<summary><span>v5.1.0</span> Tab drag sorting and mica effect</summary>
-						<p>
-							&emsp;&emsp;-Tabs: Draggable tabs to sort (desktop only)<br />
-							&emsp;&emsp;-Mica effect (experimental): Enable in settings and press "Usage"<br />
-							&emsp;&emsp;-Others: detail optimization and repairs
-						</p>
-					</details>
-					<details>
-						<summary><span>v5.0.2</span> Contribution and Edge tab</summary>
-						<p>
-							&emsp;&emsp;-Contribution: About the application’s new contributor data<br />
-							&emsp;&emsp;-New tab page: Adaptation to dark mode, adaptation to higher security restrictions browser<br />
-							&emsp;&emsp;-Tab: Add new tab closing animation<br />
-							&emsp;&emsp;-Compatibility: Preventing accidental touch of system controls<br />
-							&emsp;&emsp;-Others: detail optimization and repairs
-						</p>
-					</details>
-					<details>
-						<summary><span>v5.0.1</span> Bug fixes</summary>
-						<p>
-							<strong>Update provided by @User782Tec</strong><br />
-							&emsp;&emsp;-Fixed issue #67<br />
-							&emsp;&emsp;-Fixed an issue where Edge browser remained after closing all tabs in Edge browser<br />
-							&emsp;&emsp;-Improving the regular expression matching of input content in the Edge browser<br />
-							&emsp;&emsp;-Slightly modify the input box in the Edge browser<br />
-							&emsp;&emsp;-New tab<br />
-							&emsp;&emsp;-Details optimization and repair
-						</p>
-					</details>
-					<details>
-						<summary><span>v5.0.0</span> New Edge</summary>
-						<p>
-							<strong>🎉🎉The project has exceeded ✨100✨stars✨ on Github! 🎊🎈</strong><br />
-							&emsp;&emsp;-New: Microsoft Edge application (you can give feedback and suggestions in the Edge application, thank you)<br />
-							&emsp;&emsp;-New: Desktop drag selection box (not very useful)<br />
-							&emsp;&emsp;-Return to basics: Cancel the list hover effect<br />
-							&emsp;&emsp;-Rich: Added some files in File Explorer<br />
-							&emsp;&emsp;-Simplification: Reduce the number and amplitude of animations<br />
-							&emsp;&emsp;-Fixed: Problem with saving as in Notepad<br />
-							&emsp;&emsp;-Easter Egg: Have you discovered the dynamic wallpaper? <br />
-							&emsp;&emsp;-Others: detail optimization and repairs
-						</p>
-					</details>
-				</div>
-				<!--<a class="jump" win12_title="https://github.com/tjy-gitnub/win12/blob/main/update.md"
-					onclick="window.open('https://github.com/tjy-gitnub/win12/blob/main/update.md','_blank')"
-					style="text-align: center;display: block;margin-top: 5px;">更多</a>-->
-				<a onclick="document.getElementById('next').style.display='';$(this).hide();" style="cursor: pointer;color: var(--href);text-align: center;display: block;margin-top: 5px;">更多</a>
-				<div id="next" style="display: none;margin-left: 20px;">
-					<details><summary><span>v4.3.0</span> Actually I want to release version 5.0</summary><p>
-						<span>You are welcome to raise questions and suggestions (try to put them in issues, of course, you can also link in the version below)</span><br>
-						&emsp;&emsp;-Search menu redesign<br>
-						&emsp;&emsp;-List hover three-dimensional effect (global, dark mode may be a little more obvious, inspired by win11, you can help find a border color for light mode)<br>
-						&emsp;&emsp;-Add mouse hover prompt box (global)<br>
-						&emsp;&emsp;-New design and functions of notepad (working towards Word)<br>
-						&emsp;&emsp;-Calculator new style<br>
-						&emsp;&emsp;-Add multi-open acrylic setting<br>
-						&emsp;&emsp;-About application update record animation<br>
-						&emsp;&emsp;-New animation for File Explorer<br>
-						&emsp;&emsp;-Desktop icon click effect<br>
-						&emsp;&emsp;-Fix the position problem of the small vertical bar in the settings<br>
-						&emsp;&emsp;-New News<br>
-						&emsp;&emsp;-Detail optimization and repair</p>
-					</details>
-					<details><summary><span>v4.2.0</span> Appearance improvements</summary><p>
-						<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__SDw7SZUQ0xGSTFTSjBKMVY2SFM5U1ZWNFc5NkU3Ry4u" class="jump">Participate in a short survey to help improve the project</a><br>
-						&emsp;&emsp;-New calculator appearance<br>
-						&emsp;&emsp;-Card appearance optimization<br>
-						&emsp;&emsp;-Set the small vertical line in front of the new menu<br>
-						&emsp;&emsp;-Right-click menu shadow effects<br>
-						&emsp;&emsp;-Detail optimization and repair</p>
-					</details>
-					<details><summary><span>v4.1.0</span> New settings, new background</summary><p>
-						&emsp;&emsp;-Add the option to switch special effects on and off in settings<br>
-						&emsp;&emsp;-Add shadow effect to background<br>
-						&emsp;&emsp;-Some animation effects set<br>
-						&emsp;&emsp;-Some appearance optimization<br>
-						&emsp;&emsp;-Detail optimization and repair</p>
-					</details>
-					<details><summary><span>v4.0.0</span> Record user preferences, animation updates, new wallpapers, split screen</summary><p>
-						&emsp;&emsp;-Record user preferences (not retained after updates) @xqwcom<br>
-						&emsp;&emsp;-Yes, another animation update<br>
-						&emsp;&emsp;-Comprehensive animation upgrades such as start/taskbar/right-click menu/list/switch<br>
-						&emsp;&emsp;-New wallpaper (does it look good?)<br>
-						&emsp;&emsp;-Drag the window to the left and right edges to split the screen<br>
-						&emsp;&emsp;-Detail optimization and repair</p>
-					</details>
-					<details><summary><span>v3.9.0</span> Added theme color setting function and optimized layout</summary><p>
-						&emsp;&emsp;<i>Update part of the source @User782Tec’s pr</i><br>
-						&emsp;&emsp;-Added system theme color setting function<br>
-						&emsp;&emsp;-Notepad font selection layout optimization<br>
-						&emsp;&emsp;-"About" app improvements<br>
-						&emsp;&emsp;-Detail optimization and repair</p>
-					</details>
-					<details><summary><span>v3.8.0</span> Notepad font, window focus logic improvement</summary><p>
-						&emsp;&emsp;<i>Update primary source @User782Tec’s pr</i><br>
-						&emsp;&emsp;-See details in <a href="https://github.com/tjy-gitnub/win12/pull/50">pull</a><br>
-						&emsp;&emsp;-Improved window focus logic<br>
-						&emsp;&emsp;-Detail optimization and repair</p>
-					</details>
-					<details><summary><span>v3.7.0</span> The window is maximized and perfected, making the colors more "celebratory"</summary><p>
-						&emsp;&emsp;<i>Update part of the source @User782Tec’s pr</i><br>
-						&emsp;&emsp;-Add the function of dragging down the maximized window to restore it<br>
-						&emsp;&emsp;-Keep the previous position after restoring the maximized window<br>
-						&emsp;&emsp;-Make the system's tone more "joyful"<br>
-						&emsp;&emsp;-Add news provided by @iamkezo1<br>
-						&emsp;&emsp;-Compress background image acceleration<br>
-						&emsp;&emsp;-Disable zoom<br>
-						&emsp;&emsp;-Detail optimization and repair</p>
-					</details>
-					<details><summary><span>v3.6.1</span> Windows 12 New Year Special Edition</summary><p>
-						&emsp;&emsp;-Add theme color control function<br>
-						&emsp;&emsp;-Testing the new update mechanism<br>
-						&emsp;&emsp;-Detail optimization and repair</p>
-					</details>
-					<details><summary><span>v3.6.0</span> Improved update mechanism, added office and terminal</summary>
-						<p>&emsp;&emsp;-Using the new update mechanism, the update speed is improved<br>
-						&emsp;&emsp;-Add terminal application<br>
-						&emsp;&emsp;-Add Office<br>
-						&emsp;&emsp;-Modify the black screen instead of the white screen after shutdown<br>
-						&emsp;&emsp;-Update records only show the latest, optimized speed<br>
-						&emsp;&emsp;-Detail optimization and repair</p>
-					</details>
-					<a onclick="document.getElementById('next2').style.display='';$(this).hide();" style="cursor: pointer;color: var(--href);text-align: center;display: block;margin-top: 5px;">更多</a>
-				</div>
-					<div style="margin-left: 20px;display: none;" id="next2">
-						<details><summary><span>v3.5.0</span> Window hierarchy and focus control</summary>
-							<p>&emsp;&emsp;-Added window level control<br>
-							&emsp;&emsp;-Turn off the blur effect for non-focused windows to speed up<br>
-							&emsp;&emsp;-New news provided by @Planet-xu<br>
-							&emsp;&emsp;-Fixed the problem of drop-down menu staying @Samtjs<br>
-							&emsp;&emsp;-Detail optimization and repair</p>
-						</details>
-						<details><summary><span>v3.4.1</span> Mobile Adaptation</summary>
-							<p>&emsp;&emsp;-Adapted to mobile double (changed to single click)<br>
-							&emsp;&emsp;-Adapted to the mobile drag window<br>
-							&emsp;&emsp;-Optimize the click effect of taskbar button<br>
-							&emsp;&emsp;-Change the right-click menu style<br>
-							&emsp;&emsp;-Hover to expand drop-down menu<br>
-							&emsp;&emsp;-Detail optimization and repair</p>
-							<i>Thanks @User782Tec</i>
-						</details>
-						<details><summary><span>v3.4.0</span> Animation optimization</summary>
-							<p>&emsp;&emsp;-Don’t ask me why animation occupies a new version<br>
-							&emsp;&emsp;-Basically all animations have been updated and optimized<br>
-							&emsp;&emsp;-Fixed the problem of undeleted title bar in the previous version<br>
-							&emsp;&emsp;-Modified the start menu icon<br>
-							&emsp;&emsp;-Detail optimization and repair</p>
-						</details>
-						<details><summary><span>v3.3.0</span> Added calculator widget</summary>
-							<p>&emsp;&emsp;-Added calculator widget<br>
-							&emsp;&emsp;-Fixed the problem that the widget news pictures could not be loaded<br>
-							&emsp;&emsp;-Removed the new window title bar from the previous version<br>
-							&emsp;&emsp;-Hover the mouse over some icon buttons to display hints<br>
-							&emsp;&emsp;-Removed the link tip in the lower left corner of all links<br>
-							&emsp;&emsp;-Detail optimization and repair</p>
-						</details>
-						<details><summary><span>v3.2.0</span> Added widget menu</summary>
-							<p>&emsp;&emsp;-Added widget (information and interests) menu<br>
-							&emsp;&emsp;-News content in the widget menu<br>
-							&emsp;&emsp;-Widget button animation effect<br>
-							&emsp;&emsp;-New application window title bar style<br>
-							&emsp;&emsp;-Streamlining the calculation code of the calculator<br>
-							&emsp;&emsp;-Detail optimization and repair</p>
-						</details>
-						<details><summary><span>v3.1.0</span> Added file browsing function, some new functions</summary>
-							<p>&emsp;&emsp;-File Explorer browsing function<br>
-							&emsp;&emsp;-Optimization of PWA updates<br>
-							&emsp;&emsp;-File Explorer right-click menu<br>
-							&emsp;&emsp;-Add loading animation for application startup<br>
-							&emsp;&emsp;-Add application startup initialization<br>
-							&emsp;&emsp;-Notepad adds a new "Edit" menu<br>
-							&emsp;&emsp;-Overall optimization of drop-down menu<br>
-							&emsp;&emsp;-Right-click menu optimization<br>
-							&emsp;&emsp;-Allow browser right-click menu in input box<br>
-							&emsp;&emsp;-Double-click the window title bar to maximize<br>
-							&emsp;&emsp;-Detail optimization and repair</p>
-						</details>
-						<details><summary><span>v3.0.0</span> Desktop icon, notepad, can be installed on the computer</summary>
-							<p>&emsp;&emsp;-Win12 can be installed as a pwa application in mainstream browsers such as Edge and Chrome¹<br>
-							&emsp;&emsp;-Add desktop icons and add a "refresh" function to the desktop right-click menu<br>
-							&emsp;&emsp;-You can right-click the Start menu application and add it to the desktop<br>
-							&emsp;&emsp;-New "Notepad" application<br>
-							&emsp;&emsp;-New dark mode toggle button<br>
-							&emsp;&emsp;-Improved window appearance<br>
-							&emsp;&emsp;-Detail optimization and repair<br>
-							<i>1: Normally, there will be an installation prompt, which will be in the upper right corner of the link bar. It can be used offline after installation, and it will automatically update when there is a network connection. Thanks to @dzc120223 for the suggestion</i>
-						</p>
-						</details>
-						<a onclick="document.getElementById('next3').style.display='';$(this).hide();" style="cursor: pointer;color: var(--href);text-align: center;display: block;margin-top: 5px;">更多</a>
-					</div>
-					<div style="margin-left: 20px;display: none;" id="next3">
-						<details><summary><span>v2.3.1</span> bug fixes, appearance optimization</summary>
-							<p>&emsp;&emsp;-Fixed the error of dragging the window icon to trigger the drag event<br>
-							&emsp;&emsp;-Fixed other bugs in dragging pictures<br>
-							&emsp;&emsp;-Optimizing the appearance of the right-click menu<br>
-							&emsp;&emsp;-Readability optimization in dark mode<br>
-							&emsp;&emsp;-Detail optimization and repair</p>
-						</details>
-						<details><summary><span>v2.3.0</span> Start appearance optimization, calendar menu, taskbar icon animation</summary>
-							<p>&emsp;&emsp;-The appearance of the start menu is optimized and looser<br>
-							&emsp;&emsp;-Add a calendar menu in the taskbar<br>
-							&emsp;&emsp;-Add animation effects to taskbar icons<br>
-							&emsp;&emsp;-Window minimization animation optimization<br>
-							&emsp;&emsp;-Improvement of right-click menu<br>
-							&emsp;&emsp;-Detail optimization and repair</p>
-						</details>
-						<details><summary><span>v2.2.0</span> Start and search button animations, right-click menu optimization, new list click effect</summary>
-							<p>&emsp;&emsp;-New click animation for start and search buttons<br>
-							&emsp;&emsp;-Optimize the right-click menu<br>
-							&emsp;&emsp;-New desktop right-click menu<br>
-							&emsp;&emsp;-New list click effects<br>
-							&emsp;&emsp;-Taskbar animation effect optimization<br>
-							&emsp;&emsp;-Detail optimization and repair</p>
-						</details>
-						<details><summary><span>v2.1.1</span> More right-click menu, win10 theme list hover effect</summary>
-							<p>&emsp;&emsp;-Support more right-click menus in the start, taskbar, and update messages<br>
-							&emsp;&emsp;-Optimization of the right-click menu beyond the interface<br>
-							&emsp;&emsp;-List win10 hover effect<br>
-							&emsp;&emsp;-Click or right-click the message to view details in the window<br>
-							&emsp;&emsp;-Fixed the problem that the time could not display Sunday<br>
-							&emsp;&emsp;-Details optimization</p>
-						</details>
-						<details><summary><span>v2.1.0</span> Right-click menu, detailed optimization changes</summary>
-							<p>&emsp;&emsp;-Support right-click menu in window title, desktop, and start menu<br>
-							&emsp;&emsp;-Disable right-click menu on other elements<br>
-							&emsp;&emsp;-The list click is offset according to the mouse position<br>
-							&emsp;&emsp;-New update message icon<br>
-							&emsp;&emsp;-Fixed the problem of abnormal display of the zoom effect when clicking the button<br>
-							&emsp;&emsp;-Fixed an issue where update messages were displayed before booting<br>
-							&emsp;&emsp;-Details optimization</p>
-						</details>
-						<details><summary><span>v2.0.0</span> Dark theme, update prompts, new click effects, drag to top to maximize</summary>
-							<p>&emsp;&emsp;-Support dark mode<br>
-							&emsp;&emsp;-Show update prompt after each update<br>
-							&emsp;&emsp;-Remove original win10 theme click and hover animation<br>
-							&emsp;&emsp;-New list item click animation<br>
-							&emsp;&emsp;-Drag the window to the top to maximize<br>
-							&emsp;&emsp;-Optimize the click effect of fixed items in the start menu</p>
-						</details>
-						<details><summary><span>v1.1.4</span> Animation optimization, display time</summary>
-							<p>&emsp;&emsp;-Optimize window maximum and minimum animations, start, search and other animations<br>
-							&emsp;&emsp;-Calculator appearance optimization<br>
-							&emsp;&emsp;-"Prepare" dark theme😏<br>
-							&emsp;&emsp;-Show the current time in the start menu<br>
-							&emsp;&emsp;-Some details optimization</p>
-						</details>
-						<details><summary><span>v1.1.3</span> List Hover, Click Effect</summary>
-							<p>&emsp;&emsp;-Use new list hover, click effects in Start Menu, Settings, About, File Explorer, Calculator<br>
-							&emsp;&emsp;-Use theme color (blue-purple gradient) in taskbar and about<br>
-							&emsp;&emsp;-Apply rounded corner optimization to the taskbar<br>
-							&emsp;&emsp;-Add a tray in the lower right corner of the taskbar (not fully implemented)<br>
-							&emsp;&emsp;-The mouse is not displayed at startup, making it more realistic</p>
-						</details>
-						<details><summary><span>v1.1.2</span> Appearance optimization</summary>
-							<p>&emsp;&emsp;-Transparency improvement<br>
-							&emsp;&emsp;-Use theme color (blue-purple gradient) in all apps<br>
-							&emsp;&emsp;-Dock (task) bar rounded corners optimization<br>
-							&emsp;&emsp;-Use new avatar in settings<br>
-							&emsp;&emsp;-Accelerate window animation, closer to native</p>
-						</details>
-						<details><summary><span>v1.1.1</span> Appearance optimization, fixed some bugs</summary>
-							<p>&emsp;&emsp;-Appearance optimization, shadow increase<br>
-							&emsp;&emsp;-Fixed the problem that the height of the start and search menus would flash when they are closed<br>
-							&emsp;&emsp;-Start menu user avatar beautification<br>
-							&emsp;&emsp;-Fixed the problem of smooth animation caused by text changes when switching tabs in the "About" app<br>
-							&emsp;&emsp;-Make the page unable to scroll and more realistic</p>
-						</details>
-						<details><summary><span>v1.1.0</span> Added minimization function, icon beautification</summary>
-							<p>&emsp;&emsp;-New minimize window function<br>
-							&emsp;&emsp;-Icon part beautification<br>
-							&emsp;&emsp;-Start and search button click animations to beautify<br>
-							&emsp;&emsp;-Fixed the problem that the calculator "𝑥²" key is invalid<br>
-							&emsp;&emsp;-Fixed the problem of abnormal minimization after the window is opened and maximized<br>
-							&emsp;&emsp;-Fixed the problem of incorrect display of taskbar when opening application multiple times<br>
-							&emsp;&emsp;-Simplify js code about dragging windows</p>
-						</details>
-						<details><summary><span>v1.0.1</span> Bugs and some typos</summary>
-							<p>&emsp;&emsp;I found a bug after uploading 😅</p>
-						</details>
-						<details><summary><span>v1.0.0</span> Added calculator functions, optimized experience and start menu, added about application</summary>
-							<p>&emsp;&emsp;-Enable the start menu and search window to be better displayed on pages with insufficient height. If the page height is too small, it may not be fully displayed. It is recommended to use a computer<br>
-							&emsp;&emsp;-The calculator adds square and square root functions<br>
-							&emsp;&emsp;-Unavailable applications in the start menu are displayed in gray, making it more concise and convenient<br>
-							&emsp;&emsp;-New "About Win12 Web Version" application, including instructions and historical update records about this project<br>
-							&emsp;&emsp;-Optimize the display animation of start menu and search window<br>
-							&emsp;&emsp;-Optimize the experience of the computer button</p>
-						</details>
-					</div>
+					<!-- What's the point of listing them all? -->
+					<a onclick="window.open('update.md','_blank');" win12_title="update.md" class="a jump" style="text-align: center;">更多</a>
 				</div>
 			</div>
 		</div>
+	</div>
 	<div class="window notepad" onclick="if(font_window){playWindowsBackground();showwin('notepad-fonts');}">
 		<div class="resize-bar"></div>
 		<div class="titbar">
@@ -2314,7 +2214,7 @@ window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issu
 	<div class="window python terminal-apps">
 		<div class="resize-bar"></div>
 		<div class="titbar">
-			<img src="icon/python.png" class="icon">
+			<img src="icon/python.svg" class="icon">
 			<p>Python 3.10.2</p>
 			<div>
 				<a class="a wbtg red" onclick="hidewin('python')"><i class="bi bi-x-lg"></i></a>
@@ -2323,7 +2223,7 @@ window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issu
 			</div>
 		</div>
 		<div class="loadback">
-			<img src="icon/python.png" class="icon">
+			<img src="icon/python.svg" class="icon">
 		</div>
 
 		<div class="content" id="win-python" onmouseup="$('#win-python input').focus();" ontouchend="$('#win-python input').focus();">
@@ -2558,14 +2458,14 @@ window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issu
 	</div>
 	<div class="window run">
 		<div class="titbar">
-			<img src="icon/run.png" class="icon">
+			<img src="icon/run.svg" class="icon">
 			<p>Run</p>
 			<div>
 				<a class="a wbtg red" onclick="hidewin('run')"><i class="bi bi-x-lg"></i></a>
 			</div>
 		</div>
 		<div class="loadback">
-			<img src="icon/run.png" class="icon">
+			<img src="icon/run.svg" class="icon">
 		</div>
 		<div class="content" id="win-run">
 			<div class="top">
@@ -2586,7 +2486,7 @@ window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issu
 	<div class="window whiteboard">
 		<div class="resize-bar"></div>
 		<div class="titbar">
-			<img src="icon/whiteboard.png" class="icon">
+			<img src="icon/whiteboard.svg" class="icon">
 			<p>Whiteboard</p>
 			<div>
 				<a class="a wbtg red" onclick="hidewin('whiteboard')"><i class="bi bi-x-lg"></i></a>
@@ -2596,7 +2496,7 @@ window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issu
 			</div>
 		</div>
 		<div class="loadback">
-			<img src="icon/whiteboard.png" class="icon">
+			<img src="icon/whiteboard.svg" class="icon">
 		</div>
 		<div class="content" id="win-whiteboard">
 			<a class="download" href="" download="Picture.png"></a>
@@ -3194,7 +3094,7 @@ window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issu
 						<hr>
 					</div>
 					<div>
-						<h3>window management</h3>
+						<h3>Window management</h3>
 						<input type="checkbox" id="tsk-setting-topmost" name="tsk-setting-topmost" style="height: 15px;width:15px;color:#fff;" onclick="if(checked){topmost[topmost.length]='taskmgr'}else{topmost.splice(topmost.indexOf('taskmgr',1))};hidewin('taskmgr');apps.taskmgr.page('processes');$('#win-taskmgr>.menu>list.focs>a')[0].click();saveDesktop();document.getElementById('tsk-search').value='';setTimeout('openapp(`taskmgr`);apps.taskmgr.generateProcesses();',300);"/><label for="tsk-setting-topmost" style="font-size: 15px;">置于顶层</label>
 					</div>
 				</div>
@@ -3204,6 +3104,7 @@ window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issu
 	<script src="data/tasks.js"></script>
 	<script src="desktop.js"></script>
 	<script src="module/tab.js"></script>
+	<script src="scripts/setting_getTime.js"></script><!-- Set the page to get the time logic @Junchen Yi 2023-9-17-->
 	<script src="https://fastly.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js" async></script>
 	<!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
 	<script defer src="https://pyscript.net/latest/pyscript.js"></script> --> <!-- PyScript, deprecated -->
