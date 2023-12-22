@@ -130,7 +130,7 @@ Welcome to add~
 			<svg style="position:absolute;left:calc(50% - 25px);top:72%;" width="50px" height="50px" viewBox="0 0 16 16">
 				<circle cx="8px" cy="8px" r="7px"></circle>
 			</svg>
-			<p id="loadbackupdate" style="position:absolute;top:calc(72% + 55px);left:0;width:100%;text-align:center;color:#fff;font-size: 25px;display:none;">正在更新</p>
+			<p id="loadbackupdate" style="position:absolute;top:calc(72% + 55px);left:0;width:100%;text-align:center;color:#fff;font-size: 25px;display:none;">updating</p>
 		</loading>
 		<script>
 			setTimeout(() => {
@@ -176,7 +176,7 @@ Welcome to add~
 		</div>
 		<a class="power" onclick="$(this).addClass('show')">
 			<i class="bi bi-power" onclick="setTimeout(() => {window.location='shutdown.html';}, 200);" win12_title="关机"></i>
-			<i class="bi bi-arrow-counterclockwise" onclick="setTimeout(() => {window.location='reload.html';}, 200);" win12_title="重启"></i>
+			<i class="bi bi-arrow-counterclockwise" onclick="setTimeout(() => {window.location='reload.html';}, 200);" win12_title="Restart"></i>
 		</a>
 	</div>
 	<!-- <img src="https://bing.com/th?id=OHR.Trossachs_ZH-CN9299955040_UHD.jpg&qlt=100" alt=""> -->
@@ -414,7 +414,7 @@ Welcome to add~
 				<div class="tool">
 					<p style="font-size: 40px;margin-bottom: -10px;" class="time">12:00</p>
 					<p class="date">Monday, March 34, 2368</p>
-					<a class="a btn btn-icon power" win12_title="电源" onclick="$(this).addClass('show')">
+					<a class="a btn btn-icon power" win12_title="power supply" onclick="$(this).addClass('show')">
 						<span class="bi bi-power"></span>
 						<i class="bi bi-power" onclick="$('#start-menu').removeClass('show');
 						setTimeout(() => {window.location='shutdown.html';},200);" win12_title="Shutdown"></i>
@@ -583,14 +583,14 @@ Welcome to add~
 					<div class="calc">
 						<div class="wg calc">
 							<div class="titbar">
-								<a win12_title="更多" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" class="a more notip" onclick="$('.wg.calc>.titbar>.menu').toggleClass('show')"><i class="bi bi-three-dots"></i></a>
+								<a win12_title="More" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" class="a more notip" onclick="$('.wg.calc>.titbar>.menu').toggleClass('show')"><i class="bi bi-three-dots"></i></a>
 								<div class="menu">
-									<a win12_title="打开应用" class="a img openapp" onclick="$('.wg.calc>.titbar>.menu').removeClass('show');hide_widgets();openapp('calc')" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)">
+									<a win12_title="open app" class="a img openapp" onclick="$('.wg.calc>.titbar>.menu').removeClass('show');hide_widgets();openapp('calc')" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)">
 										<img src="icon/calc.svg">
 									</a>
-									<a class="a move" win12_title="移动" onmouseenter="showdescp(event)" onclick="if (!edit_mode) { editMode(); }" onmouseleave="hidedescp(event)"><i class="bi bi-arrows-move"></i></a>
-									<a class="a addtodt" win12_title="添加到桌面" onmouseenter="showdescp(event)" onclick="widgets.widgets.addToDesktop('calc')" onmouseleave="hidedescp(event)"><i class="bi bi-box-arrow-in-right"></i></a>
-									<a class="a delete" win12_title="删除" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="$('.wg.calc>.titbar>.menu').removeClass('show');widgets.widgets.remove('calc')"><i class="bi bi-trash"></i></a>
+									<a class="a move" win12_title="move" onmouseenter="showdescp(event)" onclick="if (!edit_mode) { editMode(); }" onmouseleave="hidedescp(event)"><i class="bi bi-arrows-move"></i></a>
+									<a class="a addtodt" win12_title="Add to desktop" onmouseenter="showdescp(event)" onclick="widgets.widgets.addToDesktop('calc')" onmouseleave="hidedescp(event)"><i class="bi bi-box-arrow-in-right"></i></a>
+									<a class="a delete" win12_title="delete" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="$('.wg.calc>.titbar>.menu').removeClass('show');widgets.widgets.remove('calc')"><i class="bi bi-trash"></i></a>
 								</div>
 							</div>
 							<div class="content" onmousedown="widgetsMove(this.parentElement, event);" ontouchstart="widgetsMove(this.parentElement, event);">
@@ -657,12 +657,12 @@ Welcome to add~
 					<div class="weather">
 						<div class="wg weather">
 							<div class="titbar">
-								<a win12_title="更多" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" class="a more notip" onclick="$('.wg.weather>.titbar>.menu').toggleClass('show')"><i class="bi bi-three-dots"></i></a>
+								<a win12_title="More" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" class="a more notip" onclick="$('.wg.weather>.titbar>.menu').toggleClass('show')"><i class="bi bi-three-dots"></i></a>
 								<div class="menu">
-									<a class="a move" win12_title="移动" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="if (!edit_mode) { editMode() }"><i class="bi bi-arrows-move"></i></a>
+									<a class="a move" win12_title="move" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="if (!edit_mode) { editMode() }"><i class="bi bi-arrows-move"></i></a>
 									<a class="a addtotb" win12_title="Add to taskbar" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="widgets.widgets.addToToolbar('weather')"><i class ="bi bi-menu-app"></i></a>
-									<a class="a addtodt" win12_title="添加到桌面" onmouseenter="showdescp(event)" onclick="widgets.widgets.addToDesktop('weather')" onmouseleave="hidedescp(event)"><i class="bi bi-box-arrow-in-right"></i></a>
-									<a class="a delete" win12_title="删除" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="$('.wg.weather>.titbar>.menu').removeClass('show');widgets.widgets.remove('weather')"><i class="bi bi-trash"></i></a>
+									<a class="a addtodt" win12_title="Add to desktop" onmouseenter="showdescp(event)" onclick="widgets.widgets.addToDesktop('weather')" onmouseleave="hidedescp(event)"><i class="bi bi-box-arrow-in-right"></i></a>
+									<a class="a delete" win12_title="delete" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="$('.wg.weather>.titbar>.menu').removeClass('show');widgets.widgets.remove('weather')"><i class="bi bi-trash"></i></a>
 								</div>
 							</div>
 							<div class="content" onmousedown="widgetsMove(this.parentElement, event);" ontouchstart="widgetsMove(this.parentElement, event);">
@@ -677,13 +677,13 @@ Welcome to add~
 					<div class="monitor">
 						<div class="wg monitor">
 							<div class="titbar">
-								<a win12_title="更多" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" class="a more notip" onclick="$('.wg.monitor>.titbar>.menu').toggleClass('show')"><i class="bi bi-three-dots"></i></a>
+								<a win12_title="more" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" class="a more notip" onclick="$('.wg.monitor>.titbar>.menu').toggleClass('show')"><i class="bi bi-three-dots"></i></a>
 								<div class="menu">
 									<a class="a chose" win12_title="Switch monitor type" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="shownotice('widgets.monitor')"><i class=" bi bi-arrow-left-right"></i></a>
-									<a class="a move" win12_title="移动" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="if (!edit_mode) { editMode(); }"><i class="bi bi-arrows-move"></i></a>
+									<a class="a move" win12_title="move" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="if (!edit_mode) { editMode(); }"><i class="bi bi-arrows-move"></i></a>
 									<a class="a addtotb" win12_title="Add to taskbar" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="widgets.widgets.addToToolbar('monitor')"><i class ="bi bi-menu-app"></i></a>
-									<a class="a addtodt" win12_title="添加到桌面" onmouseenter="showdescp(event)" onclick="widgets.widgets.addToDesktop('monitor')" onmouseleave="hidedescp(event)"><i class="bi bi-box-arrow-in-right"></i></a>
-									<a class="a delete" win12_title="删除" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="$('.wg.monitor>.titbar>.menu').removeClass('show');widgets.widgets.remove('monitor')"><i class="bi bi-trash"></i></a>
+									<a class="a addtodt" win12_title="Add to desktop" onmouseenter="showdescp(event)" onclick="widgets.widgets.addToDesktop('monitor')" onmouseleave="hidedescp(event)"><i class="bi bi-box-arrow-in-right"></i></a>
+									<a class="a delete" win12_title="delete" onmouseenter="showdescp(event)" onmouseleave="hidedescp(event)" onclick="$('.wg.monitor>.titbar>.menu').removeClass('show');widgets.widgets.remove('monitor')"><i class="bi bi-trash"></i></a>
 								</div>
 							</div>
 							<div class="content" onmousedown="widgetsMove(this.parentElement, event);" ontouchstart="widgetsMove(this.parentElement, event);">
@@ -767,7 +767,7 @@ Welcome to add~
 						<br />Commit it on github</p>
 					<a class="a" win12_title="https://github.com/tjy-gitnub/win12/issues"
 						style="margin: 10px 0 0 70px;font-size: 17px;color: #9dd0fb" onclick="
-					window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">提交issues ></a>
+					window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">Submit issues ></a>
 				</div>
 			</div>
 		</div>
@@ -790,7 +790,7 @@ Welcome to add~
 		</div>
 		<div class="inputbox disable">
 			<input type="text" class="input" onkeydown="if(event.keyCode==13){copilot.send($(this).val());$(this).val('');this.blur()}">
-			<a class="a send btn" onclick="copilot.send($('#copilot>.inputbox>.input').val());$('#copilot>.inputbox>.input').val('');">发送</a>
+			<a class="a send btn" onclick="copilot.send($('#copilot>.inputbox>.input').val());$('#copilot>.inputbox>.input').val('');">send </a>
 		</div>
 	</div>
 	<div id="control">
@@ -1061,7 +1061,7 @@ Welcome to add~
 	<div id="desktop-editbar-container">
 		<div id="desktop-editbar">
 			<div onclick="shownotice('widgets.desktop');"><i class="bi bi-plus"></i> Add widgets</div>
-			<div onclick="openapp('setting');$('#win-setting > div.menu > list > a.enable.appearance')[0].click();"><i class="bi bi-brush"></i> 个性化</div>
+			<div onclick="openapp('setting');$('#win-setting > div.menu > list > a.enable.appearance')[0].click();"><i class="bi bi-brush"></i> personalise </div>
 			<div onclick="editMode();" win12_title="Exit edit mode"><i class="bi bi-x-lg"></i></div>
 		</div>
 	</div>
@@ -1403,18 +1403,18 @@ Welcome to add~
 				<input type="text" class="input" placeholder="Find settings" style="padding-left: 30px;">
 				<input-before class="bi bi-search"></input-before>
 				<list class="focs"><!--Number of compressed lines-->
-					<a class="enable home check" onclick="apps.setting.page('home')"><img src="apps/icons/setting/home.png">主页</a><!-- 主页  by lh11117 @github.com (20239/31~2023/10/1) -->
-					<a class="enable system" onclick="apps.setting.page('system')"><img src="apps/icons/setting/system.png">系统</a>
+					<a class="enable home check" onclick="apps.setting.page('home')"><img src="apps/icons/setting/home.png">Home Page </a><!-- Home Page  by lh11117 @github.com (20239/31~2023/10/1) -->
+					<a class="enable system" onclick="apps.setting.page('system')"><img src="apps/icons/setting/system.png">system </a>
 					<a class="enable blueteeth" onclick="apps.setting.page('blueteeth')"><img src="apps/icons/setting/blueteeth.png">Bluetooth and other devices</a><!- - Bluetooth and devices@Junchen Yi 2023-9-9-->
 					<a class="enable network" onclick="apps.setting.page('network')"><img src="apps/icons/setting/network.png">Network and Internet</a><!-- Network and Internet @Junchen Yi 2023-9-10-->
-					<a class="enable appearance" onclick="apps.setting.page('appearance')"><img src="apps/icons/setting/personal.png">个性化</a>
-					<a class="enable apps" onclick="apps.setting.page('apps')"><img src="apps/icons/setting/apps.png">应用</a><!-- 应用  @Junchen Yi 2023-9-11-->
-					<a class="enable user" onclick="apps.setting.page('user')"><img src="apps/icons/setting/user.png">账户</a><!-- 账户  @Junchen Yi 2023-9-11-->
+					<a class="enable appearance" onclick="apps.setting.page('appearance')"><img src="apps/icons/setting/personal.png">Personalise </a>
+					<a class="enable apps" onclick="apps.setting.page('apps')"><img src="apps/icons/setting/apps.png">Application </a><!-- Application  @Junchen Yi 2023-9-11-->
+					<a class="enable user" onclick="apps.setting.page('user')"><img src="apps/icons/setting/user.png">Account </a><!-- Account  @Junchen Yi 2023-9-11-->
 					<a class="enable time" onclick="apps.setting.page('time')"><img src="apps/icons/setting/time.png">Time and language</a><!-- Time@Junchen Yi 2023-9-17-->
-					<a class="enable game" onclick="apps.setting.page('game')"><img src="apps/icons/setting/game.png">游戏</a>
+					<a class="enable game" onclick="apps.setting.page('game')"><img src="apps/icons/setting/game.png">Game </a>
 					<a><img src="apps/icons/setting/help.png">Accessibility</a>
 					<a class="enable safe" onclick="apps.setting.page('safe')"><img src="apps/icons/setting/safe.png">Privacy and Security</a>
-					<a class="enable update" onclick="apps.setting.page('update')"><img src="apps/icons/setting/update.png">Windows 更新</a>
+					<a class="enable update" onclick="apps.setting.page('update')"><img src="apps/icons/setting/update.png">Windows Renew</a>
 					<span class="focs"></span>
 				</list>
 			</div>
@@ -1427,13 +1427,13 @@ Welcome to add~
 						<div>
 							<p style="font-size: 28px;text-overflow: ellipsis;white-space: nowrap;">Desktop-PingGai</p>
 							<p style="color: #7f7f7f;margin:-8px 0 -5px 0;">Bottle cap</p>
-							<a style="color: var(--href);text-decoration: underline !important;;" class="a">重命名</a>
+							<a style="color: var(--href);text-decoration: underline !important;;" class="a">Double Naming</a>
 						</div>
 					</div>
 					<div class="setting-card">
 						<p style="padding: 10px 15px;"><icon><img src="apps/icons/setting/ms.png"></icon><br>All functions are available in Microsoft account<br><span style ="font-size: 14px;color:var(--text2)">Sign in to use your favorite Microsoft apps and services on your device. You can back up your device, make it more secure, and use Microsoft 365 Apps and cloud storage. </span><br><img src="apps/icons/setting/ms365.png"></p>
 						<div style="padding:  10px 15px;">
-							<a class="a button" onclick="window.location.href='./bluescreen.html?code=YOU_CAN_NOT_SIGN_IN_YOUR_MICROSOFT_ACCOUNT'" win12_title="BSOD is coming!">登录</a>
+							<a class="a button" onclick="window.location.href='./bluescreen.html?code=YOU_CAN_NOT_SIGN_IN_YOUR_MICROSOFT_ACCOUNT'" win12_title="BSOD is coming!">Login </a>
 						</div>
 					</div>
 					<div class="setting-card">
@@ -1441,19 +1441,19 @@ Welcome to add~
 						<div class="setting-list">
 							<a><icon><i class="bi bi-power"></i></icon><div><p>Electric power source</p><p></p></div>< i class="bi bi-chevron-right"></i></a>
 							<a><icon><i class="bi bi-window-desktop"></i></icon><div><p>抡栏</p><p></p></div> <i class="bi bi-chevron-right"></i></a>
-							<a><icon><i class="bi bi-camera"></i></icon><div><p>摄image头</p><p></p></div><i class ="bi bi-chevron-right"></i></a>
+							<a><icon><i class="bi bi-camera"></i></icon><div><p>camera</p><p></p></div><i class ="bi bi-chevron-right"></i></a>
 						</div>
 					</div>
 					<div class="setting-card">
 						<p style="padding: 10px 15px;">Bluetooth devices<br><span style="font-size: 14px;color:var(--text2)">Manage, add and delete devices</span></ p>
 						<div class="setting-list">
-							<a onclick="$('#win-setting>.menu>list>a.blueteeth')[0].click();"><icon></icon><div><p>蓝牙</p><p></p></div><i class="bi bi-chevron-right"></i></a>
+							<a onclick="$('#win-setting>.menu>list>a.blueteeth')[0].click();"><icon></icon><div><p>Bluetooth </p><p></p></div><i class="bi bi-chevron-right"></i></a>
 						</div>
 					</div>
 					<div class="setting-card">
 						<p style="padding: 10px 15px;">Personalized equipment</p>
 						<div class="setting-list">
-							<a onclick="$('#win-setting>.menu>list>a.appearance')[0].click();"><icon><i class="bi bi-palette"></i></icon><div><p>个性化</p><p></p></div><i class="bi bi-chevron-right"></i></a>
+							<a onclick="$('#win-setting>.menu>list>a.appearance')[0].click();"><icon><i class="bi bi-palette"></i></icon><div><p>personalise</p><p></p></div><i class="bi bi-chevron-right"></i></a>
 						</div>
 					</div>
 					<div style="height: 60px;"></div>
@@ -1466,7 +1466,7 @@ Welcome to add~
 						<div>
 							<p style="font-size: 28px;text-overflow: ellipsis;white-space: nowrap;">Desktop-PingGai</p>
 							<p style="color: #7f7f7f;margin:-8px 0 -5px 0;">Bottle cap</p>
-							<a style="color: var(--href);text-decoration: underline !important;;" class="a">重命名</a>
+							<a style="color: var(--href);text-decoration: underline !important;;" class="a">Rename</a>
 						</div>
 					</div>
 					<div class="setting-list">
@@ -1495,7 +1495,7 @@ Welcome to add~
 							<p style="color: #7f7f7f;margin:-8px 0 -5px 0;">My Bluetooth name</p>
 							<p style="font-size: 28px;text-overflow: ellipsis;white-space: nowrap;">Blueteeth-PingGai</p>
 							<p class="blueteeth-tips-text" style="color: #7f7f7f;margin:-8px 0 -5px 0;">This is your name in the Bluetooth list of other devices</p>
-							<a style="color: var(--href);text-decoration: underline !important;;" class="a">重命名</a>
+							<a style="color: var(--href);text-decoration: underline !important;;" class="a">Rename</a>
 						</div>
 					</div>
 					<div class="setting-list">
@@ -1517,7 +1517,7 @@ Welcome to add~
 						<div>
 							<p style="color: #7f7f7f;margin:-8px 0 -5px 0;">Wifi is connected</p>
 							<p style="font-size: 28px;text-overflow: ellipsis;white-space: nowrap;">PingGai - 5G</p>
-							<a style="color: var(--href);text-decoration: underline !important;;" class="a">断开</a>
+							<a style="color: var(--href);text-decoration: underline !important;;" class="a">disconnect</a>
 						</div>
 					</div>
 					<div class="setting-list">
@@ -1623,7 +1623,7 @@ Welcome to add~
 						<a><icon></icon><div><p>Startup items</p><p>Applications that automatically start when you log in</p></div><i class="bi bi-chevron- right"></i></a>
 					</div>
 				</div>
-				<!-- 应用 end @Junchen Yi -->
+				<!-- application end @Junchen Yi -->
 				<!-- Account @Junchen Yi 2023-9-11-->
 				<div class="cnt user">
 					<p class="title">Account</p>
@@ -1712,7 +1712,8 @@ Welcome to add~
 								<p class="notice">Checking for updates...</p>
 								<p class="detail"></p>
 							</div>
-							<div><a class="a button" style="font-size: 16px;margin-top: -7.5px;" onclick="apps.setting.checkUpdate()">检查更新</a></div>
+							<div><a class="a button" style="font-size: 16px;margin-top: -7.5px;" onclick="apps.setting.checkUpdate()">Check for updates
+</a></div>
 						</div>
 					</div>
 					<div class="setting-list">
@@ -1772,12 +1773,12 @@ Welcome to add~
 					<div class="card tags">
 						<p class="title"><span style="font: 15px;">🏷</span> tag</p>
 						<list>
-							<a><span style="background-color: red;"></span>红色</a>
+							<a><span style="background-color: red;"></span>Red</a>
 							<a><span style="background-color: #3981d9;"></span>Blue</a>
-							<a><span style="background-color: yellow;"></span>黄色</a>
-							<a><span style="background-color: green;"></span>绿色</a>
-							<a><span style="background-color: #fc9816;"></span>橙色</a>
-							<a><span style="background-color: purple;"></span>紫色</a>
+							<a><span style="background-color: yellow;"></span>Yellow </a>
+							<a><span style="background-color: green;"></span>Green</a>
+							<a><span style="background-color: #fc9816;"></span>orange</a>
+							<a><span style="background-color: purple;"></span>Purple </a>
 							<a><span style="background-color: #ffcad4;"></span>pink</a>
 						</list>
 					</div>
@@ -1786,7 +1787,7 @@ Welcome to add~
 					<div class="tool micaalt">
 						<a class="a b t act"
 							onclick="apps.explorer.add($('#win-explorer>.path>.tit')[0].dataset.path,'New text document.txt')"><img
-								src="apps/icons/explorer/tool-new.png">新建</a>
+								src="apps/icons/explorer/tool-new.png">New</a>
 						<div class="hr"></div>
 						<a class="a b act"><img src="apps/icons/explorer/tool-cut.png"></a>
 						<a class="a b act"><img src="apps/icons/explorer/tool-copy.png"></a>
@@ -1794,7 +1795,7 @@ Welcome to add~
 						<a class="a b act"><img src="apps/icons/explorer/tool-rename.png"></a>
 						<div class="hr"></div>
 						<a class="a b t act"><img src="apps/icons/explorer/tool-sort.png">Sort by</a>
-						<a class="a b t act"><img src="apps/icons/explorer/tool-view.png">布局</a>
+						<a class="a b t act"><img src="apps/icons/explorer/tool-view.png">Layout</a>
 					</div>
 					<div class="content" onclick="apps.explorer.del_select()"
 						oncontextmenu="return showcm(event,'explorer.content',null);">
@@ -1899,8 +1900,8 @@ Welcome to add~
 		<div class="content" id="win-about">
 			<div class="menu">
 				<list class="fires">
-					<a onclick="$('#win-about>.about').addClass('show');$('#win-about>.update').removeClass('show');"><img src="apps/icons/about/info.svg" height="17px" width="19px">简介</a>
-					<a onclick="$('#win-about>.update').addClass('show');$('#win-about>.about').removeClass('show');"><img src="apps/icons/about/update.svg" height="20px" width="18px">更新记录</a>
+					<a onclick="$('#win-about>.about').addClass('show');$('#win-about>.update').removeClass('show');"><img src="apps/icons/about/info.svg" height="17px" width="19px">Introduction</a>
+					<a onclick="$('#win-about>.update').addClass('show');$('#win-about>.about').removeClass('show');"><img src="apps/icons/about/update.svg" height="20px" width="18px">update record</a>
 				</list>
 			</div>
 			<div class="cnt about">
@@ -2067,7 +2068,7 @@ Welcome to add~
 							&emsp;&emsp;-Detail optimization and repair</p>
 					</details>
 					<!-- What's the point of listing them all? -->
-					<a onclick="window.open('update.md','_blank');" win12_title="update.md" class="a jump" style="text-align: center;">更多</a>
+					<a onclick="window.open('update.md','_blank');" win12_title="update.md" class="a jump" style="text-align: center;">More</a>
 				</div>
 			</div>
 		</div>
@@ -2089,9 +2090,9 @@ Welcome to add~
 		</div>
 		<div class="content" id="win-notepad">
 			<div class="tool">
-				<a class="a" onmouseover="showdp(this,'notepad.file',null)" onmouseleave="hidedp()">文件</a>
-				<a class="a" onmouseover="showdp(this,'notepad.edit',null)" onmouseleave="hidedp()">编辑</a>
-				<a class="a" onmouseover="showdp(this,'notepad.view',null)" onmouseleave="hidedp()">格式</a>
+				<a class="a" onmouseover="showdp(this,'notepad.file',null)" onmouseleave="hidedp()">Document</a>
+				<a class="a" onmouseover="showdp(this,'notepad.edit',null)" onmouseleave="hidedp()">Edit</a>
+				<a class="a" onmouseover="showdp(this,'notepad.view',null)" onmouseleave="hidedp()">Format </a>
 			</div>
 			<div class="text-box" contenteditable="true" spellcheck="false">
 				<p>Type here...</p>
@@ -2452,7 +2453,7 @@ Welcome to add~
 			<div class="buttons">
 				<a class="a submit act"
 					onclick="hidewin('camera-notice', 'configs');localStorage.setItem('camera', true);openapp('camera');">Agree and continue</a>
-				<a class="a cancel act" onclick="hidewin('camera-notice')">不同意</a>
+				<a class="a cancel act" onclick="hidewin('camera-notice')">Disagree</a>
 			</div>
 		</div>
 	</div>
@@ -2478,8 +2479,8 @@ Welcome to add~
 					onkeyup="if (event.keyCode == 13) { hidewin('run');apps.run.run($('#win-run>.open>input').val()); }">
 			</div>
 			<div class="buttons">
-				<a class="a submit act" onclick="hidewin('run');apps.run.run($('#win-run>.open>input').val())">确定</a>
-				<a class="a cancel act" onclick="hidewin('run')">取消</a>
+				<a class="a submit act" onclick="hidewin('run');apps.run.run($('#win-run>.open>input').val())">Sure</a>
+				<a class="a cancel act" onclick="hidewin('run')">Cancel</a>
 			</div>
 		</div>
 	</div>
@@ -2604,7 +2605,7 @@ Welcome to add~
 			</div>
 			<p ondblclick="$(this).hide()" class="a mesg">The above is all nonsense, don’t take it seriously (double-click to hide this message)</p>
 			<div class="buttons">
-				<a class="a submit act" onclick="hidewin('winver');">确定</a>
+				<a class="a submit act" onclick="hidewin('winver');">Sure</a>
 			</div>
 		</div>
 	</div>
@@ -2652,16 +2653,17 @@ Welcome to add~
 			<div class="menu" style="height:100%">
 				<list class="focs" id="tsk-pages" style="height:100%">
 					<a class="fold" onclick="fold()" style="width:33px;height:33px;margin:0px;" win12_title="Folding (currently still a pendulum style)"><icon><i class= "bi bi-chevron-right"></i></icon></a>
-					<a class="processes check" onclick="apps.taskmgr.page('processes')" win12_title="进程">
+					<a class="processes check" onclick="apps.taskmgr.page('processes')" win12_title="process">
 						<svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="3.5 5.5 29 29">
 							<path d="M 5 11 L 5 29 C 5 32 6 33 9 33 L 14 33 C 17 33 18 32 18 29 L 18 7 L 9 7 C 6 7 5 8 5 11 M 18 7 L 27 7 C 30 7 31 8 31 11 L 31 16 C 31 19 30 20 27 20 L 5 20" stroke="var(--text)" stroke-width="1.5" fill="none"/>
 						</svg>
 						<p>Process</p>
 					</a>
-					<a class="performance" onclick="apps.taskmgr.page('performance')" win12_title="性能"><icon class="s-icon"></icon><p>性能</p></a>
+					<a class="performance" onclick="apps.taskmgr.page('performance')" win12_title="performance"><icon class="s-icon"></icon><p>performance</p></a>
 					<!--To add a new page, please add it in front of this comment-->
 					<div id="set-seting-to-bottom"></div>
-					<a class="setting" onclick="apps.taskmgr.page('setting')" id="tsk-setting" style="position: relative;bottom:0px;left:0px;" win12_title="设置"><i class="bi bi-gear"></i><p>设置</p></a>
+					<a class="setting" onclick="apps.taskmgr.page('setting')" id="tsk-setting" style="position: relative;bottom:0px;left:0px;" win12_title="setup
+"><i class="bi bi-gear"></i><p>Setup </p></a>
 					<span class="focs" style="top: -445px; left: 0px;"></span>
 				</list>
 			</div>
@@ -2781,11 +2783,11 @@ Welcome to add~
 								</div>
 								<div class="information">
 									<div class="left">
-										<div><div class="top">利用率</div><div class="value">11.4%</div></div>
-										<div><div class="top">速度</div><div class="value">1024.53 GHz</div></div>
-										<div><div class="top">进程</div><div class="value">1145</div></div>
-										<div><div class="top">线程</div><div class="value">114514</div></div>
-										<div><div class="top">句柄</div><div class="value">114514191918</div></div>
+										<div><div class="top">Utilization</div><div class="value">11.4%</div></div>
+										<div><div class="top">speed</div><div class="value">1024.53 GHz</div></div>
+										<div><div class="top">process</div><div class="value">1145</div></div>
+										<div><div class="top">thread</div><div class="value">114514</div></div>
+										<div><div class="top">handle</div><div class="value">114514191918</div></div>
 										<div><div class="top">Uptime</div><div class="value">0:11:45:14</div></div>
 									</div>
 									<div class="right">
@@ -2913,7 +2915,7 @@ Welcome to add~
 								<div class="information">
 									<div class="left">
 										<div><div class="top">Send</div><div class="value">114 Mbps</div></div>
-										<div><div class="top">接收</div><div class="value">114 Mbps</div></div>
+										<div><div class="top">take over</div><div class="value">114 Mbps</div></div>
 									</div>
 									<div class="right">
 										<table>
@@ -3005,7 +3007,7 @@ Welcome to add~
 								</div>
 								<div class="information">
 									<div class="left">
-										<div><div class="top">利用率</div><div class="value">1.1%</div></div>
+										<div><div class="top">Utilization</div><div class="value">1.1%</div></div>
 										<div><div class="top">Dedicated GPU memory</div><div class="value">0.1 GB / 2 GB</div></div>
 										<div><div class="top">Shared GPU memory</div><div class="value">1.1 GB / 16 GB</div></div>
 										<div><div class="top">GPU 内存</div><div class="value">1.2 / 18 GB</div></div>
@@ -3095,7 +3097,8 @@ Welcome to add~
 					</div>
 					<div>
 						<h3>Window management</h3>
-						<input type="checkbox" id="tsk-setting-topmost" name="tsk-setting-topmost" style="height: 15px;width:15px;color:#fff;" onclick="if(checked){topmost[topmost.length]='taskmgr'}else{topmost.splice(topmost.indexOf('taskmgr',1))};hidewin('taskmgr');apps.taskmgr.page('processes');$('#win-taskmgr>.menu>list.focs>a')[0].click();saveDesktop();document.getElementById('tsk-search').value='';setTimeout('openapp(`taskmgr`);apps.taskmgr.generateProcesses();',300);"/><label for="tsk-setting-topmost" style="font-size: 15px;">置于顶层</label>
+						<input type="checkbox" id="tsk-setting-topmost" name="tsk-setting-topmost" style="height: 15px;width:15px;color:#fff;" onclick="if(checked){topmost[topmost.length]='taskmgr'}else{topmost.splice(topmost.indexOf('taskmgr',1))};hidewin('taskmgr');apps.taskmgr.page('processes');$('#win-taskmgr>.menu>list.focs>a')[0].click();saveDesktop();document.getElementById('tsk-search').value='';setTimeout('openapp(`taskmgr`);apps.taskmgr.generateProcesses();',300);"/><label for="tsk-setting-topmost" style="font-size: 15px;">Bring to top
+</label>
 					</div>
 				</div>
 			</div>
