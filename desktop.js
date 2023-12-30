@@ -4090,9 +4090,9 @@ function sendToSw(msg) {
 }
 
 /**
- * 将秒数换算为可读的时间格式
- * @param {number} second 秒数
- * @returns 将秒数格式化为  1 天 8 小时 43 分钟 26 秒类似的格式
+ * Convert seconds to a human-readable time format
+ * @param {number} second seconds
+ * @returns Format seconds to something like 1 day 8 hours 43 minutes 26 seconds
  */
 function calcTimeString(second) {
     let timeStr = '';
