@@ -4101,16 +4101,16 @@ function calcTimeString(second) {
     const minutes = Math.floor(second % 3600 / 60);
     const seconds = second % 60;
     if (days > 0) {
-        timeStr += " " + days + " 天";
+        timeStr += " " + days + " days";
     }
     if (hours > 0) {
-        timeStr += " " + hours + " 小时";
+        timeStr += " " + hours + " Hour";
     }
     if (minutes > 0) {
-        timeStr += " " + minutes + " 分钟";
+        timeStr += " " + minutes + " minute";
     }
     if (seconds > 0) {
-        timeStr += " " + seconds + " 秒";
+        timeStr += " " + seconds + " Second";
     }
-    return timeStr === "" ? " 0 秒" : timeStr;
+    return timeStr === "" ? " 0 Second" : timeStr;
 }
